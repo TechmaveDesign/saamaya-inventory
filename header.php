@@ -316,10 +316,10 @@
 						<li class="submenu">
 							<a href="javascript:void(0);"><i data-feather="shopping-bag"></i><span><span>Purchases</span><span class="menu-arrow"></span></a>
 							<ul>
-								<li><a href="#">Vendors</a></li>
-								<li><a href="#">Expenses</a></li>
-								<li><a href="#">Purchase Orders</a></li>
-								<li><a href="#">Purchase Receive</a></li>
+								<li><a href="vendor.php">Vendors</a></li>
+								<!-- <li><a href="#">Expenses</a></li> -->
+								<li><a href="purchase-orders.php">Purchase Orders</a></li>
+								<li><a href="purchase-received.php">Purchase Receive</a></li>
 								<li><a href="#">Bills</a></li>
 								<li><a href="#">Payment Made</a></li>
 								<!-- <li><a href="#">Vendor Credits</a></li> -->
