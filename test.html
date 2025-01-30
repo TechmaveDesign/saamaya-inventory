@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary Image Uploader</title>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .upload-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 100%;
+      height: 220px;
+      position: relative;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .upload-area img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .upload-area input {
+      display: none;
+    }
+
+    .upload-area .placeholder {
+      color: #aaa;
+    }
+
+    .upload-area .remove-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .upload-area .remove-btn:hover {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .mark-primary-btn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .mark-primary-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .mark-primary-btn.marked {
+      background-color: orange;
+      cursor: default;
+    }
+
+    .uploaded-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .uploaded-images .image-card {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .uploaded-images .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .uploaded-images .image-card.marked {
+      border-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Upload Area -->
+    <div class="upload-area" id="activeImageContainer">
+      <span class="placeholder">Click to upload or drag an image here</span>
+      <input type="file" id="fileInput" accept="image/*" multiple>
+    </div>
+    <button class="mark-primary-btn" id="markPrimaryBtn" style="display: none;">
+      Mark as Primary
+    </button>
+
+    <!-- Uploaded Images -->
+    <div class="uploaded-images" id="uploadedImages"></div>
+  </div>
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const activeImageContainer = document.getElementById('activeImageContainer');
+    const uploadedImagesContainer = document.getElementById('uploadedImages');
+    const markPrimaryBtn = document.getElementById('markPrimaryBtn');
+
+    let activeImage = null;
+    let primaryImageCard = null;
+
+    fileInput.addEventListener('change', handleFiles);
+    activeImageContainer.addEventListener('click', (e) => {
+      if (e.target.tagName !== 'BUTTON') {
+        fileInput.click();
+      }
+    });
+
+    function handleFiles() {
+      const files = Array.from(fileInput.files);
+
+      files.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const src = reader.result;
+
+          // Create an image card for the bottom list
+          const imageCard = document.createElement('div');
+          imageCard.classList.add('image-card');
+          imageCard.innerHTML = `<img src="${src}" alt="Uploaded Image">`;
+
+          // Click on image to set it as active
+          imageCard.addEventListener('click', () => setActiveImage(src, imageCard));
+
+          // Append to the uploaded images container
+          uploadedImagesContainer.appendChild(imageCard);
+
+          // Set the first uploaded image as active and primary by default
+          if (!activeImage) {
+            setActiveImage(src, imageCard);
+            setPrimaryImage(imageCard); // Mark the first image as primary by default
+          }
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function setActiveImage(src, imageCard) {
+      activeImage = src;
+
+      // Clear the upload area and show the active image with a remove button
+      activeImageContainer.innerHTML = `
+        <img src="${src}" alt="Active Image">
+        <button class="remove-btn">&times;</button>
+      `;
+
+      // Add remove button functionality for active image
+      activeImageContainer.querySelector('.remove-btn').addEventListener('click', () => {
+        removeImage(src, imageCard);
+      });
+
+      // Show the "Mark as Primary" button
+      markPrimaryBtn.style.display = 'block';
+
+      // Update button text and functionality
+      if (imageCard === primaryImageCard) {
+        markPrimaryBtn.innerHTML = `
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Check_icon.svg/1024px-Check_icon.svg.png" alt="Check" width="16" height="16"> Primary
+        `;
+        markPrimaryBtn.classList.add('marked');
+        markPrimaryBtn.disabled = true;
+      } else {
+        markPrimaryBtn.innerHTML = `Mark as Primary`;
+        markPrimaryBtn.classList.remove('marked');
+        markPrimaryBtn.disabled = false;
+      }
+
+      markPrimaryBtn.onclick = () => setPrimaryImage(imageCard);
+    }
+
+    function setPrimaryImage(imageCard) {
+      // If another image was previously set as primary, remove the mark
+      if (primaryImageCard) {
+        primaryImageCard.classList.remove('marked');
+      }
+
+      // Mark the new image as primary
+      imageCard.classList.add('marked');
+      primaryImageCard = imageCard;
+
+      // Update the "Mark as Primary" button for the active image
+      markPrimaryBtn.innerHTML = `
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Check_icon.svg/1024px-Check_icon.svg.png" alt="Check" width="16" height="16"> Primary
+      `;
+      markPrimaryBtn.classList.add('marked');
+      markPrimaryBtn.disabled = true;
+    }
+
+    function removeImage(src, imageCard) {
+      // Remove the image card from the uploaded list
+      if (imageCard) {
+        imageCard.remove();
+      }
+
+      // Check if the active image is being removed
+      if (activeImage === src) {
+        activeImage = null;
+
+        // Reset activeImageContainer if no images are left
+        if (uploadedImagesContainer.children.length === 0) {
+          resetActiveImage();
+        } else {
+          // Otherwise, set the first remaining image as active
+          const remainingImages = uploadedImagesContainer.querySelectorAll('.image-card img');
+          if (remainingImages.length > 0) {
+            setActiveImage(remainingImages[0].src, remainingImages[0].closest('.image-card'));
+          }
+        }
+      }
+
+      // Reset primary image if the removed image was primary
+      if (primaryImageCard && primaryImageCard === imageCard) {
+        primaryImageCard = null;
+        if (uploadedImagesContainer.children.length > 0) {
+          const nextCard = uploadedImagesContainer.querySelector('.image-card');
+          setPrimaryImage(nextCard);
+        }
+      }
+    }
+
+    function resetActiveImage() {
+      // Reset the upload area to show the placeholder
+      activeImageContainer.innerHTML = '<span class="placeholder">Click to upload or drag an image here</span>';
+      markPrimaryBtn.style.display = 'none';
+      activeImage = null;
+    }
+  </script>
+</body>
+</html>

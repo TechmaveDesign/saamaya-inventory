@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="booking_field_column border_rightfrmInput inplocate_width">
+        <div class="form-group">
+           <label for="" class="form-label"><img class="locationImage"
+                 src="assets/img/newimages/locationcircle_icon.png" alt="">
+              From</label>
+           <div class="profile__input profile__input1">
+              <input type="text" class="input__location"
+                 placeholder="Search location" aria-expanded="false">
+              <ul class="dropdown-menu">
+                 <iconify-icon icon="bxs:up-arrow" style="color: white"
+                    class="arrowupIcon"></iconify-icon>
+                 <div class="locationList_container">
+                    <li class="no-results"><a class="dropdown-item"
+                          href="#">Please Search Pickup Location</a></li>
+                    <li class="no-location-found" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">No Location
+                          Found</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Sydney Opera House,
+                          Bennelong Point, Sydney, NSW, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Great Barrier Reef,
+                          Queensland, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Uluru, Northern
+                          Territory, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Bondi Beach, Sydney,
+                          NSW, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Melbourne Cricket
+                          Ground, Melbourne, VIC, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Kangaroo Island,
+                          South
+                          Australia, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Fremantle Prison,
+                          Fremantle, WA, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Cradle Mountain,
+                          Tasmania, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Darling Harbour,
+                          Sydney, NSW, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Barossa Valley,
+                          South
+                          Australia, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Gold Coast,
+                          Queensland,
+                          Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Blue Mountains, NSW,
+                          Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Fraser Island,
+                          Queensland, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Philip Island,
+                          Victoria, Australia</a>
+                    </li>
+                    <li class="location-item" style="display: none;">
+                       <iconify-icon icon="system-uicons:location"
+                          style="color: white"></iconify-icon><a
+                          class="dropdown-item" href="#">Kings Park, Perth,
+                          WA,
+                          Australia</a>
+                    </li>
+                 </div>
+
+              </ul>
+           </div>
+        </div>
+
+     </div>
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+     <!-- booking Engine  Input dropdown js start-->
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+       const profileInputs = document.querySelectorAll('.profile__input');
+
+       profileInputs.forEach(profileInput => {
+          const input = profileInput.querySelector('.input__location');
+          const dropdownMenu = profileInput.querySelector('.dropdown-menu');
+          const noResultsItem = dropdownMenu.querySelector('.no-results');
+          const noLocationFoundItem = dropdownMenu.querySelector('.no-location-found');
+          const locationItems = dropdownMenu.querySelectorAll('.location-item');
+
+          function updateDropdown() {
+             const filter = input.value.toLowerCase();
+             let hasResults = false;
+
+             if (filter) {
+                // Filter location items based on input
+                locationItems.forEach(item => {
+                   const text = item.textContent.toLowerCase();
+                   if (text.includes(filter)) {
+                      item.style.display = '';
+                      hasResults = true;
+                   } else {
+                      item.style.display = 'none';
+                   }
+                });
+
+                // Show or hide "No Location Found" message based on input
+                noLocationFoundItem.style.display = filter && !hasResults ? '' : 'none';
+                // Hide "Please Search Anything" message when there is input
+                noResultsItem.style.display = 'none';
+             } else {
+                // Show "Please Search Anything" when input is empty
+                noResultsItem.style.display = '';
+                noLocationFoundItem.style.display = 'none';
+                locationItems.forEach(item => item.style.display = 'none');
+             }
+          }
+
+          input.addEventListener('input', function () {
+             updateDropdown();
+          });
+
+          input.addEventListener('focus', function () {
+             dropdownMenu.style.display = 'block';
+             // Only show "Please Search Anything" by default, no location items visible
+             if (!input.value) {
+                noResultsItem.style.display = '';
+                locationItems.forEach(item => item.style.display = 'none');
+             }
+          });
+
+          locationItems.forEach(item => {
+             item.addEventListener('click', function (e) {
+                e.preventDefault();
+                input.value = item.textContent.trim();
+                dropdownMenu.style.display = 'none';
+             });
+          });
+
+          document.addEventListener('click', function (e) {
+             if (!profileInput.contains(e.target)) {
+                dropdownMenu.style.display = 'none';
+             }
+          });
+       });
+    });
+ </script>
+</body>
+</html>

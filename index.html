@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<title>Samaya Inventory</title>
+
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/new-image/saamaya-inventory-favicon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Datetimepicker CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+	<!-- animation CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+	<div id="global-loader">
+		<div class="whirly-loader"> </div>
+	</div>
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<!-- Header -->
+		<div class="header">
+
+			<!-- Logo -->
+			<div class="header-left active">
+				<a href="index.html" class="logo logo-normal">
+					<img src="assets/img/new-image/Saamaya-Inventory-Logo.png" alt="">
+				</a>
+				<a href="index.html" class="logo logo-white">
+					<img src="assets/img/new-image/Saamaya-Inventory-Logo.png" alt="">
+				</a>
+				<a href="index.html" class="logo-small">
+					<img src="assets/img/new-image/Saamaya-Inventory-sm-logo.png" alt="">
+				</a>
+				<a id="toggle_btn" href="javascript:void(0);">
+					<i data-feather="chevrons-left" class="feather-16"></i>
+				</a>
+			</div>
+			<!-- /Logo -->
+
+			<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+				<span class="bar-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</a>
+
+			<!-- Header Menu -->
+			<ul class="nav user-menu">
+
+				<!-- Search -->
+				<li class="nav-item nav-searchinputs">
+					<!-- <div class="top-nav-search">
+						<a href="javascript:void(0);" class="responsive-search">
+							<i class="fa fa-search"></i>
+						</a>
+						<form action="#" class="dropdown">
+							<div class="searchinputs dropdown-toggle" id="dropdownMenuClickable"
+								data-bs-toggle="dropdown" data-bs-auto-close="false">
+								<input type="text" placeholder="Search">
+								<div class="search-addon">
+									<span><i data-feather="x-circle" class="feather-14"></i></span>
+								</div>
+							</div>
+							<div class="dropdown-menu search-dropdown" aria-labelledby="dropdownMenuClickable">
+								<div class="search-info">
+									<h6><span><i data-feather="search" class="feather-16"></i></span>Recent Searches
+									</h6>
+									<ul class="search-tags">
+										<li><a href="javascript:void(0);">Products</a></li>
+										<li><a href="javascript:void(0);">Sales</a></li>
+										<li><a href="javascript:void(0);">Applications</a></li>
+									</ul>
+								</div>
+								<div class="search-info">
+									<h6><span><i data-feather="help-circle" class="feather-16"></i></span>Help</h6>
+									<p>How to Change Product Volume from 0 to 200 on Inventory management</p>
+									<p>Change Product Name</p>
+								</div>
+								<div class="search-info">
+									<h6><span><i data-feather="user" class="feather-16"></i></span>Customers</h6>
+									<ul class="customers">
+										<li>
+											<a href="javascript:void(0);">Aron Varu<img src="assets/img/profiles/avator1.jpg" alt="" class="img-fluid"></a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">Jonita<img src="assets/img/profiles/avatar-01.jpg" alt="" class="img-fluid"></a>
+										</li>
+										<li>
+											<a href="javascript:void(0);">Aaron<img src="assets/img/profiles/avatar-10.jpg" alt="" class="img-fluid"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div> -->
+				</li>
+				<!-- /Search -->
+
+
+				
+				
+
+				<li class="nav-item nav-item-box">
+					<a href="javascript:void(0);" id="btnFullscreen">
+						<i data-feather="maximize"></i>
+					</a>
+				</li>
+			
+				<!-- Notifications -->
+				<li class="nav-item dropdown nav-item-box">
+					<a href="javascript:void(0);" class="dropdown-toggle nav-link me-3" data-bs-toggle="dropdown">
+						<i data-feather="bell"></i><span class="badge rounded-pill">2</span>
+					</a>
+					<div class="dropdown-menu notifications">
+						<div class="topnav-dropdown-header">
+							<span class="notification-title">Notifications</span>
+							<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+						</div>
+						<div class="noti-content">
+							<ul class="notification-list">
+								<li class="notification-message">
+									<a href="#">
+										<div class="media d-flex">
+											<span class="avatar flex-shrink-0">
+												<img alt="" src="assets/img/profiles/avatar-02.jpg">
+											</span>
+											<div class="media-body flex-grow-1">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added
+													new task <span class="noti-title">Patient appointment booking</span>
+												</p>
+												<p class="noti-time"><span class="notification-time">4 mins ago</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media d-flex">
+											<span class="avatar flex-shrink-0">
+												<img alt="" src="assets/img/profiles/avatar-03.jpg">
+											</span>
+											<div class="media-body flex-grow-1">
+												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span>
+													changed the task name <span class="noti-title">Appointment booking
+													with payment gateway</span>
+												</p>
+												<p class="noti-time"><span class="notification-time">6 mins ago</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media d-flex">
+											<span class="avatar flex-shrink-0">
+												<img alt="" src="assets/img/profiles/avatar-06.jpg">
+											</span>
+											<div class="media-body flex-grow-1">
+												<p class="noti-details"><span class="noti-title">Misty Tison</span>
+													added <span class="noti-title">Domenic Houston</span> and <span
+													class="noti-title">Claire Mapes</span> to project <span
+													class="noti-title">Doctor available module</span>
+												</p>
+												<p class="noti-time"><span class="notification-time">8 mins ago</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media d-flex">
+											<span class="avatar flex-shrink-0">
+												<img alt="" src="assets/img/profiles/avatar-17.jpg">
+											</span>
+											<div class="media-body flex-grow-1">
+												<p class="noti-details"><span class="noti-title">Rolland Webber</span>
+													completed task <span class="noti-title">Patient and Doctor video conferencing</span>
+												</p>
+												<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media d-flex">
+											<span class="avatar flex-shrink-0">
+												<img alt="" src="assets/img/profiles/avatar-13.jpg">
+											</span>
+											<div class="media-body flex-grow-1">
+												<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span>
+													added new task <span class="noti-title">Private chat module</span>
+												</p>
+												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="topnav-dropdown-footer">
+							<a href="#">View all Notifications</a>
+						</div>
+					</div>
+				</li>
+				<!-- /Notifications -->
+
+				<!-- <li class="nav-item nav-item-box">
+					<a href="general-settings.html"><i data-feather="settings"></i></a>
+				</li> -->
+				<li class="nav-item dropdown has-arrow main-drop">
+					<a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+						<span class="user-info">
+							<span class="user-letter">
+								<img src="assets/img/new-image/userdummy.png" alt="" class="img-fluid">
+							</span>
+							<span class="user-detail">
+								<span class="user-name">John Smilga</span>
+								<!-- <span class="user-role">Super Admin</span> -->
+							</span>
+						</span>
+					</a>
+					<div class="dropdown-menu menu-drop-user">
+						<div class="profilename">
+							<div class="profileset">
+								<span class="user-img"><img src="assets/img/new-image/userdummy.png" alt="">
+									<span class="status online"></span></span>
+								<div class="profilesets">
+									<h6>John Smilga</h6>
+									<!-- <h5>Super Admin</h5> -->
+								</div>
+							</div>
+							<hr class="m-0">
+							<a class="dropdown-item" href="#"> <i class="me-2" data-feather="user"></i> My Profile</a>
+							<!-- <a class="dropdown-item" href="#"><i class="me-2" data-feather="settings"></i>Settings</a> -->
+							<hr class="m-0">
+							<a class="dropdown-item logout pb-0" href="login.html"><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- /Header Menu -->
+
+			<!-- Mobile Menu -->
+			<div class="dropdown mobile-user-menu">
+				<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a class="dropdown-item" href="#">My Profile</a>
+					<a class="dropdown-item" href="#">Settings</a>
+					<a class="dropdown-item" href="#">Logout</a>
+				</div>
+			</div>
+			<!-- /Mobile Menu -->
+		</div>
+		<!-- /Header -->
+
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="">
+									<a href="#" class="subdrop active"><i data-feather="grid"></i><span>Dashboard</span></a>
+						</li>
+						<li class="submenu">
+							<a href="javascript:void(0);"><i data-feather="box"></i><span>Inventory</span><span class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="index.html">Items</a></li>
+								<li><a href="#">Composite Items</a></li>
+								<li><a href="#">Item Groups</a></li>
+								<li><a href="#">Price Lists</a></li>
+								<li><a href="#">Inventory Adjustments</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="javascript:void(0);"><i data-feather="shopping-cart"></i><span>Sales</span><span class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="#">Customers</a></li>
+								<li><a href="#">Sales Orders</a></li>
+								<li><a href="#">Packages</a></li>
+								<li><a href="#">Shipments</a></li>
+								<li><a href="#">Delivery Challans</a></li>
+								<li><a href="#">Invoices</a></li>
+								<li><a href="#">Payments Received</a></li>
+								<li><a href="#">Sales Returns</a></li>
+								<li><a href="#">Credit Nots</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="javascript:void(0);"><i data-feather="shopping-bag"></i><span><span>Purchases</span><span class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="#">Vendors</a></li>
+								<li><a href="#">Expenses</a></li>
+								<li><a href="#">Purchase Orders</a></li>
+								<li><a href="#">Purchase Receive</a></li>
+								<li><a href="#">Bills</a></li>
+								<li><a href="#">Payment Made</a></li>
+								<li><a href="#">Vendor Credits</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="javascript:void(0);"><i data-feather="settings"></i><span>Settings</span><span class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="#">Category</a></li>
+								<li><a href="#">Sub Category</a></li>
+								<li><a href="#">Brands</a></li>
+								<li><a href="#">Units</a></li>
+								<li><a href="#">Variant Attributes</a></li>
+								<li><a href="#">Warehouses</a></li>
+
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0);"><i data-feather="shield"></i><span><span>Roles & Permissions</span></a>
+						
+						</li>
+						<li>
+							<a href="javascript:void(0);"><i data-feather="git-pull-request"></i><span><span>System Activity</span></a>
+						
+						</li>
+			
+						
+						
+						
+						
+						
+					</ul>
+				</div>
+
+				<div class="alertPopup">
+					<div class="card bg-white border-0 mb-0">
+						<div class="alert custom-alert1 alert-primary">
+							<div class="innerAlertBox">
+								<!-- <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"><i class="fas fa-xmark"></i></button> -->
+								<div class="text-center  px-1 pb-0"> 
+									<div class="custom-alert-icon"> 
+										<!-- <i class="feather-info flex-shrink-0"></i> -->
+										<i data-feather="info"></i>
+									</div>
+									<h5>Expiry Soon</h5>
+									<p class="planPara">Your Premium plan's trial expires in <span>12 days.</span></p>
+							</div>
+							</div>
+							<div class="alertPlanButtons">
+								<a href="#">Change Plan</a>
+								<a href="#">Upgrade</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Sidebar -->
+
+		
+
+		
+
+		<div class="page-wrapper">
+			<div class="bannerSection">
+				<div class="bocContainer">
+					<div class="iconBoxShop">
+						<iconify-icon icon="hugeicons:building-06"></iconify-icon>
+					</div>
+					<h5 class="storeName">Hello, John Smilga <span>Martin Bazzar</span></h5>
+				</div>
+				<div class="ActionBox">
+					<button type="button" data-toggle="tooltip" class="btn btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh"><i data-feather="rotate-ccw" class="feather-16"></i></button>
+					<a href="#" class="btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-16"></i></a>
+				</div>
+				
+			</div>
+			<div class="content">
+				
+				<!-- <div class="row">
+					<div class="col-lg-3">
+						<div class="dashboardWidgetCard">
+							<div class="iconWrapper">
+								<div class="iconGrp">
+									<iconify-icon icon="uil:user"></iconify-icon>
+								</div>
+								<div class="CountBox">
+									<h6 class="cardTitleDB">Total Customers</h6>
+									<div class="incrementDecrementBox">
+										<h4 class="TotalValue">2056</h4>
+										<div class="increBox">
+											<h6><iconify-icon class="incrementIcon" icon="mynaui:arrow-long-up-right"></iconify-icon> 26%</h6>
+										</div>
+										<div class="todayIncreBox">
+											+45 today
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						
+							
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="dashboardWidgetCard">
+							<div class="iconWrapper">
+								<div class="iconGrp">
+									<iconify-icon icon="lucide:users"></iconify-icon>
+								</div>
+								<div class="CountBox">
+									<h6 class="cardTitleDB">Total Suppliers</h6>
+									<div class="incrementDecrementBox">
+										<h4 class="TotalValue">486</h4>
+										<div class="increBox">
+											<h6><iconify-icon class="incrementIcon" icon="mynaui:arrow-long-up-right"></iconify-icon> 18%</h6>
+										</div>
+										<div class="todayIncreBox">
+											+25 today
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						
+							
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="dashboardWidgetCard">
+							<div class="iconWrapper">
+								<div class="iconGrp">
+									<iconify-icon icon="solar:box-outline"></iconify-icon>
+								</div>
+								<div class="CountBox">
+									<h6 class="cardTitleDB">Total Products</h6>
+									<div class="incrementDecrementBox">
+										<h4 class="TotalValue">689</h4>
+										<div class="increBox">
+											<h6><iconify-icon class="incrementIcon" icon="mynaui:arrow-long-up-right"></iconify-icon> 18%</h6>
+										</div>
+										<div class="todayIncreBox">
+											+25 today
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						
+							
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="dashboardWidgetCard">
+							<div class="iconWrapper">
+								<div class="iconGrp">
+									<iconify-icon icon="fluent-mdl2:verified-brand"></iconify-icon>
+								</div>
+								<div class="CountBox">
+									<h6 class="cardTitleDB">Total Brands</h6>
+									<div class="incrementDecrementBox">
+										<h4 class="TotalValue">150+</h4>
+										<div class="increBox">
+											<h6><iconify-icon class="incrementIcon" icon="mynaui:arrow-long-up-right"></iconify-icon> 5%</h6>
+										</div>
+										<div class="todayIncreBox">
+											+1 today
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						
+							
+						</div>
+					</div>
+				</div> -->
+				<!-- Button trigger modal -->
+				 <div class="row">
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-header customCardHeader">
+								<h5>Sales Activity</h5>
+							</div>
+							<div class="card-body">
+								<div class="DashboardCard">
+									<div class="DB_card">
+										<h2>2569 <span>Qty</span></h2>
+										<h6><iconify-icon icon="nimbus:box-unpacked"></iconify-icon> To be Packed</h6>
+									</div>
+									<div class="DB_card">
+										<h2>1569 <span>Pkgs</span></h2>
+										<h6><iconify-icon icon="streamline:shipping-truck"></iconify-icon> To be Shipped</h6>
+									</div>
+									<div class="DB_card">
+										<h2>1268 <span>Pkgs</span></h2>
+										<h6><iconify-icon icon="hugeicons:package-delivered"></iconify-icon> To be Delivered</h6>
+									</div>
+									<div class="DB_card">
+										<h2>1569<span>Qty</span></h2>
+										<h6><iconify-icon icon="basil:invoice-outline"></iconify-icon> To be Invoiced</h6>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="card">
+							<div class="card-header customCardHeader">
+								<h5>Items Details</h5>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-6">
+										<ul class="StockStatus">
+											<li>
+												<div class="iconItemDT lowStock">
+													<iconify-icon icon="gravity-ui:bars-ascending-align-left-arrow-down"></iconify-icon>
+												</div>
+												<h6>23 <span>Low Stock Items</span></h6>
+											</li>
+											<li>
+												<div class="iconItemDT  groupStock">
+													<iconify-icon icon="uil:layer-group"></iconify-icon>
+												</div>
+												<h6>250 <span>All Items Group</span></h6>
+											</li>
+											<li>
+												<div class="iconItemDT  allStock">
+													<iconify-icon icon="ant-design:product-outlined"></iconify-icon>
+												</div>
+												<h6>426 <span>All Items</span></h6>
+											</li>
+										</ul>
+
+									</div>
+									<div class="col-lg-6">
+										<div id="productStock"></div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="card">
+							<div class="card-header customCardHeader d-flex justify-content-between align-items-center">
+								<h5>Top Selling Products</h5>
+								<div class="graph-sets">
+									<div class="dropdown dropdown-wraper">
+										<button class="btn btn-white btn-sm dropdown-toggle d-flex align-items-center" type="button" id="dropdown-country-sales" data-bs-toggle="dropdown" aria-expanded="false">This Week</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdown-country-sales">
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">Today</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">This Week</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">This Month</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">This Year</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">Previous Week</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">Previous Month</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">Previous Year</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);" class="dropdown-item">Custom</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="productcard">
+											<div class="imgBox">
+												<img src="assets/img/new-image/40019371_31-bournvita-chocolate-removebg-preview.png" alt="">
+											</div>
+											<h6>Chocolate Nutrition Drink</h6>
+											<h5>350 <span>Pcs</span> </h5>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="productcard">
+											<div class="imgBox">
+												<img src="assets/img/new-image/40189244_8-kelloggs-muesli-break-removebg-preview.png" alt="">
+											</div>
+											<h6>Muesli Fruit Nut & Seeds</h6>
+											<h5>150 <span>Pcs</span> </h5>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="productcard">
+											<div class="imgBox">
+												<img src="assets/img/new-image/40224575_1-nissin-nissin-geki-ho-removebg-preview.png" alt="">
+											</div>
+											<h6>Geki - Hot & Spicy Korean Veg</h6>
+											<h5>250 <span>Pcs</span> </h5>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="productcard">
+											<div class="imgBox">
+												<img src="assets/img/new-image/40272681_1-keya-quinoa-penne-pas-removebg-preview.png" alt="">
+											</div>
+											<h6>Quinoa Penne Pasta Healthy</h6>
+											<h5>280 <span>Pcs</span> </h5>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+
+					</div>
+				 </div>
+				 <div class="col-lg-4">
+					<div class="card">
+						<div class="card-header customCardHeader d-flex justify-content-between align-items-center">
+							<h5>Purchase Order</h5>
+							<div class="graph-sets">
+								<div class="dropdown dropdown-wraper">
+									<button class="btn btn-white btn-sm dropdown-toggle d-flex align-items-center" type="button" id="dropdown-country-sales" data-bs-toggle="dropdown" aria-expanded="false">This Week</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdown-country-sales">
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">Today</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">This Week</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">This Month</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">This Year</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">Previous Week</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">Previous Month</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">Previous Year</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);" class="dropdown-item">Custom</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="PurchaseOrderView">
+								<div class="DB_card pusrcheOrderCard">
+									<h2>200 <span>Qty</span></h2>
+									<h6><iconify-icon icon="ic:outline-discount"></iconify-icon> Quantity Ordered</h6>
+								</div>
+								<div class="DB_card pusrcheOrderCard">
+									<h2>$2569 <span></span></h2>
+									<h6><iconify-icon icon="material-symbols:money-bag-outline"></iconify-icon> Total Cost</h6>
+								</div>
+							</div>
+							
+						</div>
+
+				</div>
+			 </div>
+			 <div class="col-lg-8">
+				<div class="card">
+					<div class="card-header customCardHeader d-flex justify-content-between align-items-center">
+						<h5>Sales Order Summary</h5>
+						<div class="graph-sets">
+							<div class="dropdown dropdown-wraper">
+								<button class="btn btn-white btn-sm dropdown-toggle d-flex align-items-center" type="button" id="dropdown-country-sales" data-bs-toggle="dropdown" aria-expanded="false">This Week</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-country-sales">
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">Today</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">This Week</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">This Month</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">This Year</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">Previous Week</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">Previous Month</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">Previous Year</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="dropdown-item">Custom</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-body">
+						<div id="sales-analysis" class="chart-set"></div>
+					</div>
+
+			</div>
+		 </div>
+
+				
+				
+			</div>
+		</div>
+
+		<!-- <div class="customizer-links" id="setdata">
+			<ul class="sticky-sidebar">
+				<li class="sidebar-icons">
+					<a href="#" class="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Theme">
+						<i data-feather="settings" class="feather-five"></i>
+					</a>
+				</li>
+			</ul>
+		</div> -->
+
+	</div>
+	<!-- /Main Wrapper -->
+
+  
+ <!-- Modal -->
+<div class="modal fade onbordingModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content">
+	
+		<div class="modal-body">
+		  <div class="topHeadVeri">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  
+		  <div class="otpVerifyContainer">
+			<img src="assets/img/new-image/istockphoto-1253682988-612x612.jpg" alt="">
+			<div class="otpInnerContainer">
+			  <h5>Welcome Aboard to <br>Saamaya Inventory</h5>
+			  <p>Onboarding complete! Start managing your inventory seamlessly with Saamaya.</p>
+			
+  
+			  <a href="#" class="verifyBtn" data-bs-dismiss="modal">Continue</a>
+			</div>
+	 
+		  
+		  </div>
+		</div>
+		
+	  </div>
+	</div>
+  </div>
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+
+	<!-- Feather Icon JS -->
+	<script src="assets/js/feather.min.js"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Chart JS -->
+	<script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+	<script src="assets/plugins/apexchart/chart-data.js"></script>
+
+	<!-- Sweetalert 2 -->
+	<script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+	<script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/theme-script.js"></script>	
+		<script src="assets/js/script.js"></script>
+    <!-- Iconify CND -->
+	<script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+
+	<script>
+        // Data for the chart
+        const chartData = {
+            series: [30, 40, 25, 35], // Example values
+            labels: ['Low Stock Items', 'All Item Groups', 'All Items', 'Active Items']
+        };
+
+        // Configuration for the chart
+        const options = {
+            chart: {
+                type: 'donut',
+                height: 220
+            },
+            series: chartData.series,
+            labels: chartData.labels,
+            tooltip: {
+                enabled: true,
+                custom: function({ series, seriesIndex, dataPointIndex, w }) {
+                    return '<div style="padding: 5px; background: #fff;color:#000; border: 1px solid #ddd; text-align: center;">' +
+                        `<strong>${w.globals.labels[seriesIndex]}</strong>` +
+                        `<br>Value: ${series[seriesIndex]}` +
+                        '</div>';
+                }
+            },
+            legend: {
+                show: false // Hide the legend
+            }
+        };
+
+        // Render the chart
+        const chart = new ApexCharts(document.querySelector("#productStock"), options);
+        chart.render();
+    </script>
+	
+	<!-- JavaScript to Show Modal on Page Load -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  // Delay in milliseconds (e.g., 3000ms = 3 seconds)
+		  const delay = 3000;
+	  
+		  setTimeout(() => {
+			const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+			myModal.show();
+		  }, delay);
+		});
+	  </script>
+</body>
+
+</html>

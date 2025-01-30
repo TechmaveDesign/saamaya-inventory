@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>Register - Saamaya Inventory</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/new-image/saamaya-inventory-favicon.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+        <!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+			<!-- Select2 CSS -->
+            <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		<!-- custom CSS -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+    </head>
+    <body class="account-page">
+
+        <div id="global-loader" >
+			<div class="whirly-loader"> </div>
+		</div>
+	
+		<!-- Main Wrapper -->
+        <div class="main-wrapper">
+			<div class="account-content">
+				<div class="login-wrapper">
+          <div class="login-img">
+                       
+            <div class="SliderWrapper">
+
+                <div class="carousel-slide">
+                  <div class="full-width flex-container align-items-center justify-content-center flex-direction-column">
+                    
+                    <div class="slideContent firstSlider">
+                      <div class="innerContentBox">
+                        <iconify-icon icon="mingcute:quote-left-fill" class="quoteIcon"></iconify-icon>
+                        <h2 class="leftslide_title">Simplify Your Workflow, Save Time, and Succeed with <span class="highlightText">Saamaya Inventory</span> </h2>
+                        <!-- <p class="leftslide_Desc">Join thousands of businesses that trust us for their inventory management needs. Our system is designed to help you organize, track, and optimize your entire inventory process, empowering your team to work smarter, not harder.</p> -->
+                       
+                      </div>
+
+                      <div class="imageBox">
+                        <img src="assets/img/new-image/editedb.png" alt="">
+                      </div>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-slide">
+                  <div class="full-width flex-container align-items-center justify-content-center flex-direction-column">
+                  
+                    <div class="slideContent secondSlider">
+                      <div class="innerContentBox">
+                        <iconify-icon icon="mingcute:quote-left-fill" class="quoteIcon"></iconify-icon>
+                        <h2 class="leftslide_title">Trusted by Thousands of Businesses for Smarter Inventory Management </h2>
+                        <img src="assets/img/new-image/warranty.png" alt="" class="TrustBadgeImg">
+                        <!-- <p class="leftslide_Desc">Join thousands of businesses that trust us for their inventory management needs. Our system is designed to help you organize, track, and optimize your entire inventory process, empowering your team to work smarter, not harder.</p> -->
+                       <ul class="keyPoints1">
+                        <li><iconify-icon icon="hugeicons:shipment-tracking" width="24" height="24"></iconify-icon> Real-Time Tracking</li>
+                        <li><iconify-icon icon="charm:chart-bar"></iconify-icon> Sales Management</li>
+                        <li><iconify-icon icon="ep:location"></iconify-icon> Location Management</li>
+                       </ul>
+                      </div>
+
+                      <div class="imageBox">
+                        <img src="assets/img/new-image/in-mn2.png" alt="">
+                      </div>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+    
+                
+        </div>
+    </div>
+                    <div class="login-content">
+                        <form action="#">
+                          
+                            <div class="login-userset">
+                                <div class="row">
+                                    <div class="col-lg-9 mx-auto">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="login-logo logo-normal">
+                                                    <img src="assets/img/new-image/Saamaya-Inventory-Logo.png" alt="img">
+                                                </div>
+                                                <a href="index.html" class="login-logo logo-white">
+                                                    <img src="assets/img/new-image/Saamaya-Inventory-Logo.png"  alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="login-userheading">
+                                                    <h3 class="LoginTitle">Sign Up to Get Started</h3>
+                                                    <!-- <h4>Create New Dreamspos Account</h4> -->
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="text" placeholder=" " id="name">
+                                                    <label for="name" class="floatingLabelWithicon"><iconify-icon icon="uil:suitcase"></iconify-icon> Company Name</label>
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="email" placeholder=" " id="email">
+                                                    <label for="email" class="floatingLabelWithicon"><iconify-icon icon="mdi:email-outline"></iconify-icon> Email Address</label>
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="tel" name="Mobile Number" id="phoneNumber" placeholder="" class="TelPhoneinput form-control" />
+                                                    <input type="hidden" name="dilCode" id="dilCode">
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input
+                                                      type="password"
+                                                      placeholder=" "
+                                                      id="password"
+                                                      name="password"
+                                                      oninput="checkPasswordStrength()"
+                                                      onfocus="showProgressBar()"
+                                                      onblur="hideProgressBar()"
+                                                    >
+                                                    <label for="password" class="floatingLabelWithicon">
+                                                      <iconify-icon icon="bi:shield-lock"></iconify-icon> Password
+                                                    </label>
+                                                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                                  
+                                                    <div class="passwordStatus">
+                                                        <div class="progress" id="passwordStrengthContainer" style="display: none;">
+                                                            <div id="passwordStrengthBar" class="progress-bar"></div>
+                                                          </div>
+                                                          <div id="passwordStrengthText"></div>
+                                                    </div>
+                                                    
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <iconify-icon icon="solar:global-outline" class="select-icon"></iconify-icon>
+                                                    <select class="js-example-basic-single select2">
+                                                        <option value="s-0" >Select Country</option>
+                                                        <option value="us">United States</option>
+                                                        <option value="ca">Canada</option>
+                                                        <option value="ca" selected>Cameroon</option>
+                                                        <option value="gb">United Kingdom</option>
+                                                        <option value="au">Australia</option>
+                                                        <option value="in" >India</option>
+                                                        <option value="de">Germany</option>
+                                                        <option value="fr">France</option>
+                                                        <option value="jp">Japan</option>
+                                                        <option value="cn">China</option>
+                                                        <option value="za">South Africa</option>
+                                                        <option value="br">Brazil</option>
+                                                        <option value="ru">Russia</option>
+                                                        <option value="it">Italy</option>
+                                                        <option value="es">Spain</option>
+                                                        <option value="mx">Mexico</option>
+                                                    </select>
+                                                </div>
+            
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <iconify-icon icon="lsicon:location-outline"  class="select-icon"></iconify-icon>
+                                                    <select class="js-example-basic-single select2">
+                                                      <option value="s-0">Select State</option>
+                                                      <option value="ad">Adamawa</option>
+                                                      <option value="ce">Centre</option>
+                                                      <option value="en">East</option>
+                                                      <option value="es">Far North</option>
+                                                      <option value="lt">Littoral</option>
+                                                      <option value="no">North</option>
+                                                      <option value="nw">Northwest</option>
+                                                      <option value="ou">West</option>
+                                                      <option value="su">South</option>
+                                                      <option value="sw">Southwest</option>
+                                                  </select>
+                                                </div>
+            
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-login authentication-check">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <div class="custom-control custom-checkbox justify-content-start">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <label class="checkboxs ps-4 mb-0 pb-0 line-height-1">
+                                                                <input type="checkbox">
+                                                                <span class="checkmarks"></span>I agree to the <a href="#" class="hover-a">Terms & Privacy</a>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-login">
+                                            <button type="button" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+                                        </div>
+                                        <div class="signinform">
+                                            <h4>Already have an account ? <a href="login.html" class="hover-a">Sign In Instead</a></h4>
+                                        </div>
+                                        <div class="form-setlogin or-text mt-4">
+                                            <h4>OR</h4>
+                                        </div>
+                                        <div class="form-sociallink">
+                                            <ul class="d-flex justify-content-center">
+                                                 <li>
+                                                     <a href="javascript:void(0);" class="socialMediaLogo google-logo">
+                                                        <img  src="assets/img/new-image/google.png" alt="Google">
+                                                     </a>
+                                                 </li>
+                                                <li>
+                                                    <a href="javascript:void(0);" class="socialMediaLogo facebookk-logo">
+                                                        <img src="assets/img/new-image/facebook(2).png" alt="Facebook">
+                                                    </a>
+                                                </li>
+                                              
+                                                <li>
+                                                    <a href="javascript:void(0);" class="socialMediaLogo Linkdin-logo">
+                                                        <img src="assets/img/new-image/linkedin.png" alt="Linkdin">
+                                                    </a>
+                                                </li>
+                                                <!-- <li>
+                                                 <a href="javascript:void(0);" class="socialMediaLogo twitter-logo">
+                                                     <img src="assets/img/new-image/twitter(2).png" alt="Twitter">
+                                                 </a>
+                                             </li>
+                                             <li>
+                                                 <a href="javascript:void(0);" class="socialMediaLogo office365-logo">
+                                                     <img src="assets/img/new-image/office-365.png" alt="Apple">
+                                                 </a>
+                                             </li> -->
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="my-4 d-flex justify-content-center align-items-center copyright-text">
+                                            <p>Copyright &copy; 2024 Saamaya Inventory All rights reserved. Design & Develop by <a href="#">TechMave Software</a></p>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+                                
+                            
+                             
+                               
+                           </div>
+                        </form>
+                    </div>
+                    
+			</div>
+        </div>
+		<!-- /Main Wrapper -->
+        <div class="customizer-links" id="setdata">
+			<ul class="sticky-sidebar">
+				<li class="sidebar-icons">
+					<a href="#" class="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left"
+						data-bs-original-title="Theme">
+						<i data-feather="settings" class="feather-five"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        
+      </div> -->
+      <div class="modal-body">
+        <div class="topHeadVeri">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="otpVerifyContainer">
+          <img src="assets/img/new-image/otp.png" alt="">
+          <div class="otpInnerContainer">
+            <h5>OTP Verification</h5>
+            <p>One-Time Password sent to your registered mobile no. +(237) - 6 71 23 45 67</p>
+            <div class="login-content">
+              <div class="form-group  mb-0">
+                <input type="email" placeholder=" " id="email">
+                <label for="email" class="floatingLabelWithicon">Enter OTP</label>
+              </div>
+            </div>
+            
+            <p class="otpPara">Didn't receive the OTP? <a href="#" class="resendBtn">Resend OTP</a></p>
+
+            <a href="#" class="verifyBtn">Verify</a>
+          </div>
+   
+        
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+		
+		<!-- jQuery -->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+         <!-- Feather Icon JS -->
+		<script src="assets/js/feather.min.js"></script>
+		  <!-- Select2 JS -->
+          <script src="assets/plugins/select2/js/select2.min.js"></script>
+		<!-- Bootstrap Core JS -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+		
+		<!-- Custom JS -->
+         <script src="assets/js/theme-script.js"></script>	
+		<script src="assets/js/script.js"></script>
+        <script src="assets/js/custom-select2.js"></script>
+        <!-- Iconify-icon CDN -->
+        <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+
+         <!-- country code mobile field -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/9.0.6/css/intlTelInput.css">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/intlTelInput.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+
+    <script>
+        $(document).ready(function() {
+          $(".TelPhoneinput").intlTelInput({
+            initialCountry: "cm", // Set India as the default country
+            separateDialCode: true,
+            formatOnDisplay: true,
+            nationalMode: false,
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/utils.js",
+            customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
+              // Ensure placeholder shows with dial code
+              return "+(" + selectedCountryData.dialCode + ") - " + selectedCountryPlaceholder;
+            }
+          });
+      
+          // Force placeholder update on load
+          const iti = $(".TelPhoneinput").intlTelInput("getInstance");
+          $(".TelPhoneinput").attr("placeholder", iti.getSelectedCountryData().dialCode);
+        });
+      </script>
+
+      <script>
+   // Show/Hide Password Functionality
+$(".toggle-password").click(function () {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  const input = $($(this).attr("toggle"));
+  if (input.attr("type") === "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+// Show Password Strength Progress Bar
+function showProgressBar() {
+  $("#passwordStrengthContainer").show();
+}
+
+// Hide Password Strength Progress Bar
+function hideProgressBar() {
+  const password = $("#password").val();
+  if (!password) {
+    $("#passwordStrengthContainer").hide();
+  }
+}
+
+// Check Password Strength
+function checkPasswordStrength() {
+  const password = $("#password").val();
+  const strengthBar = $("#passwordStrengthBar");
+  const strengthText = $("#passwordStrengthText");
+
+  let strength = 0;
+
+  // Check password criteria
+  if (password.length >= 6) strength++; // Minimum length
+  if (/[A-Z]/.test(password)) strength++; // Contains uppercase
+  if (/[0-9]/.test(password)) strength++; // Contains number
+  if (/[^A-Za-z0-9]/.test(password)) strength++; // Contains special character
+
+  // Update strength bar and text based on strength
+  switch (strength) {
+    case 0:
+      strengthBar.css({ width: "0%", backgroundColor: "#dc3545" });
+      strengthText.text("");
+      break;
+    case 1:
+      strengthBar.css({ width: "25%", backgroundColor: "#dc3545" });
+      strengthText.text("Weak");
+      break;
+    case 2:
+      strengthBar.css({ width: "50%", backgroundColor: "#ffc107" });
+      strengthText.text("Average");
+      break;
+    case 3:
+      strengthBar.css({ width: "75%", backgroundColor: "#28a745" });
+      strengthText.text("Strong");
+      break;
+    case 4:
+      strengthBar.css({ width: "100%", backgroundColor: "#007bff" });
+      strengthText.text("Very Strong");
+      break;
+  }
+}
+
+
+      </script>
+ 
+<!-- slick slider -->
+<link rel="stylesheet" href="assets/slick/slick-theme.css">
+<link rel="stylesheet" href="assets/slick/slick.css">
+<script src="assets/slick/slick.min.js"></script>
+
+<script>
+  $('.SliderWrapper').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true, // Enables fade-out animation
+    cssEase: 'linear', // Ensures a smooth fade transition
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          fade: true // Applies fade for this breakpoint
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true // Applies fade for this breakpoint
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true // Applies fade for this breakpoint
+        }
+      }
+    ]
+  });
+</script>
+<script>
+  document.querySelector('.verifyBtn').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      
+      const button = event.target;
+      
+      // Add loading animation inside the button
+      button.innerHTML = '<span class="spinner"></span> Verifying...';
+      button.style.pointerEvents = 'none'; // Disable further clicks
+      
+      // Redirect to onboarding.html after a delay
+      setTimeout(() => {
+          window.location.href = 'onboarding.html';
+      }, 2000); // 2000 milliseconds (2 seconds) delay
+  });
+</script>
+
+<!-- slick end -->
+ 
+    </body>
+</html>
