@@ -287,7 +287,7 @@
 				<div id="sidebar-menu" class="sidebar-menu">
 					<ul>
 						<li class="">
-									<a href="index.php" class="subdrop active"><i data-feather="grid"></i><span>Dashboardddd</span></a>
+									<a href="index.php" class="subdrop active"><i data-feather="grid"></i><span>Dashboard</span></a>
 						</li>
 						<li class="submenu">
 							<a href="javascript:void(0);"><i data-feather="box"></i><span>Inventory</span><span class="menu-arrow"></span></a>
