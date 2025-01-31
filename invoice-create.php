@@ -277,7 +277,7 @@
         </div>
      
         <div class="ItemContainerTop no-bg border-top mb-3">
-        <div class="row">
+           <div class="row">
                             <div class="col-lg-6 mb-3">
                             
                             <div class="profile__input profile__input1">
@@ -510,7 +510,7 @@
 
 
                         </div>
-        </div>
+       </div>
 
         <div class="ItemContainerTop mt-5 mb-3">
             <div class="row">

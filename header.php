@@ -310,7 +310,7 @@
 								<li><a href="invoice-list.php">Invoices</a></li>
 								<li><a href="recevied-payment.php">Payments Received</a></li>
 								<li><a href="return-sale-order.php">Sales Returns</a></li>
-								<!-- <li><a href="#">Credit Nots</a></li> -->
+								<li><a href="sales-credit.php">Credit Nots</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
@@ -320,16 +320,16 @@
 								<!-- <li><a href="#">Expenses</a></li> -->
 								<li><a href="purchase-orders.php">Purchase Orders</a></li>
 								<li><a href="purchase-received.php">Purchase Receive</a></li>
-								<li><a href="#">Bills</a></li>
-								<li><a href="#">Payment Made</a></li>
-								<!-- <li><a href="#">Vendor Credits</a></li> -->
+								<li><a href="all-bills.php">Bills</a></li>
+								<li><a href="all-payments.php">Payment Made</a></li>
+								<li><a href="vendor-credits.php">Vendor Credits</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
 							<a href="javascript:void(0);"><i data-feather="settings"></i><span>Settings</span><span class="menu-arrow"></span></a>
 							<ul>
-								<li><a href="#">Category</a></li>
-								<li><a href="#">Sub Category</a></li>
+								<li><a href="category.php">Category</a></li>
+								<li><a href="sub-category.php">Sub Category</a></li>
 								<li><a href="#">Brands</a></li>
 								<li><a href="#">Units</a></li>
 								<li><a href="#">Variant Attributes</a></li>

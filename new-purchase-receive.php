@@ -55,8 +55,13 @@
                                                             <label for="#">Vendor Name</label>
                                                         </div>
                                                         <div class="col-lg-8">
-                                                            <select  class=" js-example-basic-single select2">
+                                                        <select  class=" js-example-basic-single select2">
                                                                 <option value="" disabled selected>Select Vendor</option>
+                                                                <option value="" >Jenny Smith</option>
+                                                                <option value="" >Michael Brown</option>
+                                                                <option value="" >Sarah Johnson</option>
+                                                                <option value="" >Emily Davis</option>
+                                                                <option value="" >David Wilson</option>
                                                             </select>
                                                         </div>
                                                     </div>

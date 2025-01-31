@@ -3,16 +3,16 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">New Purchase Order</h2>
+                        <h2 class="mb-1">New Sales Credits</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
                                     <a href="index.php"><i data-feather="home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                <a href="purchase-orders.php">Purchase Orders</a>
+                                <a href="purchase-orders.php">All Credit Notes</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">New Purchase Order</li>
+                                <li class="breadcrumb-item active" aria-current="page">New Sales Credits</li>
                             </ol>
                         </nav>
                     </div>
@@ -33,7 +33,7 @@
                             </div>
                         </div> -->
                         <div class="ActionHeadButtons">
-                            <a href="purchase-orders.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
+                            <a href="sales-credit.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
                             <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#add_users" class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon> New Item</a> -->
                         </div>
                         <div class="head-icons ms-2">
@@ -47,17 +47,17 @@
                             <div class="ItemNewContainer1">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                            <h6 class="SectionTitleFG">Purchase Order Details</h6>
+                                            <h6 class="SectionTitleFG">Sales  Credits Details</h6>
                                                 <div class="InputFelidsContainer">
                                                 
                                                     <div class="form-group">
                                                      <div class="row align-items-center">
                                                         <div class="col-lg-3">
-                                                            <label for="#">Vendor Name</label>
+                                                            <label for="#">Customer  Name</label>
                                                         </div>
                                                         <div class="col-lg-8">
-                                                        <select  class=" js-example-basic-single select2">
-                                                                <option value="" disabled selected>Select Vendor</option>
+                                                            <select  class=" js-example-basic-single select2">
+                                                                <option value="" disabled selected>Select Customer</option>
                                                                 <option value="" >Jenny Smith</option>
                                                                 <option value="" >Michael Brown</option>
                                                                 <option value="" >Sarah Johnson</option>
@@ -67,21 +67,11 @@
                                                         </div>
                                                     </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <div class="row">
-                                                            <div class="col-lg-3">
-                                                                <label for="#" >Delivery Address</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                            <textarea type="text" placeholder="Street 1 " id="name" class="form-control" rows="3"></textarea>
-                                                            </div>
-                                                        </div>
-                                                
-                                                </div>
+                                                    
                                             <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
-                                                            <label for="#" >Purchase Order#</label>
+                                                            <label for="#" >Credit Note# <span>*</span></label>
                                                         </div>
                                                         <div class="col-lg-8">
                                                         <div class="skuCode">
@@ -92,10 +82,24 @@
                                                     </div>
                                             
                                             </div>
+                                            <!-- <div class="form-group">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <label for="#" >Order Number</label>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                        <div class="skuCode">
+                                                            <input type="text" placeholder="" id="name" class="form-control">
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div> -->
                                             <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
-                                                            <label for="#" >Reference#</label>
+                                                            <label for="#" >Reference Number#</label>
                                                         </div>
                                                         <div class="col-lg-8">
                                                         <div class="skuCode">
@@ -110,7 +114,7 @@
                                             <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
-                                                            <label for="#" data-bs-toggle="tooltip" data-placement="top" title="">Purchase Date
+                                                            <label for="#" data-bs-toggle="tooltip" data-placement="top" title="">Credit Note Date<span>*</span>
                                                          </div>
                                                             <div class="col-lg-8">
                                                             <input type="text" placeholder=" " id="name" class="form-control datepicker1">
@@ -119,33 +123,32 @@
                                             
                                             </div>
                                             <div class="form-group">
-                                                    <div class="row align-items-center">
+                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
-                                                            <label for="#" data-bs-toggle="tooltip" data-placement="top" title="">Delivery Date
-                                                         </div>
-                                                            <div class="col-lg-8">
-                                                            <input type="text" placeholder=" " id="name" class="form-control datepicker1">
+                                                            <label for="#">Salesperson</label>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <select  class=" js-example-basic-single select2">
+                                                                <option value="" disabled selected>Select Salesperson</option>
+                                                                <option value="" >Sarah Johnson</option>
+                                                                <option value="" >Emily Davis</option>
+                                                                <option value="" >David Wilson</option>
+                                                            </select>
                                                         </div>
                                                     </div>
-                                            
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row align-items-center">
-                                                    <div class="col-lg-3">
-                                                        <label for="#">Payment Terms</label>
                                                     </div>
-                                                    <div class="col-lg-8">
-                                                        <select  class=" js-example-basic-single select2">
-                                                            <option value="" disabled selected>Select Terms</option>
-                                                            <option value="net1" >Net 15</option>
-                                                            <option value="net2" >Net 30</option>
-                                                            <option value="net3" >Net 45</option>
-                                                            <option value="net4">Net 60</option>
-                                                            <option value="net5">Cash on Delivery</option>
-                                                        </select>
-                                                    </div>
+
+                                             <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <label for="#" >Subject</label>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                            <textarea type="text" placeholder=" " id="name" class="form-control" rows="3"></textarea>
+                                                            </div>
+                                                        </div>
+                                                
                                                 </div>
-                                             </div>
                                              
                                                 </div>
                                                 
@@ -162,14 +165,65 @@
 
 
             
+             <div class="ItemContainerTop no-bg border-top mb-3">
+           <div class="row">
+            <div class="col-lg-10 mb-3">
+            
+            <div class="profile__input profile__input1">
+                <label for="#" class="mb-1">Select Price List</label>
+                                    <input type="text" class="input__location input__location1"
+                                        placeholder="Search and select an item" aria-expanded="false">
+                                    <ul class="dropdown-menu">
+                                        <!-- <iconify-icon icon="bxs:up-arrow" style="color: white"
+                                                                class="arrowupIcon"></iconify-icon> -->
+                                        <div class="locationList_container">
+                                            <li class="no-results">
+                                                <img src="assets/img/new-image/no-action-removebg-preview.png"
+                                                    alt="">
+                                                <p>Please Price List</p>
+                                                <!-- <a class="dropdown-item"
+                                                                    href="#"></a> -->
+                                            </li>
+                                            <li class="no-location-found" style="display: none;">
 
+                                                <img src="assets/img/new-image/nodata.jpg" alt="">
+                                                <p>Opps, No Item Found !</p>
+                                                <!-- <a
+                                                                    class="dropdown-item" href="#">No Item Found</a> -->
+                                            </li>
+                                            <li class="location-item active" style="display: none;">
+                                                <div class="itemDetailBox">
+                                                    <h6 class="ItemName">Horlicks <span>250gm</span>
+                                                    </h6>
+                                                    <h6 class="ItemStock">Stock on Hand <span
+                                                            class="text-success">60.00</span></h6>
+                                                </div>
+                                            </li>
+                                            <li class="location-item" style="display: none;">
+                                                <div class="itemDetailBox">
+                                                    <h6 class="ItemName">Horlicks <span>450gm</span>
+                                                    </h6>
+                                                    <h6 class="ItemStock">Stock on Hand <span
+                                                            class="text-success">40.00</span></h6>
+                                                </div>
+                                            </li>
+                                            <li class="location-item" style="display: none;">
+                                                <div class="itemDetailBox">
+                                                    <h6 class="ItemName">Organic Soap <span>125gm</span>
+                                                    </h6>
+                                                    <h6 class="ItemStock">Stock on Hand <span
+                                                            class="text-danger">00.00</span></h6>
+                                                </div>
+                                            </li>
 
-             <div class="ItemContainerTop no-bg  mb-3">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ItemNewContainer">
-                        <div class="row">
-                            <div class="col-lg-12">
+                                        </div>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-lg-10">
                                 <div class="sectionBox ComboItemsbox">
                                     <div class="form-check align-items-center mt-2 p-0">
                                         <!-- <input class="form-check-input varrientCheckbox" type="checkbox" value="" id="flexCheckChecked3" checked> -->
@@ -179,7 +233,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12 tableBox VariantContainer mb-3">
+                            <div class="col-lg-10 tableBox VariantContainer mb-3">
                                 <table class="table table-bordered AssociateItemTable">
                                     <thead>
                                         <tr>
@@ -305,13 +359,13 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="5">
+                                            <td colspan="7">
                                                 <a href="javascript:void(0);" class="addrowBtn addRowMultipleBtn">
                                                     <iconify-icon icon="hugeicons:node-add"></iconify-icon> Add row
                                                 </a>
                                             </td>
-                                            <td>
-                                                <!-- Totals Section -->
+                                            <!-- <td>
+                                               
                                                 <div >
                                                     <p style="margin: 10px 0; font-size: 14px;"><strong style="width:100px;display:inline-flex;">Sub Total:</strong> $0.00</p>
                                                     <p style="margin: 10px 0; font-size: 14px;"><strong style="width:100px;display:inline-flex;">Discount:</strong> $0.00</p>
@@ -319,7 +373,7 @@
                                                     <p style="margin: 10px 0; font-size: 14px;"><strong style="width:100px;display:inline-flex;">VAT (20%):</strong> $0.00</p>
                                                     <p style="margin: 10px 0; font-size: 16px; font-weight: bold;"><strong style="width:100px;display:inline-flex;">Total Due:</strong> $0.00</p>
                                                 </div>
-                                            </td>
+                                            </td> -->
 
                                         </tr>
 
@@ -330,14 +384,102 @@
 
                             </div>
 
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <div class="form-group">
+                                            <h6 class="TitleCom">Customer Note</h6>
+                                            <textarea type="text" placeholder=" " id="name" class="form-control"
+                                                rows="3"></textarea>
+                                        </div>
+                                        <!-- <div class="paymentBoxhu">
+                                            <h6 class="TitleCom">Payment by</h6>
+                                            <div class="typeBox">
+                                                <div class="form-check">
+                                                    <input class="form-check-input visually-hidden" type="radio" name="payment" id="Radio5" checked>
+                                                    <label class="form-check-label button-style" for="Radio5">
+                                                    <iconify-icon icon="mingcute:cash-2-line"></iconify-icon> Cash
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input visually-hidden" type="radio" name="payment" id="Radio6">
+                                                    <label class="form-check-label button-style" for="Radio6">
+                                                    <iconify-icon icon="material-symbols:qr-code"></iconify-icon>   QR
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input visually-hidden" type="radio" name="payment" id="Radio7">
+                                                    <label class="form-check-label button-style" for="Radio7">
+                                                    <iconify-icon icon="solar:card-linear"></iconify-icon>   Card
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <p class="paymentmessage">Safe and Secure payment by <img src="assets/img/new-image/mastercard_circles_92px_2x.png" alt=""> <img src="assets/img/new-image/Visa-Logo-2006.png" alt=""></p>
+                                        </div> -->
+                                        
+
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="grandTotal">
+                                            <ul class="GrandtotalList">
+                                                <li>
+                                                    <h6>Sub Total</h6>
+                                                    <h6>180.00</h6>
+                                                </li>
+                                                <li>
+                                                    <div class="typeBox">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="tax" id="Radio3" checked>
+                                                            <label class="form-check-label" for="Radio3">
+                                                            TDS
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="tax" id="Radio4">
+                                                            <label class="form-check-label" for="Radio4">
+                                                                TCS
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <h6>
+                                                        -0.00
+                                                    </h6>
+                                                </li>
+                                                <li>
+                                                    <div class="typeBox">
+                                                        <input type="text" placeholder="" id="name" class="form-control" style="width:150px;" value="Adjustment">
+                                                        <div class="InputGroup">
+                                                          <input type="text" placeholder="" id="name" class="form-control" value="" style="width:150px;">
+                                                            <a href="#" class="FieldInfo noteIconInput"
+                                                             data-bs-toggle="tooltip" 
+                                                             data-placement="top" 
+                                                             data-bs-original-title="Add any other +ve or -ve charges that need to be applied to adjust the total amount of the transaction Eg. +10 or -10.">
+                                                                <iconify-icon icon="lets-icons:setting-line"></iconify-icon>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <h6>
+                                                        0.00
+                                                    </h6>
+                                                </li>
+                                                <li class="TotalBoxLi">
+                                                    <h5>Total</h5>
+                                                    <h5>0.00</h5>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
 
 
                         </div>
-                    </div>
-                </div>
+       </div>
 
-            </div>
-        </div>
+             
         
         <div class="ItemContainerTop no-bg border-top mb-3">
             <div class="row">
@@ -380,17 +522,17 @@
             
             
         <div class="FormSubmit_fix_container">
-            <a href="purchase-orders.php">
+            <a href="sales-credit.php">
                 <button type="button" class="btn  commonCancleButton">
                     <i class="ti-save-alt"></i> Save as Draft
                 </button>
             </a>
-            <a href="purchase-orders.php">
+            <a href="sales-credits-view.php">
                 <button type="button" class="btn btn-primary commonUpdateButton" onclick="showSweetAlert()">
                     <i class="ti-save-alt"></i> Save & Send
                 </button>
             </a>
-            <a href="purchase-orders.php">
+            <a href="sales-credit.php">
                 <button type="button" class="btn commonCancleButton">
                     Cancel
                 </button>
@@ -545,6 +687,7 @@ Date Picker custom plugin End
                 </div>
             </td>
             <td>0.00</td>
+            
             <td class="QtyInput">
                 <input type="text" placeholder="0.00" id="name" class="form-control" value="">
             </td>
