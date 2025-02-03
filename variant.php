@@ -3,7 +3,7 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">All Sub Category</h2>
+                        <h2 class="mb-1">Variant Attributes</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -12,7 +12,7 @@
                                 <li class="breadcrumb-item">
                                 Settings 
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">All Sub Category</li>
+                                <li class="breadcrumb-item active" aria-current="page">Variant Attributes</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,7 +34,7 @@
                         </div> -->
                         <div class="ActionHeadButtons">
                             <!-- <a href="#" class="btn btnImport"><iconify-icon icon="lets-icons:import-light"></iconify-icon> Import</a> -->
-                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon> Add Sub Category</a>
+                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon>  New Variant</a>
                         </div>
                         <!-- <div class="head-icons ms-2">
                         <a href="#" class="btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-16"></i></a>
@@ -47,11 +47,12 @@
                             <div class="form-group">
                                 <!-- <label for="#">Product</label> -->
                                 <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
+                                    <option value="s-0" disabled selected>Select variant</option>
+                                    <option value="us">Size (T-shirts) </option>
+                                    <option value="ca">Size (Shoes)</option>
+                                    <option value="ca">Color</option>
+                                    <option value="gb">Memory</option>
+                                    <option value="gb">Storage</option>
                                 </select>
                             </div>
                         </div>
@@ -85,10 +86,11 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th>S.NO</th>
-                                    <th>Parent category</th>
-                                    <th>Sub Category</th>
+                                    <th>variant</th>
+                                    <th>Values</th>
                                     <th>Created By</th>
                                     <th>Created On</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -96,23 +98,11 @@
                            
                             <tr>
                                 <td>01</td>
-                                <td>Electronics</td>
-                                <td class="subcategory_row" data-category="Electronics">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Smartphones </div>
-                                        <div class="subct_item">Tablets </div>
-                                        <div class="subct_item">Laptops </div>
-                                        <div class="subct_item">Televisions </div>
-                                        <div class="subct_item">Smartwatches </div>
-                                        <div class="subct_item">Cameras </div>
-                                        <div class="subct_item">Refrigerators</div>
-                                        <div class="subct_item">Air Conditioners </div>
-                                        <div class="subct_item">Dishwashers</div>
-                                        <div class="subct_item">Smart Home Devices</div>
-                                    </div>
-                                </td>
+                                <td>Size (T-shirts)</td>
+                                <td>S,M,L,XL</td>
                                 <td>Admin</td>
                                 <td>2025-01-01 10:00</td>
+                                <td><span class="badge alert-danger">Inactive</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -137,20 +127,11 @@
                             </tr>
                             <tr>
                                 <td>02</td>
-                                <td>Furniture</td>
-                                <td class="subcategory_row" data-category="Furniture">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Sofas & Couches</div>
-                                        <div class="subct_item">Sectionals</div>
-                                        <div class="subct_item">Recliners</div>
-                                        <div class="subct_item">Coffee Tables</div>
-                                        <div class="subct_item">End Tables</div>
-                                        <div class="subct_item">TV Stands</div>
-                                        <div class="subct_item">Ottomans </div>
-                                    </div>
-                                </td>
+                                <td>Size (Shoes)</td>
+                                <td>5,6,7,8,9</td>
                                 <td>Admin</td>
                                 <td>2025-01-02 11:00</td>
+                                <td><span class="badge bg-soft-warning">Pending</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -176,18 +157,11 @@
 
                             <tr>
                                 <td>03</td>
-                                <td>Clothing & Fashion</td>
-                                <td class="subcategory_row" data-category="Clothing & Fashion">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Men’s Wear</div>
-                                        <div class="subct_item">Women’s Wear</div>
-                                        <div class="subct_item">Children’s Clothing</div>
-                                        <div class="subct_item">Footwear</div>
-                                        <div class="subct_item">Accessories</div>
-                                    </div>
-                                </td>
+                                <td>Color</td>
+                                <td>Red, Blue, Green</td>
                                 <td>Super Admin</td>
                                 <td>2025-01-03 14:30</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -213,21 +187,11 @@
 
                             <tr>
                                 <td>04</td>
-                                <td>Food & Beverages</td>
-                                <td class="subcategory_row" data-category="Food & Beverages">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Fresh Produce</div>
-                                        <div class="subct_item">Packaged Foods</div>
-                                        <div class="subct_item">Beverages & Soft Drinks</div>
-                                        <div class="subct_item">Chicken</div>
-                                        <div class="subct_item">Rice</div>
-                                        <div class="subct_item">Wheat</div>
-                                        <div class="subct_item">Popcorn</div>
-                                    </div>
-                                </td>
-                                
+                                <td>Memory</td>
+                                <td>64 GB, 128 GB, 512 GB</td>
                                 <td>Admin</td>
                                 <td>2025-01-04 09:45</td>
+                                <td><span class="badge alert-danger">Inactive</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -252,105 +216,11 @@
                             </tr>
                             <tr>
                                 <td>05</td>
-                                <td>Health & Beauty</td>
-                                <td class="subcategory_row" data-category="Health & Beauty">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Skincare Products</div>
-                                        <div class="subct_item">Cosmetics</div>
-                                        <div class="subct_item">Healthcare Supplies</div>
-                                        <div class="subct_item">Pharmaceuticals</div>
-                                        <div class="subct_item">Facial Cleansers</div>
-                                        <div class="subct_item">Sunscreens</div>
-                                        <div class="subct_item">Face Masks</div>
-                                        <div class="subct_item">Eye Care</div>
-                                    </div>
-                                </td>
-                                
+                                <td>Storage</td>
+                                <td>250GB, 1TB</td>
                                 <td>Super Admin</td>
                                 <td>2025-01-03 08:15</td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>06</td>
-                                <td>Sports & Outdoors</td>
-                                <td class="subcategory_row" data-category="Sports & Outdoors">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Gym Equipment</div>
-                                        <div class="subct_item">Camping & Hiking Gear</div>
-                                        <div class="subct_item">Sportswear</div>
-                                        <div class="subct_item">Soccer</div>
-                                        <div class="subct_item">Basketball</div>
-                                        <div class="subct_item">Baseball & Softball</div>
-                                        <div class="subct_item">American Football</div>
-                                        <div class="subct_item">Volleyball</div>
-
-                                    </div>
-                                </td>
-                                
-                                <td>Admin</td>
-                                <td>2025-01-05 12:00</td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>07</td>
-                                <td>Automotive & Spare Parts</td>
-                                <td class="subcategory_row" data-category="Automotive & Spare Parts">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Car Accessories</div>
-                                        <div class="subct_item">Vehicle Parts</div>
-                                        <div class="subct_item">Lubricants & Oils</div>
-                                        <div class="subct_item">Pistons & Rings</div>
-                                        <div class="subct_item">Crankshafts & Camshafts</div>
-                                        <div class="subct_item">Gaskets & Seals</div>
-                                        <div class="subct_item">Batteries</div>
-                                        <div class="subct_item">Sensors & Switches</div>
-                                    </div>
-                                </td>
-                                
-                                <td>Admin</td>
-                                <td>2025-01-07 10:00</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -391,36 +261,26 @@
                 <div class="content">
                     <div class="modal-header border-0 custom-modal-header">
                         <div class="page-title">
-                            <h4>Add Sub Category</h4>
+                            <h4>Create Attributes</h4>
                         </div>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body custom-modal-body">
-                        <form action="category.php">
+                        <form action="variant.php">
                             <div class="mb-3">
-                                <!-- <label class="form-label">Parent Category</label>
-                                <input type="text" class="form-control"> -->
-                                <div class="form-group">
-                                <label for="#">Parent Categor</label>
-                                <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
-                                </select>
-                            </div>
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form-group adding_fildswrap Addprtags_wrap mb-3">
-                                <label class="form-label">Category Name </label>
+                                <label class="form-label">Variant </label>
                                 <div class="tag-container">
-                                    <input type="text" class="form-control tag-input" placeholder="Sub category name.">
+                                    <input type="text" class="form-control tag-input" placeholder="Variant">
                                     <button class="add-tag" type="button"><i class="fa-solid fa-plus"></i>
                                         Add</button>
                                 </div>
-                                <div class="tags-list">
+                                <div class="tags-list" >
                                     <!-- Tags will be displayed here -->
                                 </div>
                             </div>
@@ -433,7 +293,7 @@
                             </div>
                             <div class="modal-footer-btn">
                                 <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Sub Category</button>
+                                <button type="submit" class="btn btn-submit">Add Attributes</button>
                             </div>
                         </form>
                     </div>
@@ -452,36 +312,26 @@
                 <div class="content">
                     <div class="modal-header border-0 custom-modal-header">
                         <div class="page-title">
-                            <h4>Edit Category</h4>
+                            <h4>Edit Attributes</h4>
                         </div>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body custom-modal-body">
-                        <form action="category.php">
+                        <form action="variant.php">
                             <div class="mb-3">
-                                <!-- <label class="form-label">Category</label>
-                                <input type="text" class="form-control"> -->
-                                <div class="form-group">
-                                <label for="#">Parent Categor</label>
-                                <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
-                                </select>
-                            </div>
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form-group adding_fildswrap Addprtags_wrap mb-3">
-                                <label class="form-label">Category Name </label>
+                                <label class="form-label">Variant </label>
                                 <div class="tag-container">
-                                    <input type="text" class="form-control tag-input" placeholder="Sub category name.">
+                                    <input type="text" class="form-control tag-input" placeholder="Variant">
                                     <button class="add-tag" type="button"><i class="fa-solid fa-plus"></i>
                                         Add</button>
                                 </div>
-                                <div class="tags-list">
+                                <div class="tags-list" >
                                     <!-- Tags will be displayed here -->
                                 </div>
                             </div>
@@ -494,7 +344,7 @@
                             </div>
                             <div class="modal-footer-btn">
                                 <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Edit Category</button>
+                                <button type="submit" class="btn btn-submit">Save Changes</button>
                             </div>
                         </form>
                     </div>
@@ -504,35 +354,6 @@
     </div>
 </div>
 <!-- Edit Category -->
-
-<!-- All Subcategories -->
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="subcategoryModalLabel">All Subcategories</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body mdheight_small">
-                <!-- Search Bar -->
-                <div class="searchwrapper_category">
-                    <input type="text" id="subcategorySearch" class="form-control" placeholder="Search subcategories..."
-                        style="margin-bottom: 10px;">
-                    <iconify-icon icon="proicons:search"></iconify-icon>
-                </div>
-                <ul class="list-group subcategory_mdListing" id="modalSubcategoryList">
-                    <!-- Dynamic content will be populated here -->
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- All Subcategories -->
-
 
 
 <?php include "footer.php"?>
@@ -664,117 +485,3 @@ Date Picker custom plugin End
         });
     });
 </script>
-
-<!-- sub category dynamic data show count and list in modal start -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const rows = document.querySelectorAll('.subcategory_row');
-        rows.forEach((row) => {
-            const container = row.querySelector('.subcategory_items');
-            const items = container.querySelectorAll('.subct_item');
-            const maxVisible = 4;
-            // Hide subcategories beyond the first 4
-            items.forEach((item, index) => {
-                if (index >= maxVisible) {
-                    item.style.display = 'none';
-                }
-            });
-            // Add remaining count circle if needed
-            if (items.length > maxVisible) {
-                const remainingCount = items.length - maxVisible;
-                const countCircle = document.createElement('div');
-                countCircle.className = 'subct_item_count';
-                countCircle.textContent = `+${remainingCount}`;
-                countCircle.setAttribute('data-bs-toggle', 'modal');
-                countCircle.setAttribute('data-bs-target', '#subcategoryModal');
-                countCircle.setAttribute('data-subcategory', JSON.stringify(Array.from(items).map(
-                    item => item.textContent))); // Store all items in data attribute
-                countCircle.setAttribute('data-category', row.getAttribute(
-                'data-category')); // Store category name
-                container.appendChild(countCircle);
-            }
-        });
-        // Populate modal with the correct subcategory items
-        document.querySelectorAll('.subct_item_count').forEach(countCircle => {
-            countCircle.addEventListener('click', (event) => {
-                const categoryName = event.target.getAttribute('data-category');
-                const allSubcategories = JSON.parse(event.target.getAttribute(
-                    'data-subcategory'));
-                const modalTitle = document.getElementById('subcategoryModalLabel');
-                const modalList = document.getElementById('modalSubcategoryList');
-                const searchInput = document.getElementById('subcategorySearch');
-                modalList.innerHTML = ''; // Clear previous list
-                // Set modal title to category name
-                modalTitle.textContent = `${categoryName} - All Subcategories`;
-                // Populate modal list with subcategories
-                allSubcategories.forEach(subcategory => {
-                    const listItem = document.createElement('li');
-                    listItem.className = 'list-group-item';
-                    listItem.textContent = subcategory;
-                    modalList.appendChild(listItem);
-                });
-                // Add search functionality
-                searchInput.addEventListener('input', () => {
-                    const searchText = searchInput.value.toLowerCase();
-                    const items = modalList.querySelectorAll('.list-group-item');
-                    let found = false;
-                    items.forEach(item => {
-                        const text = item.textContent.toLowerCase();
-                        if (text.includes(searchText)) {
-                            item.style.display = 'block'; // Show item
-                            found = true;
-                        } else {
-                            item.style.display = 'none'; // Hide item
-                        }
-                    });
-                    // Show "No subcategory found" message if no results match
-                    const noResultsMessage = document.getElementById(
-                    'noResultsMessage');
-                    if (!found) {
-                        if (!noResultsMessage) {
-                            const noMessage = document.createElement('li');
-                            noMessage.id = 'noResultsMessage';
-                            noMessage.className = 'list-group-item text-danger';
-                            noMessage.textContent = 'No subcategory found';
-                            modalList.appendChild(noMessage);
-                        }
-                    } else {
-                        const noMessage = document.getElementById('noResultsMessage');
-                        if (noMessage) {
-                            noMessage
-                        .remove(); // Remove the "No subcategory found" message
-                        }
-                    }
-                });
-            });
-        });
-    });
-</script>
-<!-- sub category dynamic data show count and list in modal end -->
-
-
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="subcategoryModalLabel">All Subcategories</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body mdheight_small">
-                <!-- Search Bar -->
-                <div class="searchwrapper_category">
-                    <input type="text" id="subcategorySearch" class="form-control" placeholder="Search subcategories..."
-                        style="margin-bottom: 10px;">
-                    <iconify-icon icon="proicons:search"></iconify-icon>
-                </div>
-                <ul class="list-group subcategory_mdListing" id="modalSubcategoryList">
-                    <!-- Dynamic content will be populated here -->
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>

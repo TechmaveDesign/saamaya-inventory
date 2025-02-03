@@ -3,7 +3,7 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">All Category</h2>
+                        <h2 class="mb-1">All Units</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -12,7 +12,7 @@
                                 <li class="breadcrumb-item">
                                 Settings 
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">All Category</li>
+                                <li class="breadcrumb-item active" aria-current="page">All Units</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,7 +34,7 @@
                         </div> -->
                         <div class="ActionHeadButtons">
                             <!-- <a href="#" class="btn btnImport"><iconify-icon icon="lets-icons:import-light"></iconify-icon> Import</a> -->
-                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon> New Category</a>
+                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon>  New Unit</a>
                         </div>
                         <!-- <div class="head-icons ms-2">
                         <a href="#" class="btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-16"></i></a>
@@ -47,11 +47,12 @@
                             <div class="form-group">
                                 <!-- <label for="#">Product</label> -->
                                 <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
+                                    <option value="s-0" disabled selected>Select Units Name</option>
+                                    <option value="us">Piece</option>
+                                    <option value="ca">Kilogram</option>
+                                    <option value="ca">Gram</option>
+                                    <option value="gb">Liter</option>
+                                    <option value="gb">Meter</option>
                                 </select>
                             </div>
                         </div>
@@ -85,7 +86,8 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th>S.NO</th>
-                                    <th>Category</th>
+                                    <th>Unit</th>
+                                    <th>No of Products</th>
                                     <th>Created By</th>
                                     <th>Created On</th>
                                     <th>Status</th>
@@ -96,7 +98,8 @@
                            
                             <tr>
                                 <td>01</td>
-                                <td>Electronics</td>
+                                <td>Piece</td>
+                                <td>30</td>
                                 <td>Admin</td>
                                 <td>2025-01-01 10:00</td>
                                 <td><span class="badge alert-danger">Inactive</span></td>
@@ -124,7 +127,8 @@
                             </tr>
                             <tr>
                                 <td>02</td>
-                                <td>Furniture</td>
+                                <td>Kilogram</td>
+                                <td>400</td>
                                 <td>Admin</td>
                                 <td>2025-01-02 11:00</td>
                                 <td><span class="badge bg-soft-warning">Pending</span></td>
@@ -153,7 +157,8 @@
 
                             <tr>
                                 <td>03</td>
-                                <td>Clothing & Fashion</td>
+                                <td>Gram</td>
+                                <td>60</td>
                                 <td>Super Admin</td>
                                 <td>2025-01-03 14:30</td>
                                 <td><span class="badge bg-soft-success">Active</span></td>
@@ -182,7 +187,8 @@
 
                             <tr>
                                 <td>04</td>
-                                <td>Food & Beverages</td>
+                                <td>Meter</td>
+                                <td>70</td>
                                 <td>Admin</td>
                                 <td>2025-01-04 09:45</td>
                                 <td><span class="badge alert-danger">Inactive</span></td>
@@ -210,7 +216,8 @@
                             </tr>
                             <tr>
                                 <td>05</td>
-                                <td>Health & Beauty</td>
+                                <td>Liter</td>
+                                <td>200</td>
                                 <td>Super Admin</td>
                                 <td>2025-01-03 08:15</td>
                                 <td><span class="badge bg-soft-success">Active</span></td>
@@ -239,7 +246,8 @@
 
                             <tr>
                                 <td>06</td>
-                                <td>Sports & Outdoors</td>
+                                <td>Kilo</td>
+                                <td>10</td>
                                 <td>Admin</td>
                                 <td>2025-01-05 12:00</td>
                                 <td><span class="badge bg-soft-warning">Pending</span></td>
@@ -264,68 +272,7 @@
                                         </button>
                                     </div>
                                 </td>
-                            </tr>
-
-                            <tr>
-                                <td>07</td>
-                                <td>Home & Furniture</td>
-                                <td>Admin</td>
-                                <td>2025-01-06 15:30</td>
-                                <td><span class="badge bg-soft-warning">Pending</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>08</td>
-                                <td>Automotive & Spare Parts</td>
-                                <td>Admin</td>
-                                <td>2025-01-07 10:00</td>
-                                <td><span class="badge bg-soft-success">Active</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            
-
+                            </tr>  
             </tbody>
         </table>
     </div>
@@ -344,16 +291,16 @@
                 <div class="content">
                     <div class="modal-header border-0 custom-modal-header">
                         <div class="page-title">
-                            <h4>Add Category</h4>
+                            <h4>Add New Unit</h4>
                         </div>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body custom-modal-body">
-                        <form action="category.php">
+                        <form action="units.php">
                             <div class="mb-3">
-                                <label class="form-label">Category</label>
+                                <label class="form-label">Unit Name</label>
                                 <input type="text" class="form-control">
                             </div>
                             <!-- <div class="mb-3">
@@ -369,7 +316,7 @@
                             </div>
                             <div class="modal-footer-btn">
                                 <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Add Category</button>
+                                <button type="submit" class="btn btn-submit">Add Unit</button>
                             </div>
                         </form>
                     </div>
@@ -388,16 +335,16 @@
                 <div class="content">
                     <div class="modal-header border-0 custom-modal-header">
                         <div class="page-title">
-                            <h4>Edit Category</h4>
+                            <h4>Edit Unit</h4>
                         </div>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body custom-modal-body">
-                        <form action="category.php">
+                        <form action="units.php">
                             <div class="mb-3">
-                                <label class="form-label">Category</label>
+                                <label class="form-label">Unit Name</label>
                                 <input type="text" class="form-control">
                             </div>
                             <!-- <div class="mb-3">
@@ -413,7 +360,7 @@
                             </div>
                             <div class="modal-footer-btn">
                                 <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Edit Category</button>
+                                <button type="submit" class="btn btn-submit">Save Changes</button>
                             </div>
                         </form>
                     </div>

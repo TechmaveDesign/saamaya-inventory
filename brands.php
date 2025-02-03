@@ -3,7 +3,7 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">All Sub Category</h2>
+                        <h2 class="mb-1">All Brands</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -12,7 +12,7 @@
                                 <li class="breadcrumb-item">
                                 Settings 
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">All Sub Category</li>
+                                <li class="breadcrumb-item active" aria-current="page">All Brands</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,7 +34,7 @@
                         </div> -->
                         <div class="ActionHeadButtons">
                             <!-- <a href="#" class="btn btnImport"><iconify-icon icon="lets-icons:import-light"></iconify-icon> Import</a> -->
-                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon> Add Sub Category</a>
+                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon> New Brands</a>
                         </div>
                         <!-- <div class="head-icons ms-2">
                         <a href="#" class="btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-16"></i></a>
@@ -47,11 +47,11 @@
                             <div class="form-group">
                                 <!-- <label for="#">Product</label> -->
                                 <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
+                                    <option value="s-0" disabled selected>Select Brand</option>
+                                    <option value="us">Lenevo</option>
+                                    <option value="ca">Boat</option>
+                                    <option value="ca">Nike</option>
+                                    <option value="gb">Apple</option>
                                 </select>
                             </div>
                         </div>
@@ -85,10 +85,11 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th>S.NO</th>
-                                    <th>Parent category</th>
-                                    <th>Sub Category</th>
+                                    <th>Brand</th>
+                                    <th>Logo</th>
                                     <th>Created By</th>
                                     <th>Created On</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -96,23 +97,11 @@
                            
                             <tr>
                                 <td>01</td>
-                                <td>Electronics</td>
-                                <td class="subcategory_row" data-category="Electronics">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Smartphones </div>
-                                        <div class="subct_item">Tablets </div>
-                                        <div class="subct_item">Laptops </div>
-                                        <div class="subct_item">Televisions </div>
-                                        <div class="subct_item">Smartwatches </div>
-                                        <div class="subct_item">Cameras </div>
-                                        <div class="subct_item">Refrigerators</div>
-                                        <div class="subct_item">Air Conditioners </div>
-                                        <div class="subct_item">Dishwashers</div>
-                                        <div class="subct_item">Smart Home Devices</div>
-                                    </div>
-                                </td>
+                                <td>Lenevo</td>
+                                <td><img src="assets/img/brand/brand-icon-01.png" alt=""></td>
                                 <td>Admin</td>
                                 <td>2025-01-01 10:00</td>
+                                <td><span class="badge alert-danger">Inactive</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -137,20 +126,11 @@
                             </tr>
                             <tr>
                                 <td>02</td>
-                                <td>Furniture</td>
-                                <td class="subcategory_row" data-category="Furniture">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Sofas & Couches</div>
-                                        <div class="subct_item">Sectionals</div>
-                                        <div class="subct_item">Recliners</div>
-                                        <div class="subct_item">Coffee Tables</div>
-                                        <div class="subct_item">End Tables</div>
-                                        <div class="subct_item">TV Stands</div>
-                                        <div class="subct_item">Ottomans </div>
-                                    </div>
-                                </td>
+                                <td>Boat</td>
+                                <td><img src="assets/img/brand/brand-icon-02.png" alt=""></td>
                                 <td>Admin</td>
                                 <td>2025-01-02 11:00</td>
+                                <td><span class="badge bg-soft-warning">Pending</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -176,18 +156,11 @@
 
                             <tr>
                                 <td>03</td>
-                                <td>Clothing & Fashion</td>
-                                <td class="subcategory_row" data-category="Clothing & Fashion">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Men’s Wear</div>
-                                        <div class="subct_item">Women’s Wear</div>
-                                        <div class="subct_item">Children’s Clothing</div>
-                                        <div class="subct_item">Footwear</div>
-                                        <div class="subct_item">Accessories</div>
-                                    </div>
-                                </td>
+                                <td>Nike</td>
+                                <td><img src="assets/img/brand/brand-icon-03.png" alt=""></td>
                                 <td>Super Admin</td>
                                 <td>2025-01-03 14:30</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -213,21 +186,11 @@
 
                             <tr>
                                 <td>04</td>
-                                <td>Food & Beverages</td>
-                                <td class="subcategory_row" data-category="Food & Beverages">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Fresh Produce</div>
-                                        <div class="subct_item">Packaged Foods</div>
-                                        <div class="subct_item">Beverages & Soft Drinks</div>
-                                        <div class="subct_item">Chicken</div>
-                                        <div class="subct_item">Rice</div>
-                                        <div class="subct_item">Wheat</div>
-                                        <div class="subct_item">Popcorn</div>
-                                    </div>
-                                </td>
-                                
+                                <td>Apple</td>
+                                <td><img src="assets/img/brand/brand-icon-04.png" alt=""></td>
                                 <td>Admin</td>
                                 <td>2025-01-04 09:45</td>
+                                <td><span class="badge alert-danger">Inactive</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -252,22 +215,11 @@
                             </tr>
                             <tr>
                                 <td>05</td>
-                                <td>Health & Beauty</td>
-                                <td class="subcategory_row" data-category="Health & Beauty">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Skincare Products</div>
-                                        <div class="subct_item">Cosmetics</div>
-                                        <div class="subct_item">Healthcare Supplies</div>
-                                        <div class="subct_item">Pharmaceuticals</div>
-                                        <div class="subct_item">Facial Cleansers</div>
-                                        <div class="subct_item">Sunscreens</div>
-                                        <div class="subct_item">Face Masks</div>
-                                        <div class="subct_item">Eye Care</div>
-                                    </div>
-                                </td>
-                                
+                                <td>Amazon</td>
+                                <td><img src="assets/img/brand/brand-icon-05.png" alt=""></td>
                                 <td>Super Admin</td>
                                 <td>2025-01-03 08:15</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -293,23 +245,11 @@
 
                             <tr>
                                 <td>06</td>
-                                <td>Sports & Outdoors</td>
-                                <td class="subcategory_row" data-category="Sports & Outdoors">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Gym Equipment</div>
-                                        <div class="subct_item">Camping & Hiking Gear</div>
-                                        <div class="subct_item">Sportswear</div>
-                                        <div class="subct_item">Soccer</div>
-                                        <div class="subct_item">Basketball</div>
-                                        <div class="subct_item">Baseball & Softball</div>
-                                        <div class="subct_item">American Football</div>
-                                        <div class="subct_item">Volleyball</div>
-
-                                    </div>
-                                </td>
-                                
+                                <td>Woodmart</td>
+                                <td><img src="assets/img/brand/brand-icon-06.png" alt=""></td>
                                 <td>Admin</td>
                                 <td>2025-01-05 12:00</td>
+                                <td><span class="badge bg-soft-warning">Pending</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -335,22 +275,11 @@
 
                             <tr>
                                 <td>07</td>
-                                <td>Automotive & Spare Parts</td>
-                                <td class="subcategory_row" data-category="Automotive & Spare Parts">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">Car Accessories</div>
-                                        <div class="subct_item">Vehicle Parts</div>
-                                        <div class="subct_item">Lubricants & Oils</div>
-                                        <div class="subct_item">Pistons & Rings</div>
-                                        <div class="subct_item">Crankshafts & Camshafts</div>
-                                        <div class="subct_item">Gaskets & Seals</div>
-                                        <div class="subct_item">Batteries</div>
-                                        <div class="subct_item">Sensors & Switches</div>
-                                    </div>
-                                </td>
-                                
+                                <td>Versace</td>
+                                <td><img src="assets/img/brand/brand-icon-07.png" alt=""></td>
                                 <td>Admin</td>
-                                <td>2025-01-07 10:00</td>
+                                <td>2025-01-06 15:30</td>
+                                <td><span class="badge bg-soft-warning">Pending</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
@@ -373,6 +302,39 @@
                                     </div>
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td>08</td>
+                                <td>Lava</td>
+                                <td><img src="assets/img/brand/brand-icon-08.png" alt=""></td>
+                                <td>Admin</td>
+                                <td>2025-01-07 10:00</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            
+
             </tbody>
         </table>
     </div>
@@ -391,38 +353,27 @@
                 <div class="content">
                     <div class="modal-header border-0 custom-modal-header">
                         <div class="page-title">
-                            <h4>Add Sub Category</h4>
+                            <h4>Create Brand</h4>
                         </div>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body custom-modal-body">
-                        <form action="category.php">
+                        <form action="brands.php">
                             <div class="mb-3">
-                                <!-- <label class="form-label">Parent Category</label>
-                                <input type="text" class="form-control"> -->
-                                <div class="form-group">
-                                <label for="#">Parent Categor</label>
-                                <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
-                                </select>
+                                <label class="form-label">Brand</label>
+                                <input type="text" class="form-control">
                             </div>
+                            <div class="mb-3">
+                            <label class="form-label">Logo</label>
+                            <div class="ImageContainer">
+                            <div class="upload-area forbrands" id="activeImageContainer1">
+                                <span class="placeholder">Upload Logo</span>
+                                <input type="file" id="fileInput1" accept="image/*">
                             </div>
-                            <div class="form-group adding_fildswrap Addprtags_wrap mb-3">
-                                <label class="form-label">Category Name </label>
-                                <div class="tag-container">
-                                    <input type="text" class="form-control tag-input" placeholder="Sub category name.">
-                                    <button class="add-tag" type="button"><i class="fa-solid fa-plus"></i>
-                                        Add</button>
-                                </div>
-                                <div class="tags-list">
-                                    <!-- Tags will be displayed here -->
-                                </div>
+                            <div class="uploaded-images brands" id="uploadedImages1"></div>
+                        </div>
                             </div>
                             <div class="mb-0">
                                 <div class="status-toggle modal-status d-flex justify-content-between align-items-center">
@@ -433,7 +384,7 @@
                             </div>
                             <div class="modal-footer-btn">
                                 <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Sub Category</button>
+                                <button type="submit" class="btn btn-submit">Add Brand</button>
                             </div>
                         </form>
                     </div>
@@ -452,38 +403,27 @@
                 <div class="content">
                     <div class="modal-header border-0 custom-modal-header">
                         <div class="page-title">
-                            <h4>Edit Category</h4>
+                            <h4>Edit Brand</h4>
                         </div>
                         <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body custom-modal-body">
-                        <form action="category.php">
+                        <form action="brands.php">
                             <div class="mb-3">
-                                <!-- <label class="form-label">Category</label>
-                                <input type="text" class="form-control"> -->
-                                <div class="form-group">
-                                <label for="#">Parent Categor</label>
-                                <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
-                                </select>
+                                <label class="form-label">Category</label>
+                                <input type="text" class="form-control">
                             </div>
+                            <div class="mb-3">
+                            <label class="form-label">Logo</label>
+                            <div class="ImageContainer">
+                                <div class="upload-area forbrands" id="activeImageContainer2">
+                                    <span class="placeholder">Upload Logo</span>
+                                    <input type="file" id="fileInput2" accept="image/*">
+                                </div>
+                                <div class="uploaded-images brands" id="uploadedImages2"></div>
                             </div>
-                            <div class="form-group adding_fildswrap Addprtags_wrap mb-3">
-                                <label class="form-label">Category Name </label>
-                                <div class="tag-container">
-                                    <input type="text" class="form-control tag-input" placeholder="Sub category name.">
-                                    <button class="add-tag" type="button"><i class="fa-solid fa-plus"></i>
-                                        Add</button>
-                                </div>
-                                <div class="tags-list">
-                                    <!-- Tags will be displayed here -->
-                                </div>
                             </div>
                             <div class="mb-0">
                                 <div class="status-toggle modal-status d-flex justify-content-between align-items-center">
@@ -494,7 +434,7 @@
                             </div>
                             <div class="modal-footer-btn">
                                 <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Edit Category</button>
+                                <button type="submit" class="btn btn-submit">Save Changes</button>
                             </div>
                         </form>
                     </div>
@@ -504,35 +444,6 @@
     </div>
 </div>
 <!-- Edit Category -->
-
-<!-- All Subcategories -->
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="subcategoryModalLabel">All Subcategories</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body mdheight_small">
-                <!-- Search Bar -->
-                <div class="searchwrapper_category">
-                    <input type="text" id="subcategorySearch" class="form-control" placeholder="Search subcategories..."
-                        style="margin-bottom: 10px;">
-                    <iconify-icon icon="proicons:search"></iconify-icon>
-                </div>
-                <ul class="list-group subcategory_mdListing" id="modalSubcategoryList">
-                    <!-- Dynamic content will be populated here -->
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- All Subcategories -->
-
 
 
 <?php include "footer.php"?>
@@ -586,195 +497,135 @@ Date Picker custom plugin End
 
 </script>
 
+<!-- js code for image upload -->
+
 <script>
-    $(document).ready(function() {
-        // Function to toggle the visibility of the tags list
-        function toggleTagList($list, tags) {
-            if (tags.length > 0) {
-                $list.css('display', 'flex'); // Show if there are tags
+    function initializeImageUpload(fileInputId, activeImageContainerId, uploadedImagesContainerId, markPrimaryBtnId) {
+        const fileInput = document.getElementById(fileInputId);
+        const activeImageContainer = document.getElementById(activeImageContainerId);
+        const uploadedImagesContainer = document.getElementById(uploadedImagesContainerId);
+        const markPrimaryBtn = document.getElementById(markPrimaryBtnId);
+
+        let activeImage = null;
+        let primaryImageCard = null;
+
+        fileInput.addEventListener('change', handleFiles);
+        activeImageContainer.addEventListener('click', (e) => {
+            if (e.target.tagName !== 'BUTTON') {
+                fileInput.click();
+            }
+        });
+
+        function handleFiles() {
+            const files = Array.from(fileInput.files);
+
+            files.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const src = reader.result;
+
+                    const imageCard = document.createElement('div');
+                    imageCard.classList.add('image-card');
+                    imageCard.innerHTML = `<img src="${src}" alt="Uploaded Image">`;
+
+                    imageCard.addEventListener('click', () => setActiveImage(src, imageCard));
+
+                    uploadedImagesContainer.appendChild(imageCard);
+
+                    if (!activeImage) {
+                        setActiveImage(src, imageCard);
+                        setPrimaryImage(imageCard);
+                    }
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function setActiveImage(src, imageCard) {
+            activeImage = src;
+
+            activeImageContainer.innerHTML = `
+                <img src="${src}" alt="Active Image">
+                <button class="remove-btn">&times;</button>
+            `;
+
+            activeImageContainer.querySelector('.remove-btn').addEventListener('click', () => {
+                removeImage(src, imageCard);
+            });
+
+            markPrimaryBtn.style.display = 'block';
+
+            if (imageCard === primaryImageCard) {
+                markPrimaryBtn.innerHTML = `
+                    <img src="assets/img/new-image/check-mark.png" alt="Check" width="16" height="16"> Primary
+                `;
+                markPrimaryBtn.classList.add('marked');
+                markPrimaryBtn.disabled = true;
             } else {
-                $list.css('display', 'none'); // Hide if no tags
+                markPrimaryBtn.innerHTML = `Mark as Primary`;
+                markPrimaryBtn.classList.remove('marked');
+                markPrimaryBtn.disabled = false;
+            }
+
+            markPrimaryBtn.onclick = () => setPrimaryImage(imageCard);
+        }
+
+        function setPrimaryImage(imageCard) {
+            if (primaryImageCard) {
+                primaryImageCard.classList.remove('marked');
+            }
+
+            imageCard.classList.add('marked');
+            primaryImageCard = imageCard;
+
+            markPrimaryBtn.innerHTML = `
+                <img src="assets/img/new-image/check-mark.png" alt="Check" width="16" height="16"> Primary
+            `;
+            markPrimaryBtn.classList.add('marked');
+            markPrimaryBtn.disabled = true;
+        }
+
+        function removeImage(src, imageCard) {
+            if (imageCard) {
+                imageCard.remove();
+            }
+
+            if (activeImage === src) {
+                activeImage = null;
+
+                if (uploadedImagesContainer.children.length === 0) {
+                    resetActiveImage();
+                } else {
+                    const remainingImages = uploadedImagesContainer.querySelectorAll('.image-card img');
+                    if (remainingImages.length > 0) {
+                        setActiveImage(remainingImages[0].src, remainingImages[0].closest('.image-card'));
+                    }
+                }
+            }
+
+            if (primaryImageCard && primaryImageCard === imageCard) {
+                primaryImageCard = null;
+                if (uploadedImagesContainer.children.length > 0) {
+                    const nextCard = uploadedImagesContainer.querySelector('.image-card');
+                    setPrimaryImage(nextCard);
+                } else {
+                    markPrimaryBtn.style.display = 'none';
+                }
+            }
+
+            if (uploadedImagesContainer.children.length === 0) {
+                markPrimaryBtn.style.display = 'none';
             }
         }
-        // Loop through each tag container (supporting multiple instances)
-        $('.tag-container').each(function() {
-            var $container = $(this);
-            var $input = $container.find('.tag-input');
-            var $addButton = $container.find('.add-tag');
-            var $list = $container.siblings('.tags-list');
-            var tags = []; // Tags are scoped to this specific container
-            // Add tag functionality
-            $addButton.on('click', function() {
-                var tag = $input.val().trim();
-                if (tag !== '') {
-                    tags.push(tag);
-                    var tagItem = $('<div class="tag">' + tag +
-                        '<span class="remove-tag">&times;</span></div>');
-                    $list.append(tagItem);
-                    $input.val('');
-                    toggleTagList($list, tags); // Toggle visibility after adding a tag
-                }
-            });
-            // Enter key functionality
-            $input.on('keypress', function(event) {
-                if (event.which === 13) { // Enter key
-                    event.preventDefault();
-                    $addButton.click();
-                }
-            });
-            // Remove tag functionality
-            $list.on('click', '.remove-tag', function() {
-                var $tagItem = $(this).parent();
-                var tag = $tagItem.text().trim();
-                tags = tags.filter(function(item) {
-                    return item !== tag;
-                });
-                $tagItem.remove();
-                toggleTagList($list, tags); // Toggle visibility after removing a tag
-            });
-            // Initial toggle of tags list
-            toggleTagList($list, tags);
-        });
-        // Handling the edit modal opening
-        $('#Editcategory_modal').on('shown.bs.modal', function() {
-            // When the modal is shown, ensure the tags list is displayed even if it's empty
-            $('.tags-list').css('display', 'flex');
-            // Fix the tag removal issue in the modal by reinitializing tags for each modal
-            $('#Editcategory_modal .tags-list').each(function() {
-                var $list = $(this);
-                var tags = []; // Scoped to each modal
-                // Reinitialize the tags for the modal
-                $list.find('.remove-tag').each(function() {
-                    var tag = $(this).parent().text().trim();
-                    tags.push(tag); // Collect the tags in this modal
-                });
-                // Handle tag removal inside the modal
-                $list.on('click', '.remove-tag', function() {
-                    var $tagItem = $(this).parent();
-                    var tag = $tagItem.text().trim();
-                    tags = tags.filter(function(item) {
-                        return item !== tag;
-                    });
-                    $tagItem.remove();
-                    toggleTagList($list,
-                    tags); // Toggle visibility after removing a tag
-                });
-                toggleTagList($list, tags); // Ensure visibility is correct in modal
-            });
-        });
-    });
+
+        function resetActiveImage() {
+            activeImageContainer.innerHTML = '<span class="placeholder">Click to upload or drag an image here</span>';
+            markPrimaryBtn.style.display = 'none';
+            activeImage = null;
+        }
+    }
+
+    // Initialize two instances
+    initializeImageUpload('fileInput1', 'activeImageContainer1', 'uploadedImages1', 'markPrimaryBtn1');
+    initializeImageUpload('fileInput2', 'activeImageContainer2', 'uploadedImages2', 'markPrimaryBtn2');
 </script>
-
-<!-- sub category dynamic data show count and list in modal start -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const rows = document.querySelectorAll('.subcategory_row');
-        rows.forEach((row) => {
-            const container = row.querySelector('.subcategory_items');
-            const items = container.querySelectorAll('.subct_item');
-            const maxVisible = 4;
-            // Hide subcategories beyond the first 4
-            items.forEach((item, index) => {
-                if (index >= maxVisible) {
-                    item.style.display = 'none';
-                }
-            });
-            // Add remaining count circle if needed
-            if (items.length > maxVisible) {
-                const remainingCount = items.length - maxVisible;
-                const countCircle = document.createElement('div');
-                countCircle.className = 'subct_item_count';
-                countCircle.textContent = `+${remainingCount}`;
-                countCircle.setAttribute('data-bs-toggle', 'modal');
-                countCircle.setAttribute('data-bs-target', '#subcategoryModal');
-                countCircle.setAttribute('data-subcategory', JSON.stringify(Array.from(items).map(
-                    item => item.textContent))); // Store all items in data attribute
-                countCircle.setAttribute('data-category', row.getAttribute(
-                'data-category')); // Store category name
-                container.appendChild(countCircle);
-            }
-        });
-        // Populate modal with the correct subcategory items
-        document.querySelectorAll('.subct_item_count').forEach(countCircle => {
-            countCircle.addEventListener('click', (event) => {
-                const categoryName = event.target.getAttribute('data-category');
-                const allSubcategories = JSON.parse(event.target.getAttribute(
-                    'data-subcategory'));
-                const modalTitle = document.getElementById('subcategoryModalLabel');
-                const modalList = document.getElementById('modalSubcategoryList');
-                const searchInput = document.getElementById('subcategorySearch');
-                modalList.innerHTML = ''; // Clear previous list
-                // Set modal title to category name
-                modalTitle.textContent = `${categoryName} - All Subcategories`;
-                // Populate modal list with subcategories
-                allSubcategories.forEach(subcategory => {
-                    const listItem = document.createElement('li');
-                    listItem.className = 'list-group-item';
-                    listItem.textContent = subcategory;
-                    modalList.appendChild(listItem);
-                });
-                // Add search functionality
-                searchInput.addEventListener('input', () => {
-                    const searchText = searchInput.value.toLowerCase();
-                    const items = modalList.querySelectorAll('.list-group-item');
-                    let found = false;
-                    items.forEach(item => {
-                        const text = item.textContent.toLowerCase();
-                        if (text.includes(searchText)) {
-                            item.style.display = 'block'; // Show item
-                            found = true;
-                        } else {
-                            item.style.display = 'none'; // Hide item
-                        }
-                    });
-                    // Show "No subcategory found" message if no results match
-                    const noResultsMessage = document.getElementById(
-                    'noResultsMessage');
-                    if (!found) {
-                        if (!noResultsMessage) {
-                            const noMessage = document.createElement('li');
-                            noMessage.id = 'noResultsMessage';
-                            noMessage.className = 'list-group-item text-danger';
-                            noMessage.textContent = 'No subcategory found';
-                            modalList.appendChild(noMessage);
-                        }
-                    } else {
-                        const noMessage = document.getElementById('noResultsMessage');
-                        if (noMessage) {
-                            noMessage
-                        .remove(); // Remove the "No subcategory found" message
-                        }
-                    }
-                });
-            });
-        });
-    });
-</script>
-<!-- sub category dynamic data show count and list in modal end -->
-
-
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="subcategoryModalLabel">All Subcategories</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body mdheight_small">
-                <!-- Search Bar -->
-                <div class="searchwrapper_category">
-                    <input type="text" id="subcategorySearch" class="form-control" placeholder="Search subcategories..."
-                        style="margin-bottom: 10px;">
-                    <iconify-icon icon="proicons:search"></iconify-icon>
-                </div>
-                <ul class="list-group subcategory_mdListing" id="modalSubcategoryList">
-                    <!-- Dynamic content will be populated here -->
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>

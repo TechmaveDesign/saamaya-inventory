@@ -258,7 +258,7 @@
 								</div>
 							</div>
 							<hr class="m-0">
-							<a class="dropdown-item" href="#"> <i class="me-2" data-feather="user"></i> My Profile</a>
+							<a class="dropdown-item" href="profile.php"> <i class="me-2" data-feather="user"></i> My Profile</a>
 							<!-- <a class="dropdown-item" href="#"><i class="me-2" data-feather="settings"></i>Settings</a> -->
 							<hr class="m-0">
 							<a class="dropdown-item logout pb-0" href="login.html"><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
@@ -272,7 +272,7 @@
 			<div class="dropdown mobile-user-menu">
 				<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 				<div class="dropdown-menu dropdown-menu-right">
-					<a class="dropdown-item" href="#">My Profile</a>
+					<a class="dropdown-item" href="profile.php">My Profile</a>
 					<a class="dropdown-item" href="#">Settings</a>
 					<a class="dropdown-item" href="#">Logout</a>
 				</div>
@@ -297,6 +297,7 @@
 								<!-- <li><a href="#">Item Groups</a></li> -->
 								<!-- <li><a href="#">Price Lists</a></li> -->
 								<li><a href="inventory-adjustment-list.php">Inventory Adjustments</a></li>
+								<li><a href="inventory-transfer-list.php">Inventory Transfer</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
@@ -330,10 +331,10 @@
 							<ul>
 								<li><a href="category.php">Category</a></li>
 								<li><a href="sub-category.php">Sub Category</a></li>
-								<li><a href="#">Brands</a></li>
-								<li><a href="#">Units</a></li>
-								<li><a href="#">Variant Attributes</a></li>
-								<li><a href="#">Warehouses</a></li>
+								<li><a href="brands.php">Brands</a></li>
+								<li><a href="units.php">Units</a></li>
+								<li><a href="variant.php">Variant Attributes</a></li>
+								<li><a href="warehouses.php">Warehouses</a></li>
 
 							</ul>
 						</li>

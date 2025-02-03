@@ -3,16 +3,16 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">All Category</h2>
+                        <h2 class="mb-1">Inventory Transfer</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
                                     <a href="index.php"><i data-feather="home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                Settings 
+                                    Inventory
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">All Category</li>
+                                <li class="breadcrumb-item active" aria-current="page">Inventory Transfer</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,7 +34,7 @@
                         </div> -->
                         <div class="ActionHeadButtons">
                             <!-- <a href="#" class="btn btnImport"><iconify-icon icon="lets-icons:import-light"></iconify-icon> Import</a> -->
-                            <a href="vendor-add.php"  class="btn btn-primary d-flex align-items-center themeBtn" data-bs-toggle="modal" data-bs-target="#add-category"><iconify-icon icon="majesticons:plus"></iconify-icon> New Category</a>
+                            <a href="inventory-transfer.php"  class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon> New Transfer</a>
                         </div>
                         <!-- <div class="head-icons ms-2">
                         <a href="#" class="btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-16"></i></a>
@@ -43,33 +43,42 @@
                 </div>
                 <div class="filterBox">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <!-- <label for="#">Product</label> -->
                                 <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Category</option>
-                                    <option value="us">Electronics</option>
-                                    <option value="ca">Furniture</option>
-                                    <option value="ca">Clothing & Fashion</option>
-                                    <option value="gb">Food & Beverages</option>
+                                    <option value="s-0" disabled selected>Create By</option>
+                                    <option value="us">Jhon Doe</option>
+                                    <option value="ca">Emily Davis</option>
+                                    <option value="ca">Jane Smith</option>
+                                    <option value="gb">Michael Brown</option>
+                                    <option value="au">Ketty Peri</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <!-- <label for="#">Product</label> -->
                                 <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Status</option>
-                                    <option value="us">Active</option>
-                                    <option value="ca">Inactive</option>
-                                    <option value="ma">Pending</option>
+                                    <option value="s-0" disabled selected>Reasons</option>
+                                    <option value="us">Stock on fire</option>
+                                    <option value="ca">Physical Stock Count</option>
+                                    <option value="ca">Stock Adjustment</option>
+                                    <option value="gb">Reconciliation Adjustment</option>
+                                    <option value="au">Stolen goods</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div class="form-group">
                                 <!-- <label for="#"></label> -->
                                 <input type="text" placeholder="Date Range"  class="form-control daterange">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="form-group">
+                                <!-- <label for="#">Date To</label> -->
+                                <input type="text" placeholder="Reference No."  class="form-control ">
                             </div>
                         </div>
                        
@@ -84,28 +93,41 @@
                         <table class="table common-datatable withoutActionTR nowrap w-100">
                             <thead class="thead-light">
                                 <tr>
-                                    <th>S.NO</th>
-                                    <th>Category</th>
-                                    <th>Created By</th>
-                                    <th>Created On</th>
+                                    <th>Created Date & Time</th>
+                                    <th>Created by</th>
+                                    <th>Reason</th>
+                                    <th>From</th>
+                                    <th>To</th>
                                     <th>Status</th>
+                                    <th>Reference No.</th>
+                                    <th>Last Modified By</th>
+                                    <th>Last Modified Time</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                            
                             <tr>
-                                <td>01</td>
-                                <td>Electronics</td>
-                                <td>Admin</td>
-                                <td>2025-01-01 10:00</td>
-                                <td><span class="badge alert-danger">Inactive</span></td>
+                                <td>2025-01-01 09:00 AM</td>
+                                <td>Jane Smith</td>
+                                <td>Stock Adjustment</td>
+                                <td>Main Warehouse A</td>
+                                <td>Secondary Warehouse B</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-12345</td>
+                                <td>John Doe</td>
+                                <td>2025-01-01 08:30 AM</td>
+                             
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
                                                 </span>
                                             </span>
                                         </a>
@@ -123,17 +145,26 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>02</td>
-                                <td>Furniture</td>
-                                <td>Admin</td>
-                                <td>2025-01-02 11:00</td>
-                                <td><span class="badge bg-soft-warning">Pending</span></td>
+                                <td>2025-01-02 10:45 AM</td>
+                                <td>John Doe</td>
+                                <td>System Error Correction</td>
+                                <td>Secondary Warehouse B</td>
+                                <td>Warehouse 2</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-67890</td>
+                                <td>Jane Smith</td>
+                                <td>2025-01-02 10:15 AM</td>
+                              
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
                                                 </span>
                                             </span>
                                         </a>
@@ -150,19 +181,209 @@
                                     </div>
                                 </td>
                             </tr>
-
                             <tr>
-                                <td>03</td>
-                                <td>Clothing & Fashion</td>
-                                <td>Super Admin</td>
-                                <td>2025-01-03 14:30</td>
-                                <td><span class="badge bg-soft-success">Active</span></td>
+                                <td>2025-01-03 02:30 PM</td>
+                                <td>Admin</td>
+                                <td>Physical Stock Count</td>
+                                <td>Warehouse 2</td>
+                                <td>Warehouse 3</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-34567</td>
+                                <td>Admin</td>
+                                <td>2025-01-03 02:00 PM</td>
+                              
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-04 11:30 AM</td>
+                                <td>John Doe</td>
+                                <td>Reconciliation Adjustment</td>
+                                <td>Warehouse 3</td>
+                                <td>Warehouse 2</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-45678</td>
+                                <td>Emily Davis</td>
+                                <td>2025-01-04 11:00 AM</td>
+                                
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-05 02:00 PM</td>
+                                <td>Emily Davis</td>
+                                <td>Supplier Adjustment</td>
+                                <td>Warehouse 2</td>
+                                <td>Main Warehouse A</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-56789</td>
+                                <td>Michael Brown</td>
+                                <td>2025-01-05 01:30 PM</td>
+                            
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-05 02:00 PM</td>
+                                <td>Emily Davis</td>
+                                <td>Supplier Adjustment</td>
+                                <td>Main Warehouse A</td>
+                                <td>Warehouse 3</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-56789</td>
+                                <td>Michael Brown</td>
+                                <td>2025-01-05 01:30 PM</td>
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1-2 2v2"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-06 10:30 AM</td>
+                                <td>John Doe</td>
+                                <td>Stock Adjustment</td>
+                                <td>Warehouse 3</td>
+                                <td>Secondary Warehouse B</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-67890</td>
+                                <td>Emily Davis</td>
+                                <td>2025-01-06 10:00 AM</td>
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1-2 2v2"></path>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-07 12:00 PM</td>
+                                <td>Jane Smith</td>
+                                <td>System Correction</td>
+                                <td>Secondary Warehouse B</td>
+                                <td>Warehouse 3</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>INV-78901</td>
+                                <td>John Doe</td>
+                                <td>2025-01-07 11:45 AM</td>
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip" data-placement="top" title="inventory-transfer-view" href="inventory-transfer-view.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                        <circle cx="12" cy="12" r="3"></circle>
+                                                    </svg>
                                                 </span>
                                             </span>
                                         </a>
@@ -180,152 +401,6 @@
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td>04</td>
-                                <td>Food & Beverages</td>
-                                <td>Admin</td>
-                                <td>2025-01-04 09:45</td>
-                                <td><span class="badge alert-danger">Inactive</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>05</td>
-                                <td>Health & Beauty</td>
-                                <td>Super Admin</td>
-                                <td>2025-01-03 08:15</td>
-                                <td><span class="badge bg-soft-success">Active</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>06</td>
-                                <td>Sports & Outdoors</td>
-                                <td>Admin</td>
-                                <td>2025-01-05 12:00</td>
-                                <td><span class="badge bg-soft-warning">Pending</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>07</td>
-                                <td>Home & Furniture</td>
-                                <td>Admin</td>
-                                <td>2025-01-06 15:30</td>
-                                <td><span class="badge bg-soft-warning">Pending</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>08</td>
-                                <td>Automotive & Spare Parts</td>
-                                <td>Admin</td>
-                                <td>2025-01-07 10:00</td>
-                                <td><span class="badge bg-soft-success">Active</span></td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" data-bs-toggle="modal" data-bs-target="#Edit-category">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                <iconify-icon icon="akar-icons:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <button class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            
-
             </tbody>
         </table>
     </div>
@@ -335,96 +410,6 @@
     </div>
     
 </div>
-
-<!-- Add Category -->
-<div class="modal fade" id="add-category">
-    <div class="modal-dialog modal-dialog-centered custom-modal-two">
-        <div class="modal-content">
-            <div class="page-wrapper-new p-0">
-                <div class="content">
-                    <div class="modal-header border-0 custom-modal-header">
-                        <div class="page-title">
-                            <h4>Add Category</h4>
-                        </div>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body custom-modal-body">
-                        <form action="category.php">
-                            <div class="mb-3">
-                                <label class="form-label">Category</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <!-- <div class="mb-3">
-                                <label class="form-label">Category Slug</label>
-                                <input type="text" class="form-control">
-                            </div> -->
-                            <div class="mb-0">
-                                <div class="status-toggle modal-status d-flex justify-content-between align-items-center">
-                                    <span class="status-label">Status</span>
-                                    <input type="checkbox" id="user2" class="check" checked="">
-                                    <label for="user2" class="checktoggle"></label>
-                                </div>
-                            </div>
-                            <div class="modal-footer-btn">
-                                <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Add Category</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Add Category -->
-
-<!-- Edit Category -->
-<div class="modal fade" id="Edit-category">
-    <div class="modal-dialog modal-dialog-centered custom-modal-two">
-        <div class="modal-content">
-            <div class="page-wrapper-new p-0">
-                <div class="content">
-                    <div class="modal-header border-0 custom-modal-header">
-                        <div class="page-title">
-                            <h4>Edit Category</h4>
-                        </div>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body custom-modal-body">
-                        <form action="category.php">
-                            <div class="mb-3">
-                                <label class="form-label">Category</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <!-- <div class="mb-3">
-                                <label class="form-label">Category Slug</label>
-                                <input type="text" class="form-control">
-                            </div> -->
-                            <div class="mb-0">
-                                <div class="status-toggle modal-status d-flex justify-content-between align-items-center">
-                                    <span class="status-label">Status</span>
-                                    <input type="checkbox" id="user3" class="check" checked="">
-                                    <label for="user3" class="checktoggle"></label>
-                                </div>
-                            </div>
-                            <div class="modal-footer-btn">
-                                <button type="button" class="btn btn-cancel me-2" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-submit">Edit Category</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Edit Category -->
-
-
 <?php include "footer.php"?>
 <!-- ------------------------------------
 Date Picker custom plugin start

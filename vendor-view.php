@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="tab">
-                <div class="topActionHeader TopHeadEnquiry">
+                 <div class="topActionHeader TopHeadEnquiry">
                                     <div class="leftSideEnquiryAction">
                                     <!-- <button type="button" class="btn inspectionButton" data-bs-toggle="modal" data-bs-target="#createInspectionModal"><iconify-icon icon="solar:checklist-minimalistic-linear"></iconify-icon> Create Inspection</button>
                                     <button type="button" class="btn inspectionButton" data-bs-toggle="modal" data-bs-target="#CreateJobWorkOrderModal"><iconify-icon icon="carbon:task-add"></iconify-icon>Schedule Job Work Order</button>

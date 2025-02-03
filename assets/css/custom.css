@@ -3820,3 +3820,224 @@ iconify-icon.IconInput {
 	border-radius: 50%;
 	cursor: pointer;
 }
+
+.tag-container {
+	display: flex;
+}
+
+.add-tag {
+	width: 80px;
+	margin-left: 10px;
+	border: 1px solid #ddd !important;
+	background: #fafafb !important;
+	color: #000;
+	justify-content: center;
+	font-size: 12px;
+	box-shadow: none;
+	display: flex;
+	align-items: center;
+	padding: 4px 0px;
+	border-radius: 4px;
+}
+
+.tags-list {
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+	margin-top: 16px;
+}
+
+.tags-list .tag {
+	display: inline-flex;
+	align-items: center;
+	margin: 0px;
+	padding: 4px 10px;
+	background-color: #f0f0f0;
+	border-radius: 20px;
+	position: relative;
+	font-size: 12px;
+}
+
+.Addprtags_wrap .remove-tag {
+	margin-left: 6px;
+	cursor: pointer;
+	color: red;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.brands .image-card {
+	display: none;
+}
+
+.upload-area.forbrands {
+	height: 140px;
+	width: 140px;
+}
+
+.searchwrapper_category {
+	position: relative;
+}
+
+.searchwrapper_category iconify-icon {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	font-size: 17px;
+}
+
+.subcategory_mdListing {
+	max-height: 250px;
+	overflow-y: scroll;
+}
+
+.subcategory_mdListing li {
+	border: none;
+}
+
+.profile-set.profile-wrap {
+	margin: 0;
+}
+
+.profile-set.profile-wrap .profile-contentimg {
+	margin-top: -10px;
+	max-width: 120px;
+}
+
+.cardCustom {
+	border-radius: 10px;
+	border: 2px solid #dbe0e6;
+}
+
+.avtar_box {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+}
+
+.avatar-upload {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatar-upload .avatar-edit {
+	position: absolute;
+	left: 64%;
+	z-index: 1;
+	top: 72px;
+}
+
+.avatar-upload .avatar-edit input {
+	display: none;
+}
+
+.avatar-upload .avatar-edit input+label {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	margin-bottom: 0;
+	border-radius: 100%;
+	background: #FFFFFF;
+	border: 1px solid transparent;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+	cursor: pointer;
+	font-weight: normal;
+	transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input+label:after {
+	content: "\f030";
+	font-family: 'FontAwesome';
+	color: #757575;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	border-radius: 100%;
+	border: 6px solid #F8F8F8;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview>div {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.content.profile {
+	padding: 30px 40px;
+}
+
+.profile-set.profile-wrap .profile-contentname h4 {
+	padding-top: 5px;
+	font-weight: 600;
+}
+
+.editBtn button {
+	border: 1px solid #cdd3d8;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: #6e7980;
+	background: #eff3f5;
+	border-radius: 5px;
+	padding: 6px 10px;
+}
+
+.profile-set.profile-wrap .profile-top {
+	align-items: flex-start;
+}
+
+.profile-box-wrap {
+	display: flex;
+	width: 100%;
+}
+
+.profile-content-main {
+	width: 100%;
+}
+
+.profile-box {
+	width: 40%;
+    padding-top: 15px;
+}
+
+.profile-hadder {
+	display: flex;
+	justify-content: space-between;
+}
+.profile-box label {
+    font-weight: 500;
+    color: #777;
+}
+
+.profile-box p {font-weight: 700;}
+.password {
+    display: flex;
+}
+
+.password p#passwordText {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.password span {
+    color: #B8BCC9;
+    font-size: 13px;
+    cursor: pointer;
+}
