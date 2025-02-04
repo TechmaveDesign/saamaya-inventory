@@ -93,31 +93,28 @@
                         <table class="table common-datatable withoutActionTR nowrap w-100">
                             <thead class="thead-light">
                                 <tr>
-                                    <th>Created Date & Time</th>
-                                    <th>Created by</th>
-                                    <th>Reason</th>
-                                    <th>From</th>
-                                    <th>To</th>
-                                    <th>Status</th>
+                                    <th>From Store</th>
+                                    <th>To Store</th>
                                     <th>Reference No.</th>
+                                    <th>No. of Product</th>
+                                    <th>quantity</th>
                                     <th>Last Modified By</th>
                                     <th>Last Modified Time</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                            
                             <tr>
-                                <td>2025-01-01 09:00 AM</td>
-                                <td>Jane Smith</td>
-                                <td>Stock Adjustment</td>
-                                <td>Main Warehouse A</td>
-                                <td>Secondary Warehouse B</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Main Store A</td>
+                                <td>Secondary Store B</td>
                                 <td>INV-12345</td>
+                                <td>05</td>
+                                <td>12</td>
                                 <td>John Doe</td>
                                 <td>2025-01-01 08:30 AM</td>
-                             
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -145,16 +142,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-02 10:45 AM</td>
-                                <td>John Doe</td>
-                                <td>System Error Correction</td>
-                                <td>Secondary Warehouse B</td>
-                                <td>Warehouse 2</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Secondary Store B</td>
+                                <td>Store 2</td>
                                 <td>INV-67890</td>
+                                <td>04</td>
+                                <td>45</td>
                                 <td>Jane Smith</td>
                                 <td>2025-01-02 10:15 AM</td>
-                              
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -182,16 +177,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-03 02:30 PM</td>
-                                <td>Admin</td>
-                                <td>Physical Stock Count</td>
-                                <td>Warehouse 2</td>
-                                <td>Warehouse 3</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Store 2</td>
+                                <td>Store 3</td>
                                 <td>INV-34567</td>
+                                <td>07</td>
+                                <td>10</td>
                                 <td>Admin</td>
                                 <td>2025-01-03 02:00 PM</td>
-                              
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -219,16 +212,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-04 11:30 AM</td>
-                                <td>John Doe</td>
-                                <td>Reconciliation Adjustment</td>
-                                <td>Warehouse 3</td>
-                                <td>Warehouse 2</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Store 3</td>
+                                <td>Store 2</td>
                                 <td>INV-45678</td>
+                                <td>05</td>
+                                <td>12</td>
                                 <td>Emily Davis</td>
                                 <td>2025-01-04 11:00 AM</td>
-                                
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -256,16 +247,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-05 02:00 PM</td>
-                                <td>Emily Davis</td>
-                                <td>Supplier Adjustment</td>
-                                <td>Warehouse 2</td>
-                                <td>Main Warehouse A</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Store 2</td>
+                                <td>Main Store A</td>
                                 <td>INV-56789</td>
+                                <td>03</td>
+                                <td>12</td>
                                 <td>Michael Brown</td>
                                 <td>2025-01-05 01:30 PM</td>
-                            
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -293,15 +282,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-05 02:00 PM</td>
-                                <td>Emily Davis</td>
-                                <td>Supplier Adjustment</td>
-                                <td>Main Warehouse A</td>
-                                <td>Warehouse 3</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Main Store A</td>
+                                <td>Store 3</td>
                                 <td>INV-56789</td>
+                                <td>06</td>
+                                <td>10</td>
                                 <td>Michael Brown</td>
                                 <td>2025-01-05 01:30 PM</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -329,15 +317,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-06 10:30 AM</td>
-                                <td>John Doe</td>
-                                <td>Stock Adjustment</td>
-                                <td>Warehouse 3</td>
-                                <td>Secondary Warehouse B</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Store 3</td>
+                                <td>Secondary Store B</td>
                                 <td>INV-67890</td>
+                                <td>05</td>
+                                <td>15</td>
                                 <td>Emily Davis</td>
                                 <td>2025-01-06 10:00 AM</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
@@ -365,15 +352,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>2025-01-07 12:00 PM</td>
-                                <td>Jane Smith</td>
-                                <td>System Correction</td>
-                                <td>Secondary Warehouse B</td>
-                                <td>Warehouse 3</td>
-                                <td><span class="badge bg-soft-success">Adjusted</span></td>
+                                <td>Secondary Store B</td>
+                                <td>Store 3</td>
                                 <td>INV-78901</td>
+                                <td>04</td>
+                                <td>14</td>
                                 <td>John Doe</td>
                                 <td>2025-01-07 11:45 AM</td>
+                                <td><span class="badge bg-soft-success">Adjusted</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"

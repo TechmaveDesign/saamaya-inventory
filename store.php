@@ -47,10 +47,10 @@
                             <div class="form-group">
                                 <!-- <label for="#">Product</label> -->
                                 <select class="js-example-basic-single select2">
-                                    <option value="s-0" disabled selected>Select Warehouse</option>
-                                    <option value="us">Main Warehouse A</option>
-                                    <option value="ca">Secondary Warehouse B</option>
-                                    <option value="ca">Warehouse 2</option>
+                                    <option value="s-0" disabled selected>Select Store</option>
+                                    <option value="us">Main Store A</option>
+                                    <option value="ca">Secondary Store B</option>
+                                    <option value="ca">Store 2</option>
                                 </select>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th>Store ID</th>
-                                    <th>Warehouse Name</th>
+                                    <th>Store Name</th>
                                     <th>Location</th>
                                     <th>Manager</th>
                                     <th>Contact</th>
@@ -91,7 +91,7 @@
                            
                             <tr>
                                 <td>#ST001</td>
-                                <td>Main Warehouse A</td>
+                                <td>Main Store A</td>
                                 <td>Berlin, Germany</td>
                                 <td>john Do</td>
                                 <td>+12163547758 | johndoe@example.com</td>
@@ -101,7 +101,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                                 data-bs-toggle="tooltip" data-placement="top" title="View item Details"
-                                                href="item-detail.php">
+                                                href="store-view.php">
                                                 <span class="icon">
                                                     <span class="feather-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -114,7 +114,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" href="edit-warehouse.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" href="edit-store.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                 <iconify-icon icon="akar-icons:edit"></iconify-icon>
@@ -136,7 +136,7 @@
                             </tr>
                             <tr>
                                 <td>#ST002</td>
-                                <td>Secondary Warehouse B</td>
+                                <td>Secondary Store B</td>
                                 <td>Munich, Germany</td>
                                 <td>Jane Smith</td>
                                 <td>+126578767654 | Smith@example.com</td>
@@ -146,7 +146,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                                 data-bs-toggle="tooltip" data-placement="top" title="View item Details"
-                                                href="item-detail.php">
+                                                href="store-view.php">
                                                 <span class="icon">
                                                     <span class="feather-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -159,7 +159,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-warehouse.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-store.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                 <iconify-icon icon="akar-icons:edit"></iconify-icon>
@@ -182,7 +182,7 @@
 
                             <tr>
                                 <td>#ST003</td>
-                                <td>Warehouse 2</td>
+                                <td>Store 2</td>
                                 <td>Delhi, India</td>
                                 <td>Michel Stark</td>
                                 <td>+9246565757 | Stark8454@example.com</td>
@@ -192,7 +192,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                                 data-bs-toggle="tooltip" data-placement="top" title="View item Details"
-                                                href="item-detail.php">
+                                                href="store-view.php">
                                                 <span class="icon">
                                                     <span class="feather-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -205,7 +205,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-warehouse.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-store.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                 <iconify-icon icon="akar-icons:edit"></iconify-icon>
@@ -228,7 +228,7 @@
 
                             <tr>
                                 <td>#ST004</td>
-                                <td>Warehouse 3</td>
+                                <td>Store 3</td>
                                 <td>Munich, Germany</td>
                                 <td>Mark Wood</td>
                                 <td>+4656578670 | Wood545@example.com</td>
@@ -238,7 +238,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                                 data-bs-toggle="tooltip" data-placement="top" title="View item Details"
-                                                href="item-detail.php">
+                                                href="store-view.php">
                                                 <span class="icon">
                                                     <span class="feather-icon">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -251,7 +251,7 @@
                                                     </span>
                                                 </span>
                                             </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-warehouse.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-store.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                 <iconify-icon icon="akar-icons:edit"></iconify-icon>
