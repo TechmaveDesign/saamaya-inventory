@@ -430,19 +430,18 @@
             
             
              <div class="FormSubmit_fix_container">
-                                <a href="inventory-adjustment-list.php">
-                                    <button type="button" class="btn btn-primary commonUpdateButton" onclick="showSweetAlert()">
-                                        <i class="ti-save-alt"></i> Submit
-                                    </button>
-                                </a>
+                <a href="inventory-adjustment-list.php">
+                    <button type="button" class="btn btn-primary commonUpdateButton" onclick="showSweetAlert()">
+                        <i class="ti-save-alt"></i> Submit
+                    </button>
+                </a>
 
-                            <a href="#">
-                                <button type="button" class="btn commonCancleButton">
-                                    Cancel
-                                </button>
-                            </a>
-
-                    </div>
+            <a href="#">
+                <button type="button" class="btn commonCancleButton">
+                    Cancel
+                </button>
+            </a>
+            </div>
 </div>
 <?php include "footer.php"?>
 

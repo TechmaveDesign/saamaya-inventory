@@ -334,6 +334,7 @@
 								<li><a href="brands.php">Brands</a></li>
 								<li><a href="units.php">Units</a></li>
 								<li><a href="variant.php">Variant Attributes</a></li>
+								<li><a href="store.php">Store</a></li>
 								<li><a href="warehouses.php">Warehouses</a></li>
 
 							</ul>

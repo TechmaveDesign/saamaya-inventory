@@ -3,7 +3,7 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">All Warehouse</h2>
+                        <h2 class="mb-1">All Store</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -12,7 +12,7 @@
                                 <li class="breadcrumb-item">
                                 Settings 
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">All Warehouse</li>
+                                <li class="breadcrumb-item active" aria-current="page">All Store</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,7 +34,7 @@
                         </div> -->
                         <div class="ActionHeadButtons">
                             <!-- <a href="#" class="btn btnImport"><iconify-icon icon="lets-icons:import-light"></iconify-icon> Import</a> -->
-                            <a href="new-warehouse.php"  class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon>  New Warehouse</a>
+                            <a href="new-store.php"  class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon>  New Store</a>
                         </div>
                         <!-- <div class="head-icons ms-2">
                         <a href="#" class="btn-custom" data-bs-toggle="tooltip" data-bs-placement="top" title="Collapse" id="collapse-header"><i data-feather="chevron-up" class="feather-16"></i></a>
@@ -54,10 +54,15 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-4">
                             <div class="form-group">
-                                <!-- <label for="#"></label> -->
-                                <input type="text" placeholder="Date Range"  class="form-control daterange">
+                                <!-- <label for="#">Product</label> -->
+                                <select class="js-example-basic-single select2">
+                                    <option value="s-0" disabled selected>Select Location</option>
+                                    <option value="us">Berlin, Germany</option>
+                                    <option value="ca">Munich, Germany</option>
+                                    <option value="ca">Delhi, India</option>
+                                </select>
                             </div>
                         </div>
                        
@@ -72,38 +77,43 @@
                         <table class="table common-datatable withoutActionTR nowrap w-100 Warehouse">
                             <thead class="thead-light">
                                 <tr>
-                                    <th>Warehouse ID</th>
+                                    <th>Store ID</th>
                                     <th>Warehouse Name</th>
                                     <th>Location</th>
                                     <th>Manager</th>
-                                    <th>Store Name</th>
                                     <th>Contact</th>
-                                    <th>Created On</th>
+                                    <th>Opening Hours</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                            
                             <tr>
-                                <td>#WH001</td>
+                                <td>#ST001</td>
                                 <td>Main Warehouse A</td>
                                 <td>Berlin, Germany</td>
                                 <td>john Do</td>
-                                <td class="subcategory_row" data-category="john Do">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">MCD Store 1</div>
-                                        <div class="subct_item">MCD Store 2</div>
-                                        <div class="subct_item">MCD Store 3</div>
-                                        <div class="subct_item">MCD Store 4</div>
-                                        <div class="subct_item">MCD Store 5</div>
-                                        <div class="subct_item">MCD Store 6</div>
-                                        
-                                    </div>
-                                </td>
                                 <td>+12163547758 | johndoe@example.com</td>
-                                <td>2025-01-01 10:00</td>
+                                <td>8:00 AM - 10:00 PM</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                data-bs-toggle="tooltip" data-placement="top" title="View item Details"
+                                                href="item-detail.php">
+                                                <span class="icon">
+                                                    <span class="feather-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                            class="feather feather-eye">
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-placement="top" href="edit-warehouse.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
@@ -125,25 +135,30 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>#WH002</td>
+                                <td>#ST002</td>
                                 <td>Secondary Warehouse B</td>
                                 <td>Munich, Germany</td>
                                 <td>Jane Smith</td>
-                                <td class="subcategory_row" data-category="Jane Smith">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">MCD Store 3</div>
-                                        <div class="subct_item">MCD Store 1</div>
-                                        <div class="subct_item">MCD Store 3</div>
-                                        <div class="subct_item">MCD Store 4</div>
-                                        <div class="subct_item">MCD Store 6</div>
-                                        <div class="subct_item">MCD Store 5</div>
-                                        
-                                    </div>
-                                </td>
                                 <td>+126578767654 | Smith@example.com</td>
-                                <td>2025-01-02 11:00</td>
+                                <td>9:00 AM - 9:00 PM</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                data-bs-toggle="tooltip" data-placement="top" title="View item Details"
+                                                href="item-detail.php">
+                                                <span class="icon">
+                                                    <span class="feather-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                            class="feather feather-eye">
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-warehouse.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
@@ -166,21 +181,30 @@
                             </tr>
 
                             <tr>
-                                <td>#WH003</td>
+                                <td>#ST003</td>
                                 <td>Warehouse 2</td>
                                 <td>Delhi, India</td>
                                 <td>Michel Stark</td>
-                                <td class="subcategory_row" data-category="Michel Stark">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">MCD Store 3</div>
-                                        <div class="subct_item">MCD Store 1</div>
-                                        <div class="subct_item">MCD Store 3</div>
-                                    </div>
-                                </td>
                                 <td>+9246565757 | Stark8454@example.com</td>
-                                <td>2025-01-03 14:30</td>
+                                <td>10:00 AM - 8:00 PM</td>
+                                <td><span class="badge bg-soft-danger">Inactive</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                data-bs-toggle="tooltip" data-placement="top" title="View item Details"
+                                                href="item-detail.php">
+                                                <span class="icon">
+                                                    <span class="feather-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                            class="feather feather-eye">
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-warehouse.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
@@ -203,21 +227,30 @@
                             </tr>
 
                             <tr>
-                                <td>#WH004</td>
+                                <td>#ST004</td>
                                 <td>Warehouse 3</td>
                                 <td>Munich, Germany</td>
                                 <td>Mark Wood</td>
-                                <td class="subcategory_row" data-category="Michel Stark">
-                                    <div class="subcategory_items">
-                                        <div class="subct_item">MCD Store 1</div>
-                                        <div class="subct_item">MCD Store 2</div>
-                                        <div class="subct_item">MCD Store 5</div>
-                                    </div>
-                                </td>
                                 <td>+4656578670 | Wood545@example.com</td>
-                                <td>2025-01-04 09:45</td>
+                                <td>9:00 AM - 9:00 PM</td>
+                                <td><span class="badge bg-soft-success">Active</span></td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                                data-bs-toggle="tooltip" data-placement="top" title="View item Details"
+                                                href="item-detail.php">
+                                                <span class="icon">
+                                                    <span class="feather-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                            class="feather feather-eye">
+                                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                            <circle cx="12" cy="12" r="3"></circle>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="edit-warehouse.php">
                                             <span class="icon">
                                                 <span class="feather-icon">

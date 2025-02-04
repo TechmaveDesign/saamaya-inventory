@@ -507,7 +507,7 @@
 
 <!-- All Subcategories -->
 <!-- Bootstrap Modal -->
-<div class="modal fade" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
+<div class="modal fade Sub" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -751,30 +751,3 @@ Date Picker custom plugin End
     });
 </script>
 <!-- sub category dynamic data show count and list in modal end -->
-
-
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="subcategoryModal" tabindex="-1" aria-labelledby="subcategoryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="subcategoryModalLabel">All Subcategories</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body mdheight_small">
-                <!-- Search Bar -->
-                <div class="searchwrapper_category">
-                    <input type="text" id="subcategorySearch" class="form-control" placeholder="Search subcategories..."
-                        style="margin-bottom: 10px;">
-                    <iconify-icon icon="proicons:search"></iconify-icon>
-                </div>
-                <ul class="list-group subcategory_mdListing" id="modalSubcategoryList">
-                    <!-- Dynamic content will be populated here -->
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>

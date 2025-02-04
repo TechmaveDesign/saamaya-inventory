@@ -16,6 +16,8 @@
 		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 			<!-- Select2 CSS -->
             <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+            <link rel="stylesheet" type="text/css" href="assets/css/duDatepicker.css">
+<link rel="stylesheet" type="text/css" href="assets/css/duDatepicker-theme.css">
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 		<!-- custom CSS -->
@@ -207,7 +209,7 @@
                                                         <div class="form-group mb-3 mt-4">
                                                             <label class="form-label">Inventory Start date <span>*</span></label>
                                                             <div class="form-addons">
-                                                                <input type="text" class="form-control" value="18/12/2024">
+                                                                <input type="text" class="form-control datepicker1" value="Feb 13, 2025" >
                                                             </div>
                                                         </div>
                                                     </div>
@@ -302,6 +304,25 @@
          <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.0.3/js/intlTelInput.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
 
+                <!-- ------------------------------------
+Date Picker custom plugin start
+-------------------------------------- -->
+<script type="text/javascript" src="assets/js/duDatepicker.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        duDatepicker('.datepicker1', {
+            format: 'mmm d, yyyy', // Use 'mmm' for abbreviated month (e.g., Dec)
+            range: false, 
+            clearBtn: true,
+            // theme: 'myTheme',
+            // disabledDays: ['Sat', 'Sun'],
+        })
+    }
+</script>
+<!-- ------------------------------------
+Date Picker custom plugin End
+-------------------------------------- -->
+
     <script>
         $(document).ready(function() {
           $(".TelPhoneinput").intlTelInput({
@@ -337,11 +358,6 @@
             }, 2000); // 2000 milliseconds (2 seconds) delay
         });
       </script>
-
-     
- 
-
-
 <!-- slick end -->
  
     </body>
