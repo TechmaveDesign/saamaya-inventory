@@ -220,6 +220,11 @@
                                                                         </a>
                                                                     </li>
                                                                     <li class="nav-item">
+                                                                        <a class="nav-link" id="Operational-tab" data-bs-toggle="tab" href="#Operational" aria-controls="Operational" role="tab" aria-selected="false">
+                                                                        Operational Information
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
                                                                         <a class="nav-link" id="profileIcon-tab" data-bs-toggle="tab" href="#profileIcon" aria-controls="profile" role="tab" aria-selected="false">
                                                                         Geo-Location
                                                                         </a>
@@ -304,6 +309,24 @@
                                                                             </div>
                                                                         </div>
                                                 </div>
+                                                                    </div>
+                                                                    <div class="tab-pane mt-3" id="Operational" aria-labelledby="Operational-tab" role="tabpanel">
+                                                                        <div class="InputFelidsContainer">
+                                                                        <div class="form-group">
+                                                                            <div class="row align-items-center">
+                                                                                <div class="col-lg-3">
+                                                                                    <label for="#">Status (Default: Active)</label>
+                                                                                </div>
+                                                                                <div class="col-lg-8">
+                                                                                    <select class="js-example-basic-single select2">
+                                                                                        <option value="" disabled selected>Select Status</option>
+                                                                                        <option value="Active">Active</option>
+                                                                                        <option value="Inactive">Inactive</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
                                                                     </div>
                                                                     
                                                                     <div class="tab-pane mt-3" id="profileIcon" aria-labelledby="profileIcon-tab" role="tabpanel">
