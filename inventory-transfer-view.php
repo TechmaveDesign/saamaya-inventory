@@ -3,24 +3,24 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">Adjustment  Details</h2>
+                        <h2 class="mb-1">Inventory Transfer  Details</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
                                     <a href="index.php"><i data-feather="home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                <a href="inventory-adjustment-list.php">Inventory Adjustment List</a>
+                                <a href="inventory-adjustment-list.php">Inventory Transfer List</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">New Adjustment</li>
+                                <li class="breadcrumb-item active" aria-current="page">Transfer  Details</li>
                             </ol>
                         </nav>
                     </div>
                     <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
                     
                         <div class="ActionHeadButtons">
-                            <a href="inventory-adjustment-list.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
-                            <a href="inventory-adjustment-edit.php" class="btn EditBtn"> Edit <iconify-icon icon="akar-icons:edit"></iconify-icon></a>
+                            <a href="inventory-transfer-list.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
+                            <a href="edit-transfer.php" class="btn EditBtn"> Edit <iconify-icon icon="akar-icons:edit"></iconify-icon></a>
 
                             <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#add_users" class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon> New Item</a> -->
                         </div>
@@ -153,13 +153,13 @@
                                                             	
                                                             <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>Warehouse</h6>
+                                                                    <h6>Move</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue">
                                                                    <div class="moveBox">
                                                                     <h6>Warehouse 1</h6>
-                                                                    <!-- <span class="moveIcon"><iconify-icon icon="lsicon:move-down-filled"></iconify-icon></span>
-                                                                    <h6>Warehouse 2</h6> -->
+                                                                    <span class="moveIcon"><iconify-icon icon="lsicon:move-down-filled"></iconify-icon></span>
+                                                                    <h6>Warehouse 2</h6>
                                                                    </div>
                                                                 </div>
                                                             </li>
