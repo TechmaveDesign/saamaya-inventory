@@ -3,16 +3,16 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">Add New Customer</h2>
+                        <h2 class="mb-1">Add New Vendors</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
                                     <a href="index.php"><i data-feather="home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                <a href="customer-list.php">All Customers</a>
+                                <a href="vendor.php">All Vendors</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Add New Customer</li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New Vendors</li>
                             </ol>
                         </nav>
                     </div>
@@ -33,7 +33,7 @@
                             </div>
                         </div> -->
                         <div class="ActionHeadButtons">
-                            <a href="customer-list.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
+                            <a href="vendor.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
                             <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#add_users" class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon> New Item</a> -->
                         </div>
                         <div class="head-icons ms-2">
@@ -47,42 +47,18 @@
                             <div class="ItemNewContainer1">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                            <h6 class="SectionTitleFG">Customer Details</h6>
+                                            <h6 class="SectionTitleFG">Vendors Details</h6>
                                                 <div class="InputFelidsContainer">
+                                                
                                                 <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
-                                                            <label for="#">Customer Type</label>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                            <div class="typeBox">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="Radio" id="Radio1" checked>
-                                                                <label class="form-check-label" for="Radio1">
-                                                                Business
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="radio" name="Radio" id="Radio2">
-                                                                <label class="form-check-label" for="Radio2">
-                                                                     Individual
-                                                                </label>
-                                                            </div>
-                                                            </div>
-                                                           
-                                                        </div>
-                                                    </div>
-                                            
-                                            </div>
-                                                <div class="form-group">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-lg-3">
-                                                            <label for="#">Customer Name</label>
+                                                            <label for="#">Vendor Basic</label>
                                                         </div>
                                                         <div class="col-lg-8">
                                                             <div class="CustomerKop">
-                                                              <input type="text" placeholder="First Name" id="name" class="form-control">
-                                                              <input type="text" placeholder="Last Name" id="name" class="form-control">
+                                                              <input type="text" placeholder="Vendor ID" id="name" class="form-control">
+                                                              <input type="text" placeholder="Vendor Name" id="name" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -94,8 +70,54 @@
                                                             <label for="#" >Company Name</label>
                                                         </div>
                                                         <div class="col-lg-8">
-                                                            <div class="skuCode">
-                                                            <input type="text" placeholder=" " id="name" class="form-control">
+                                                        <div class="skuCode">
+                                                            <input type="text" placeholder="First Name " id="name" class="form-control">
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                            <div class="form-group">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <label for="#">Vendor Type </label>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <div class="typeBox">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="Radio" id="Radio1" checked>
+                                                                <label class="form-check-label" for="Radio1">
+                                                                Company
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="Radio" id="Radio2">
+                                                                <label class="form-check-label" for="Radio2">
+                                                                     Individual
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="Radio" id="Radio3">
+                                                                <label class="form-check-label" for="Radio3">
+                                                                Manufacturer
+                                                                </label>
+                                                            </div>
+                                                            </div>
+                                                           
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                            <div class="form-group">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <label for="#" > Vendor Name</label>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                        <div class="CustomerKop">
+                                                            <input type="text" placeholder="First Name " id="name" class="form-control">
+                                                            <input type="text" placeholder="Last Name " id="name" class="form-control">
                                                          
                                                             </div>
                                                             
@@ -103,6 +125,7 @@
                                                     </div>
                                             
                                             </div>
+                                            
                                             <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
@@ -142,23 +165,12 @@
                                             
                                             </div>
                                             
-                                            <div class="form-group mt-4">
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <label for="#" >Description </label>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                        <textarea type="text" placeholder=" " id="name" class="form-control" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
-                                            
-                                            </div>
                                             
 
                                                 </div>
                                                 
                                         </div>
-                                        <div class="col-lg-6">
+                                        <!-- <div class="col-lg-6">
                                             <h6 class="SectionTitleFG">Other Details</h6>
                                             <div class="InputFelidsContainer">
                                                 <div class="form-group">
@@ -234,192 +246,95 @@
                                                 </div>
                                                 
                                              </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                        </div>
-                        
-                    </div>
-             </div>
-            
-         
-             <div class="ItemContainerTop no-bg  mb-3">
-                    <div class="row">
-                            <div class="col-lg-12">
-                            <div class="ItemNewContainer1">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                            <div class="sectionBox ComboItemsbox">
-                                                    <div class="form-check align-items-center mt-2 p-0">
-                                                        <!-- <input class="form-check-input varrientCheckbox" type="checkbox" value="" id="flexCheckChecked3" checked> -->
-                                                        <label class="form-check-label" for="flexCheckChecked3">
-                                                        Address Details
-                                                        </label>
-                                                    </div>
-                                                 </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                            <h6 class="SectionTitleFG">Billing Address</h6>
-                                            <div class="InputFelidsContainer">
-                                                <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">Country / Region</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <select  class="country-select js-example-basic-single select2">
-                                                                    <option value="" disabled selected>Select Country</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <label for="#" >Address</label>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                        <textarea type="text" placeholder=" " id="name" class="form-control" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
-                                            
-                                            </div>
-                                            <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">City</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <div class="skuCode">
-                                                                <input type="text" placeholder=" " id="name" class="form-control">
-                                                            
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">State</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <select class="js-example-basic-single select2">
-                                                                    <option value="" disabled selected>Select State</option>
-                                                                    <option value="adamaoua">Adamaoua</option>
-                                                                    <option value="centre">Centre</option>
-                                                                    <option value="east">East</option>
-                                                                    <option value="far_north">Far North</option>
-                                                                    <option value="littoral">Littoral</option>
-                                                                    <option value="north">North</option>
-                                                                    <option value="north_west">North-West</option>
-                                                                    <option value="west">West</option>
-                                                                    <option value="south">South</option>
-                                                                    <option value="south_west">South-West</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">Pin code</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <div class="skuCode">
-                                                                <input type="text" placeholder=" " id="name" class="form-control">
-                                                            
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                
-                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="col-lg-6">
-                                            <h6 class="SectionTitleFG">Shipping Address</h6>
-                                            <div class="InputFelidsContainer">
-                                                <div class="form-group">
-                                                        <div class="row align-items-center">
+                                                <h6 class="SectionTitleFG">Business Address</h6>
+                                                <div class="InputFelidsContainer">
+                                                    
+                                                    
+                                                    <div class="form-group">
+                                                        <div class="row">
                                                             <div class="col-lg-3">
-                                                                <label for="#">Country / Region</label>
+                                                                <label for="#" >Street Address</label>
                                                             </div>
                                                             <div class="col-lg-8">
-                                                                <select  class="country-select js-example-basic-single select2">
-                                                                    <option value="" disabled selected>Select Country</option>
-                                                                </select>
+                                                            <textarea type="text" placeholder="Street 1 " id="name" class="form-control" rows="3"></textarea>
                                                             </div>
                                                         </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <label for="#" >Address</label>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                        <textarea type="text" placeholder=" " id="name" class="form-control" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
-                                            
-                                            </div>
-                                            <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">City</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <div class="skuCode">
-                                                                <input type="text" placeholder=" " id="name" class="form-control">
-                                                            
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">State</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <select class="js-example-basic-single select2">
-                                                                    <option value="" disabled selected>Select State</option>
-                                                                    <option value="adamaoua">Adamaoua</option>
-                                                                    <option value="centre">Centre</option>
-                                                                    <option value="east">East</option>
-                                                                    <option value="far_north">Far North</option>
-                                                                    <option value="littoral">Littoral</option>
-                                                                    <option value="north">North</option>
-                                                                    <option value="north_west">North-West</option>
-                                                                    <option value="west">West</option>
-                                                                    <option value="south">South</option>
-                                                                    <option value="south_west">South-West</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <div class="form-group">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-lg-3">
-                                                                <label for="#">Pin code</label>
-                                                            </div>
-                                                            <div class="col-lg-8">
-                                                                <div class="skuCode">
-                                                                <input type="text" placeholder=" " id="name" class="form-control">
-                                                            
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                </div>
                                                 
-                                             </div>
-                                        </div>
-                                           
-                                           
+                                                </div>
+                                                <div class="form-group">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3">
+                                                                    <label for="#">City/Town</label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="skuCode">
+                                                                    <input type="text" placeholder=" " id="name" class="form-control">
+                                                                
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3">
+                                                                    <label for="#">Region/State</label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select class="js-example-basic-single select2">
+                                                                        <option value="" disabled selected>Select State</option>
+                                                                        <option value="adamaoua">Adamaoua</option>
+                                                                        <option value="centre">Centre</option>
+                                                                        <option value="east">East</option>
+                                                                        <option value="far_north">Far North</option>
+                                                                        <option value="littoral">Littoral</option>
+                                                                        <option value="north">North</option>
+                                                                        <option value="north_west">North-West</option>
+                                                                        <option value="west">West</option>
+                                                                        <option value="south">South</option>
+                                                                        <option value="south_west">South-West</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3">
+                                                                    <label for="#">Country / Region</label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <select  class="country-select js-example-basic-single select2">
+                                                                        <option value="" disabled selected>Select Country</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3">
+                                                                    <label for="#">Postal Code</label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <div class="skuCode">
+                                                                    <input type="text" placeholder=" " id="name" class="form-control">
+                                                                
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                    </div>
+
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+
+
+
+                                       
                                         
                                     </div>
                                 </div>
@@ -427,21 +342,183 @@
                         
                     </div>
              </div>
+
+
+
+             <div class="ItemNewContainer1 pt-3 mb-5">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                    <div class="sectionBox ComboItemsbox">
+                                                            <div class="form-check align-items-center mt-2 p-0">
+                                                                <!-- <input class="form-check-input varrientCheckbox" type="checkbox" value="" id="flexCheckChecked3" checked> -->
+                                                                <label class="form-check-label" for="flexCheckChecked3">
+                                                                Financial Details
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-6">
+                                                    <!-- <h6 class="SectionTitleFG">Billing Address</h6> -->
+                                                    <div class="InputFelidsContainer">
+                                                    <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">Bank Name</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="skuCode">
+                                                                        <input type="text" placeholder=" " id="name" class="form-control">
+                                                                    
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">Account Holder Name</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="skuCode">
+                                                                        <input type="text" placeholder=" " id="name" class="form-control">
+                                                                    
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                        </div> 
+                                                        <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">Currency</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <select  class=" js-example-basic-single select2">
+                                                                            <option value="" disabled selected>Select Currency</option>
+                                                                            <option value="net1" >XAF</option>
+                                                                            <option value="net2" >USD</option>
+                                                                            <option value="net3" >EUR</option>
+                                                                            <option value="net4">CFA </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">Payment Terms</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <select  class=" js-example-basic-single select2">
+                                                                            <option value="" disabled selected>Select Terms</option>
+                                                                            <option value="net1" >Net 15</option>
+                                                                            <option value="net2" >Net 30</option>
+                                                                            <option value="net3" >Net 45</option>
+                                                                            <option value="net4">Net 60</option>
+                                                                            <option value="net5">Cash on Delivery</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">Payment Method</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <select  class=" js-example-basic-single select2">
+                                                                            <option value="" disabled selected>Select Method</option>
+                                                                            <option value="method1" >Bank Transfer</option>
+                                                                            <option value="method2" >Mobile Money</option>
+                                                                            <option value="method3" >Cash</option>
+                                                                            <option value="method4">Cheque</option>
+                                                                            <option value="method5">Cash on Delivery</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        
+                                                    <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">Tax Identification Number (TIN)</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="skuCode">
+                                                                        <input type="text" placeholder=" " id="name" class="form-control">
+                                                                    
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-lg-3">
+                                                                        <label for="#">VAT Registration Number</label>
+                                                                    </div>
+                                                                    <div class="col-lg-8">
+                                                                        <div class="skuCode">
+                                                                        <input type="text" placeholder=" " id="name" class="form-control">
+                                                                    
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-lg-3">
+                                                                <label for="#">Dcuments</label>
+                                                            </div>
+                                                            <div class="col-lg-8">
+                                                            <div class="file-upload-container">
+                                                                <label for="file-input" class="custom-file-button">
+                                                                <span class="upload-icon"><iconify-icon icon="tabler:upload"></iconify-icon></span>
+                                                                Upload Images
+                                                                </label>
+                                                                <input type="file" id="file-input" multiple>
+                                                                <div class="file-upload-info">You can upload a maximum of 5 Dcuments, 10MB each</div>
+                                                            
+                                                            </div>
+                                                            <div id="image-preview-list"></div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                </div>
+
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                            </div>
+            </div>
+
+            
+         
+             
             
             
              <div class="FormSubmit_fix_container">
-                <a href="inventory-adjustment-list.php">
-                    <button type="button" class="btn btn-primary commonUpdateButton" onclick="showSweetAlert()">
-                        <i class="ti-save-alt"></i> Submit
-                    </button>
-                </a>
+                                <a href="vendor.php">
+                                    <button type="button" class="btn btn-primary commonUpdateButton" onclick="showSweetAlert()">
+                                        <i class="ti-save-alt"></i> Submit
+                                    </button>
+                                </a>
 
-            <a href="#">
-                <button type="button" class="btn commonCancleButton">
-                    Cancel
-                </button>
-            </a>
-            </div>
+                            <a href="vendor.php">
+                                <button type="button" class="btn commonCancleButton">
+                                    Cancel
+                                </button>
+                            </a>
+
+                    </div>
 </div>
 <?php include "footer.php"?>
 

@@ -3,16 +3,16 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">New Adjustment</h2>
+                        <h2 class="mb-1">Edit Transfer</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
                                     <a href="index.php"><i data-feather="home"></i></a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                <a href="inventory-adjustment-list.php">Inventory Adjustment List</a>
+                                <a href="inventory-transfer-list.php"> Inventory Transfer Details</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">New Adjustment</li>
+                                <li class="breadcrumb-item active" aria-current="page">Edit Transfer</li>
                             </ol>
                         </nav>
                     </div>
@@ -33,7 +33,7 @@
                             </div>
                         </div> -->
                         <div class="ActionHeadButtons">
-                            <a href="inventory-adjustment-list.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
+                            <a href="inventory-transfer-list.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
                             <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#add_users" class="btn btn-primary d-flex align-items-center themeBtn"><iconify-icon icon="majesticons:plus"></iconify-icon> New Item</a> -->
                         </div>
                         <div class="head-icons ms-2">
@@ -48,7 +48,7 @@
                                         <div class="row">
                                             <div class="col-lg-8">
                                                 <div class="InputFelidsContainer">
-                                                <div class="form-group">
+                                                <!-- <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
                                                             <label for="#">Mode of adjustment</label>
@@ -72,7 +72,7 @@
                                                         </div>
                                                     </div>
                                             
-                                            </div>
+                                            </div> -->
                                                 <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
@@ -124,24 +124,6 @@
                                             <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
-                                                            <label for="#" >Warehouse <span>*</span> </label>
-                                                        </div>
-                                                        <div class="col-lg-8">
-                                                        <select class="js-example-basic-single select2">
-                                                            <option value="" disabled selected>Select Warehouse</option>
-                                                            <option value="box">Main Warehouse A</option>
-                                                            <option value="cm">Secondary Warehouse B</option>
-                                                            <option value="dz">Warehouse 2</option>
-                                                            <option value="kg">Warehouse 3</option>
-                                                        </select>
-                                                            
-                                                        </div>
-                                                    </div>
-                                            
-                                            </div>
-                                            <!-- <div class="form-group mt-4">
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
                                                             <label for="#" >Move  </label>
                                                         </div>
                                                         <div class="col-lg-8">
@@ -163,7 +145,7 @@
                                                         </div>
                                                     </div>
                                             
-                                            </div> -->
+                                            </div>
                                             <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
@@ -450,13 +432,13 @@
              </div>
             
              <div class="FormSubmit_fix_container">
-                                <a href="inventory-adjustment-list.php">
+                                <a href="inventory-transfer-list.php">
                                     <button type="button" class="btn btn-primary commonUpdateButton" onclick="showSweetAlert()">
                                         <i class="ti-save-alt"></i> Submit
                                     </button>
                                 </a>
 
-                            <a href="#">
+                            <a href="inventory-transfer-list.php">
                                 <button type="button" class="btn commonCancleButton">
                                     Cancel
                                 </button>

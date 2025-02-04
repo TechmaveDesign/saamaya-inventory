@@ -87,6 +87,17 @@
                                             <div class="form-group">
                                                     <div class="row align-items-center">
                                                         <div class="col-lg-3">
+                                                            <label for="#">Scan Barcode <span>*</span></label>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <input type="text" placeholder=" " id="" class="form-control">
+                                                        </div>
+                                                    </div>
+                                            
+                                            </div>
+                                            <div class="form-group">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
                                                             <label for="#" >SKU <a href="#" class="FieldInfo"  data-bs-toggle="tooltip" data-placement="top" title="The Stock Keeping Unit of the item"><iconify-icon icon="akar-icons:question"></iconify-icon></a></label>
                                                         </div>
                                                         <div class="col-lg-8">

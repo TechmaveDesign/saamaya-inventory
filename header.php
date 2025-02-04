@@ -258,7 +258,7 @@
 								</div>
 							</div>
 							<hr class="m-0">
-							<a class="dropdown-item" href="#"> <i class="me-2" data-feather="user"></i> My Profile</a>
+							<a class="dropdown-item" href="profile.php"> <i class="me-2" data-feather="user"></i> My Profile</a>
 							<!-- <a class="dropdown-item" href="#"><i class="me-2" data-feather="settings"></i>Settings</a> -->
 							<hr class="m-0">
 							<a class="dropdown-item logout pb-0" href="login.html"><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
@@ -272,7 +272,7 @@
 			<div class="dropdown mobile-user-menu">
 				<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 				<div class="dropdown-menu dropdown-menu-right">
-					<a class="dropdown-item" href="#">My Profile</a>
+					<a class="dropdown-item" href="profile.php">My Profile</a>
 					<a class="dropdown-item" href="#">Settings</a>
 					<a class="dropdown-item" href="#">Logout</a>
 				</div>
@@ -297,6 +297,7 @@
 								<!-- <li><a href="#">Item Groups</a></li> -->
 								<!-- <li><a href="#">Price Lists</a></li> -->
 								<li><a href="inventory-adjustment-list.php">Inventory Adjustments</a></li>
+								<li><a href="inventory-transfer-list.php">Inventory Transfer</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
@@ -310,30 +311,31 @@
 								<li><a href="invoice-list.php">Invoices</a></li>
 								<li><a href="recevied-payment.php">Payments Received</a></li>
 								<li><a href="return-sale-order.php">Sales Returns</a></li>
-								<!-- <li><a href="#">Credit Nots</a></li> -->
+								<li><a href="sales-credit.php">Credit Nots</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
 							<a href="javascript:void(0);"><i data-feather="shopping-bag"></i><span><span>Purchases</span><span class="menu-arrow"></span></a>
 							<ul>
-								<li><a href="#">Vendors</a></li>
-								<li><a href="#">Expenses</a></li>
-								<li><a href="#">Purchase Orders</a></li>
-								<li><a href="#">Purchase Receive</a></li>
-								<li><a href="#">Bills</a></li>
-								<li><a href="#">Payment Made</a></li>
-								<!-- <li><a href="#">Vendor Credits</a></li> -->
+								<li><a href="vendor.php">Vendors</a></li>
+								<!-- <li><a href="#">Expenses</a></li> -->
+								<li><a href="purchase-orders.php">Purchase Orders</a></li>
+								<li><a href="purchase-received.php">Purchase Receive</a></li>
+								<li><a href="all-bills.php">Bills</a></li>
+								<li><a href="all-payments.php">Payment Made</a></li>
+								<li><a href="vendor-credits.php">Vendor Credits</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
 							<a href="javascript:void(0);"><i data-feather="settings"></i><span>Settings</span><span class="menu-arrow"></span></a>
 							<ul>
-								<li><a href="#">Category</a></li>
-								<li><a href="#">Sub Category</a></li>
-								<li><a href="#">Brands</a></li>
-								<li><a href="#">Units</a></li>
-								<li><a href="#">Variant Attributes</a></li>
-								<li><a href="#">Warehouses</a></li>
+								<li><a href="category.php">Category</a></li>
+								<li><a href="sub-category.php">Sub Category</a></li>
+								<li><a href="brands.php">Brands</a></li>
+								<li><a href="units.php">Units</a></li>
+								<li><a href="variant.php">Variant Attributes</a></li>
+								<li><a href="store.php">Store</a></li>
+								<li><a href="warehouses.php">Warehouses</a></li>
 
 							</ul>
 						</li>
