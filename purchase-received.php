@@ -123,7 +123,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -158,7 +158,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -194,7 +194,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -230,7 +230,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -265,7 +265,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -301,7 +301,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -337,7 +337,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
@@ -373,7 +373,7 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-view.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Customer Detail" href="purchase-received-view.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">

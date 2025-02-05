@@ -165,7 +165,7 @@
                                                             </li>
                                                             <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>Description</h6>
+                                                                    <h6>Reason</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue">
                                                                     <h6>Discrepancy resolved during audit</h6>

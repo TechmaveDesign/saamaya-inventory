@@ -17,7 +17,7 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb salesOrderHeader">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">Purchase Details View</h2>
+                        <h2 class="mb-1">Purchase Received</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -26,7 +26,7 @@
                                 <li class="breadcrumb-item">
                                 <a href="purchase-orders.php">Purchase Orders</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">Purchase Details  View</li>
+                                <li class="breadcrumb-item active" aria-current="page">Received</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,11 +34,11 @@
                     
                         <div class="ActionHeadButtons ">
                            
-                            <a href="purchase-orders.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
-                            <a href="edit-purchase-order.php" class="btn EditBtn"> Edit <iconify-icon icon="akar-icons:edit"></iconify-icon></a>
+                            <a href="purchase-received.php" class="btn btnImport"><iconify-icon icon="typcn:arrow-back-outline"></iconify-icon> Back</a>
+                            <a href="purchase-receive-edit.php" class="btn EditBtn"> Edit <iconify-icon icon="akar-icons:edit"></iconify-icon></a>
                             <a href="javascript:void(0);" class="btn btnImport" onclick="printInvoice()"> <iconify-icon icon="fluent:print-48-regular"></iconify-icon> Print</a>
                             <a href="javascript:void(0);" class="btn btnImport"><iconify-icon icon="ant-design:file-pdf-outlined"></iconify-icon> Download PDF</a>
-                            <a href="new-purchase-receive.php" class="btn btnImport"><iconify-icon icon="line-md:circle-twotone-to-confirm-circle-transition"></iconify-icon>Convert to Bill</a>
+                            <a href="javascript:void(0);" class="btn btnImport"><iconify-icon icon="line-md:circle-twotone-to-confirm-circle-transition"></iconify-icon>Convert to Bill</a>
                             <!-- <a href="javascript:void(0);" class="btn btnImport" id="conInvoicebtn"><iconify-icon icon="basil:invoice-outline"></iconify-icon> Convert to Invoice</a> -->
                             <!-- <div class="enquiryID_container" id="invoicedStatus">
                                         <div class="EnquiryID">
@@ -77,11 +77,11 @@
                                         <div>
                                             <!-- <h2 style="margin: 0; color: #ff5722;">Drongo</h2> -->
                                             <img src="assets/img/new-image/Saamaya-Inventory-Logo.png" alt="" style="width:100px;">
-                                            <p style="margin: 5px 0; font-size: 16px;"><strong>Purchase Order# <span style="color:#ff5c00">PO-00002</span></strong> </p>
+                                            <p style="margin: 5px 0; font-size: 16px;"><strong>Purchase Received# <span style="color:#ff5c00">PR-00002</span></strong> </p>
                                         </div>
                                         <div style="text-align: right;">
-                                            <h3 style="margin: 0;">Purchase Order</h3>
-                                            <p style="margin: 5px 0; font-size: 14px;"><strong>Purchase Order Date:</strong> 17/06/2023</p>
+                                            <h3 style="margin: 0;">Purchase Received </h3>
+                                            <p style="margin: 5px 0; font-size: 14px;"><strong> Received Date:</strong> 17/06/2023</p>
                                             <p style="margin: 5px 0; font-size: 14px;"><strong>Ref:</strong> BC 5555555</p>
                                         </div>
                                     </div>
@@ -106,7 +106,7 @@
                                     </div>
 
                                     <!-- Table Section -->
-                                    <h4 style="margin-bottom: 10px;">Order Details</h4>
+                                    <h4 style="margin-bottom: 10px;">Received Items</h4>
                                     <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
                                     <thead>
                                         <tr>

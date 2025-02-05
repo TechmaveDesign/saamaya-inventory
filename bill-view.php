@@ -77,7 +77,7 @@
                                         <div>
                                             <!-- <h2 style="margin: 0; color: #ff5722;">Drongo</h2> -->
                                             <img src="assets/img/new-image/Saamaya-Inventory-Logo.png" alt="" style="width:100px;">
-                                            <p style="margin: 5px 0; font-size: 16px;"><strong>Bill# <span style="color:#ff5c00">SO-00002</span></strong> </p>
+                                            <p style="margin: 5px 0; font-size: 16px;"><strong>Bill# <span style="color:#ff5c00">Bi-00002</span></strong> </p>
                                         </div>
                                         <div style="text-align: right;">
                                             <h3 style="margin: 0;">Bill View</h3>

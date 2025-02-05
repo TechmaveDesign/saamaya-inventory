@@ -91,15 +91,6 @@
                                                     <div class="col-lg-7">
                                                     <h6 class="DetailTitle">Primary Details</h6>
                                                         <ul class="ProductDetailList">
-                                                            
-                                                            <!-- <li>
-                                                                <div class="itemDetailTitle">
-                                                                    <h6>Item Group Name</h6>
-                                                                </div>
-                                                                <div class="itemDetailValue">
-                                                                    <h6><a href="#">soap</a></h6>
-                                                                </div>
-                                                            </li> -->
                                                             <li>
                                                                 <div class="itemDetailTitle">
                                                                     <h6>Store Name</h6>
@@ -114,6 +105,14 @@
                                                                 </div>
                                                                 <div class="itemDetailValue">
                                                                     <h6>john Do</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Vendor Name</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>Greesh Wood</h6>
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -142,10 +141,18 @@
                                                             </li>
                                                             <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>Location</h6>
+                                                                    <h6>Street Address 1</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue">
-                                                                    <h6>Berlin, Germany</h6>
+                                                                    <h6>123 Main Street, Apt 101</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Street Address 2</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>434 Main Street, Apt 202</h6>
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -215,159 +222,40 @@
                                                                     <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dolores!</h6>
                                                                 </div>
                                                             </li>
-                                                        </ul>
-                                                        <h6 class="DetailTitle mt-3 mb-3">Sales Information </h6>
+                                                        </ul> -->
+                                                        <!-- <h6 class="DetailTitle mt-3 mb-3">Remarks </h6> -->
                                                         <ul class="ProductDetailList">
                                                             <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>Selling Price</h6>
-                                                                </div>
-                                                                <div class="itemDetailValue">
-                                                                    <h6>$20.00</h6>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="itemDetailTitle">
-                                                                    <h6>Description</h6>
+                                                                    <h6>Remarks</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue description">
                                                                     <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, dolores!</h6>
                                                                 </div>
                                                             </li>
-                                                        </ul> -->
+                                                        </ul>
                                                     </div>
-                                                    <div class="col-lg-4">
-                                                    <div class="ImageContainer">
-                                                            <!-- Upload Area -->
-                                                            <div class="upload-area" id="activeImageContainer">
-                                                            <span class="placeholder">Click to upload or drag an image here</span>
-                                                            <input type="file" id="fileInput" accept="image/*" multiple>
-                                                            </div>
-                                                            <button class="mark-primary-btn" id="markPrimaryBtn" style="display: none;">
-                                                            Mark as Primary
-                                                            </button>
-
-                                                            <!-- Uploaded Images -->
-                                                            <div class="uploaded-images" id="uploadedImages"></div>
-                                                        </div>
-
-                                                        <div class="RightSideBarDT">
-                                                            <div class="stockManage">
-                                                                <h6>Stock Management</h6>
-                                                                <ul>
-                                                                    <li>
-                                                                        <span>Stock on Hand</span>
-                                                                        <span> 20.00</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Last Sale Qty</span>
-                                                                        <span> 30.00</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Last Purchase Date</span>
-                                                                        <span>24 Nov, 2024</span>
-                                                                    </li>
-                                                                </ul>
-
-                                                                <div class="ItemCountBox">
-                                                                   
-                                                                        <div class="card ">
-                                                                            <div class="card-body">
-                                                                                <h4 class="boxCountTitle">0 <span>Qty</span></h4>
-                                                                                <p>To be Shipped</p>
-                                                                            </div>
-                                                                        </div>
-                                                                 
-                                                                  
-                                                                        <div class="card ">
-                                                                            <div class="card-body">
-                                                                                <h4 class="boxCountTitle">0 <span>Qty</span></h4>
-                                                                                <p>To be Received</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    
-                                                                   
-                                                                        <div class="card ">
-                                                                            <div class="card-body">
-                                                                                <h4 class="boxCountTitle">0 <span>Qty</span></h4>
-                                                                                <p>To be Invoiced</p>
-                                                                            </div>
-                                                                        </div>
-                                                                  
-                                                                   
-                                                                        <div class="card ">
-                                                                            <div class="card-body">
-                                                                                <h4 class="boxCountTitle">0 <span>Qty</span></h4>
-                                                                                <p>To be Billed</p>
-                                                                            </div>
-                                                                        </div>
-                                                                   
-                                                                </div>
-
-                                                                <div class="reorderPoint">
-                                                                    <label>Reorder Point</label>
-                                                                    <h5>
-                                                                        10
-                                                                        <a href="javascript:void(0)" id="popoverLink" data-bs-toggle="popover" data-bs-title="Reorder Point" 
-                                                                        data-bs-content='
-                                                                        <label class="mb-1">Set Reorder Point <span>*</span></label>
-                                                                        <input type="number" class="form-control" id="inputContent" placeholder="Enter reorder value" value="10">
-                                                                        <button type="button" class="btn btn-primary mt-2" id="updateButton">Update</button>'
-                                                                        >
-                                                                        <iconify-icon icon="uil:pen"></iconify-icon>
-                                                                        </a>
-                                                                    </h5>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        
-                                                    </div>
-                                                    <div class="col-lg-11 mt-4">
-                                                        <div class="card">
-                                                            <div class="card-header customCardHeader d-flex justify-content-between align-items-center">
-                                                                <h5>Sales Order Summary</h5>
-                                                                <div class="graph-sets">
-                                                                    <div class="dropdown dropdown-wraper">
-                                                                        <button class="btn btn-white btn-sm dropdown-toggle d-flex align-items-center" type="button" id="dropdown-country-sales" data-bs-toggle="dropdown" aria-expanded="false">This Week</button>
-                                                                        <ul class="dropdown-menu" aria-labelledby="dropdown-country-sales">
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">Today</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">Yesterday</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">This Week</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">This Month</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">This Year</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">Previous Week</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">Previous Month</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">Previous Year</a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="javascript:void(0);" class="dropdown-item">Custom</a>
-                                                                            </li>
-                                                                        </ul>
+                                                    <div class="col-lg-5">
+                                                    <div class="DocMainContainer">
+                                                            <h6 class="mb-3">Uploaded Documents</h6>
+                                                            <div class="DocContainer">
+                                                                <a  href="assets/img/new-image/photo-id.jpg" class="AttachmentBox" data-fancybox="gallery" data-caption="Attachment document name">
+                                                                    <div class="documents">
+                                                                        <img src="assets/img/new-image/photo-id.jpg" alt="">
                                                                     </div>
+                                                                </a>
+                                                                <a  href="assets/img/new-image/passport.png" class="AttachmentBox" data-fancybox="gallery" data-caption="Attachment document name">
+                                                                <div class="documents">
+                                                                    <img src="assets/img/new-image/passport.png" alt="">
                                                                 </div>
+                                                                </a>
+                                                                <a  href="assets/img/new-image/aadhaar-card-7579588_1280.png" class="AttachmentBox" data-fancybox="gallery" data-caption="Attachment document name">
+                                                                <div class="documents">
+                                                                    <img src="assets/img/new-image/aadhaar-card-7579588_1280.png" alt="">
+                                                                </div>
+                                                                </a>
                                                             </div>
-                                                            <div class="card-body">
-                                                                <div id="sales-analysis" class="chart-set"></div>
-                                                            </div>
-
-                                                    </div>
+                                                        </div>    
                                                     </div>
                                                 </div>
                                             </div>
@@ -390,8 +278,8 @@
                                                                                 <th>Unit Price</th>
                                                                                 <th>Selling Price</th>
                                                                                 <th>Pack Qty</th>
-                                                                                <th>Transfer Date</th>
                                                                                 <th>Validity On</th>
+                                                                                <th>Transfer Date</th>
                                                                                 <th>Status</th>
                                                                                 <!-- <th>Action</th> -->
                                                                             </tr>
@@ -419,10 +307,8 @@
                                                                                 <td>
                                                                                    150
                                                                                 </td>
+                                                                                <td> Dec 25, 2026</td>
                                                                                 <td>Mar 01, 2022</td>
-                                                                                <td>
-                                                                                 Dec 25, 2026
-                                                                                </td>
                                                                                 <td>
                                                                                   <span class="badge bg-soft-success">In Stock</span>
                                                                                 </td>
@@ -450,10 +336,8 @@
                                                                                 <td>
                                                                                    250
                                                                                 </td>
+                                                                                <td> Dec 25, 2026 </td>
                                                                                 <td>jun 04, 2023</td>
-                                                                                <td>
-                                                                                 Dec 25, 2026
-                                                                                </td>
                                                                                 <td>
                                                                                   <span class="badge bg-soft-success">In Stock</span>
                                                                                 </td>
@@ -481,10 +365,8 @@
                                                                                 <td>
                                                                                    50
                                                                                 </td>
+                                                                                <td> Dec 25, 2027</td>
                                                                                 <td>Mar 01, 2022</td>
-                                                                                <td>
-                                                                                 Dec 25, 2027
-                                                                                </td>
                                                                                 <td>
                                                                                   <span class="badge bg-soft-warning">Low Stock</span>
                                                                                 </td>
@@ -512,10 +394,8 @@
                                                                                 <td>
                                                                                    0
                                                                                 </td>
+                                                                                <td> Dec 25, 2026</td>
                                                                                 <td>Jan 20, 2021</td>
-                                                                                <td>
-                                                                                 Dec 25, 2026
-                                                                                </td>
                                                                                 <td>
                                                                                   <span class="badge bg-soft-danger">Out of Stock</span>
                                                                                 </td>
@@ -790,4 +670,27 @@
         markPrimaryBtn.style.display = 'none';
         activeImage = null;
     }
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+ <script>
+    // Initialize Fancybox with custom buttons
+    Fancybox.bind("[data-fancybox]", {
+        Toolbar: {
+            display: [
+                "close", // Default close button
+                "download", // Add download button to Fancybox
+            ],
+        },
+        buttons: {
+            download: {
+                type: "link",
+                label: "Download",
+                class: "fancybox__button--download",
+                src: (fancybox) => fancybox.current.src,
+                download: true, // Enable the download link
+            },
+        },
+    });
 </script>

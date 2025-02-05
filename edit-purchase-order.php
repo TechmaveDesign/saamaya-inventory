@@ -58,6 +58,10 @@
                                                         <div class="col-lg-8">
                                                             <select  class=" js-example-basic-single select2">
                                                                 <option value="" disabled selected>Select Vendor</option>
+                                                                <option value="" >John Doe</option>
+                                                                <option value="" >Jane Smith</option>
+                                                                <option value="" >Emily Clark</option>
+                                                                <option value="" >Michael Brown</option>
                                                             </select>
                                                         </div>
                                                     </div>

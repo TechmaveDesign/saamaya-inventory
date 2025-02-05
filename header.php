@@ -311,7 +311,7 @@
 								<li><a href="invoice-list.php">Invoices</a></li>
 								<li><a href="recevied-payment.php">Payments Received</a></li>
 								<li><a href="return-sale-order.php">Sales Returns</a></li>
-								<li><a href="sales-credit.php">Credit Nots</a></li>
+								<li><a href="sales-credit.php">Credit Notes</a></li>
 							</ul>
 						</li>
 						<li class="submenu">
@@ -344,7 +344,7 @@
 						
 						</li>
 						<li>
-							<a href="javascript:void(0);"><i data-feather="git-pull-request"></i><span><span>System Activity</span></a>
+							<a href="system-activity.php"><i data-feather="git-pull-request"></i><span><span>System Activity</span></a>
 						
 						</li>
 			
