@@ -99,7 +99,7 @@
                                                     </div>
                                             
                                             </div>
-                                            <div class="form-group mt-4">
+                                            <!-- <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <label for="#" >Reasons <span>*</span> </label>
@@ -120,19 +120,19 @@
                                                         </div>
                                                     </div>
                                             
-                                            </div>
+                                            </div> -->
                                             <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
-                                                            <label for="#" >Warehouse <span>*</span> </label>
+                                                            <label for="#" >Store <span>*</span> </label>
                                                         </div>
                                                         <div class="col-lg-8">
                                                         <select class="js-example-basic-single select2">
-                                                            <option value="" disabled selected>Select Warehouse</option>
-                                                            <option value="box">Main Warehouse A</option>
-                                                            <option value="cm">Secondary Warehouse B</option>
-                                                            <option value="dz">Warehouse 2</option>
-                                                            <option value="kg">Warehouse 3</option>
+                                                            <option value="" disabled selected>Select Store</option>
+                                                            <option value="box">Main Store A</option>
+                                                            <option value="cm">Secondary Store B</option>
+                                                            <option value="dz">Store 2</option>
+                                                            <option value="kg">Store 3</option>
                                                         </select>
                                                             
                                                         </div>
@@ -167,7 +167,7 @@
                                             <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
-                                                            <label for="#" >Description </label>
+                                                            <label for="#" >Reason </label>
                                                         </div>
                                                         <div class="col-lg-8">
                                                         <textarea type="text" placeholder=" " id="name" class="form-control" rows="3"></textarea>

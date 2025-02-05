@@ -3,7 +3,7 @@
     <div class="content">
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
                     <div class="my-auto mb-2">
-                        <h2 class="mb-1">New Store</h2>
+                        <h2 class="mb-1">Edit Store</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -12,7 +12,7 @@
                                 <li class="breadcrumb-item">
                                 <a href="vendor.php">Settings</a>
                                 </li>
-                                <li class="breadcrumb-item active" aria-current="page">New Store</li>
+                                <li class="breadcrumb-item active" aria-current="page">Edit Store</li>
                             </ol>
                         </nav>
                     </div>

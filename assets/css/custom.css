@@ -3872,7 +3872,7 @@ iconify-icon.IconInput {
 
 .upload-area.forbrands {
 	height: 140px;
-	width: 140px;
+	width: 100%;
 }
 
 .searchwrapper_category {
@@ -4283,4 +4283,11 @@ input#phoneNumber {
 .Sub.modal .modal-footer {
     border: 0;
     justify-content: end;
+}
+.DocContainer a {
+    width: calc(50% - 10px);
+}
+
+.DocContainer a .documents {
+    width: 100%;
 }

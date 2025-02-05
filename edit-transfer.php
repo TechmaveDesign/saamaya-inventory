@@ -99,7 +99,7 @@
                                                     </div>
                                             
                                             </div>
-                                            <div class="form-group mt-4">
+                                            <!-- <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
                                                             <label for="#" >Reasons <span>*</span> </label>
@@ -120,7 +120,7 @@
                                                         </div>
                                                     </div>
                                             
-                                            </div>
+                                            </div> -->
                                             <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
@@ -128,19 +128,19 @@
                                                         </div>
                                                         <div class="col-lg-8">
                                                         <select class="js-example-basic-single select2">
-                                                                <option value="s-0">Select Warehouse</option>
-                                                                <option value="us">Warehouse 1</option>
-                                                                <option value="ca">Warehouse 2</option>
-                                                                <option value="ca">Warehouse 3</option>
-                                                                <option value="ca">Warehouse 4</option>
+                                                                <option value="s-0">Select Store</option>
+                                                                <option value="us">Store 1</option>
+                                                                <option value="ca">Store 2</option>
+                                                                <option value="ca">Store 3</option>
+                                                                <option value="ca">Store 4</option>
                                                             </select>
                                                         <span class="transferIcon"><iconify-icon icon="mingcute:transfer-2-fill" width="18" height="18"></iconify-icon></span>
                                                         <select class="js-example-basic-single select2">
-                                                                <option value="s-0">Select Warehouse</option>
-                                                                <option value="us">Warehouse 1</option>
-                                                                <option value="ca">Warehouse 2</option>
-                                                                <option value="ca">Warehouse 3</option>
-                                                                <option value="ca">Warehouse 4</option>
+                                                                <option value="s-0">Select Store</option>
+                                                                <option value="us">Store 1</option>
+                                                                <option value="ca">Store 2</option>
+                                                                <option value="ca">Store 3</option>
+                                                                <option value="ca">Store 4</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -149,7 +149,7 @@
                                             <div class="form-group mt-4">
                                                     <div class="row">
                                                         <div class="col-lg-3">
-                                                            <label for="#" >Description </label>
+                                                            <label for="#" >Reason</label>
                                                         </div>
                                                         <div class="col-lg-8">
                                                         <textarea type="text" placeholder=" " id="name" class="form-control" rows="3"></textarea>

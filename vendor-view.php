@@ -96,14 +96,14 @@
                                                         </div>
                                                         <ul class="ProductDetailList">
                                                             <li><h6>Basic Details</h6></li>
-                                                            <!-- <li>
+                                                            <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>Description</h6>
+                                                                    <h6>Vendor Name</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue">
-                                                                    <h6><a href="#">soap</a></h6>
+                                                                    <h6>jone</h6>
                                                                 </div>
-                                                            </li> -->
+                                                            </li>
                                                             <li>
                                                                 <div class="itemDetailTitle">
                                                                     <h6>Vendor Type</h6>
@@ -152,6 +152,46 @@
                                                                     <h6>9873900234</h6>
                                                                 </div>
                                                             </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Street Address</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>434 Main Street, Apt 202</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>City/Town</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>Cameroon</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Region/State</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>Centre</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Country / Region</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>Algeria</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Postal Code</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>#4657</h6>
+                                                                </div>
+                                                            </li> 
                                                       
                                                             	
                                                            
@@ -166,13 +206,29 @@
                                                         </ul>
                                                        
                                                         <ul class="ProductDetailList">
-                                                          <li><h6>Other Details</h6></li>
-                                                            <li>
+                                                          <li><h6>Financial Details</h6></li>
+                                                          <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>TIN (Taxpayer Identification Number)</h6>
+                                                                    <h6>Bank Name</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue">
-                                                                    <h6>1234567890</h6>
+                                                                    <h6>ICICI Bank</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Account Holder Name</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>Fresh Farm Co.</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Payment Method</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>Bank Transfer</h6>
                                                                 </div>
                                                             </li>
                                                             <li>
@@ -191,25 +247,47 @@
                                                                     <h6>USD</h6>
                                                                 </div>
                                                             </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>Tax Identification Number (TIN)</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>1234567890</h6>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="itemDetailTitle">
+                                                                    <h6>VAT Registration Number</h6>
+                                                                </div>
+                                                                <div class="itemDetailValue">
+                                                                    <h6>465746</h6>
+                                                                </div>
+                                                            </li>
                                                         </ul>
                                                         
                                                         
                                                     </div>
                                                     <div class="col-lg-5">
-                                                        <div class="DocMainContainer">
+                                                    <div class="DocMainContainer">
                                                             <h6 class="mb-3">Uploaded Documents</h6>
                                                             <div class="DocContainer">
-                                                                <div class="documents">
-                                                                    <img src="assets/img/new-image/photo-id.jpg" alt="">
-                                                                </div>
+                                                                <a  href="assets/img/new-image/photo-id.jpg" class="AttachmentBox" data-fancybox="gallery" data-caption="Attachment document name">
+                                                                    <div class="documents">
+                                                                        <img src="assets/img/new-image/photo-id.jpg" alt="">
+                                                                    </div>
+                                                                </a>
+                                                                <a  href="assets/img/new-image/passport.png" class="AttachmentBox" data-fancybox="gallery" data-caption="Attachment document name">
                                                                 <div class="documents">
                                                                     <img src="assets/img/new-image/passport.png" alt="">
                                                                 </div>
+                                                                </a>
+                                                                <a  href="assets/img/new-image/aadhaar-card-7579588_1280.png" class="AttachmentBox" data-fancybox="gallery" data-caption="Attachment document name">
                                                                 <div class="documents">
                                                                     <img src="assets/img/new-image/aadhaar-card-7579588_1280.png" alt="">
                                                                 </div>
+                                                                </a>
                                                             </div>
-                                                        </div>
+                                                        </div> 
                                                     </div>
                                                    
                                                 </div>
@@ -617,5 +695,28 @@ $(document).ready(function () {
     imageItem.remove();
   });
 });
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+ <script>
+    // Initialize Fancybox with custom buttons
+    Fancybox.bind("[data-fancybox]", {
+        Toolbar: {
+            display: [
+                "close", // Default close button
+                "download", // Add download button to Fancybox
+            ],
+        },
+        buttons: {
+            download: {
+                type: "link",
+                label: "Download",
+                class: "fancybox__button--download",
+                src: (fancybox) => fancybox.current.src,
+                download: true, // Enable the download link
+            },
+        },
+    });
 </script>
 

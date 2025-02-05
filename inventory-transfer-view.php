@@ -157,15 +157,15 @@
                                                                 </div>
                                                                 <div class="itemDetailValue">
                                                                    <div class="moveBox">
-                                                                    <h6>Warehouse 1</h6>
+                                                                    <h6>Store 1</h6>
                                                                     <span class="moveIcon"><iconify-icon icon="lsicon:move-down-filled"></iconify-icon></span>
-                                                                    <h6>Warehouse 2</h6>
+                                                                    <h6>Store 2</h6>
                                                                    </div>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="itemDetailTitle">
-                                                                    <h6>Description</h6>
+                                                                    <h6>Reason</h6>
                                                                 </div>
                                                                 <div class="itemDetailValue">
                                                                     <h6>Discrepancy resolved during audit</h6>
