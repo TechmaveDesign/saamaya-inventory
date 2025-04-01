@@ -340,7 +340,11 @@
 							</ul>
 						</li>
 						<li>
-							<a href="javascript:void(0);"><i data-feather="shield"></i><span><span>Roles & Permissions</span></a>
+							<a href="system-user.php"><iconify-icon icon="uil:user" class="system-user"></iconify-icon> <span><span>System User</span></a>
+						
+						</li>
+						<li>
+							<a href="role-permission.php"><i data-feather="shield"></i><span><span>Roles & Permissions</span></a>
 						
 						</li>
 						<li>

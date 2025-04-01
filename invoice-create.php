@@ -280,27 +280,23 @@
            <div class="row">
                             <div class="col-lg-6 mb-3">
                             
-                            <div class="profile__input profile__input1">
+                            <!-- <div class="profile__input profile__input1">
                                 <label for="#" class="mb-1">Search Item</label>
                                                     <input type="text" class="input__location input__location1"
                                                         placeholder="Search and select an item" aria-expanded="false">
                                                     <ul class="dropdown-menu">
-                                                        <!-- <iconify-icon icon="bxs:up-arrow" style="color: white"
-                                                                                class="arrowupIcon"></iconify-icon> -->
                                                         <div class="locationList_container">
                                                             <li class="no-results">
                                                                 <img src="assets/img/new-image/no-action-removebg-preview.png"
                                                                     alt="">
                                                                 <p>Please Search Item Here</p>
-                                                                <!-- <a class="dropdown-item"
-                                                                                    href="#"></a> -->
+                                                                
                                                             </li>
                                                             <li class="no-location-found" style="display: none;">
 
                                                                 <img src="assets/img/new-image/nodata.jpg" alt="">
                                                                 <p>Opps, No Item Found !</p>
-                                                                <!-- <a
-                                                                                    class="dropdown-item" href="#">No Item Found</a> -->
+                                                               
                                                             </li>
                                                             <li class="location-item active" style="display: none;">
                                                                 <div class="itemDetailBox">
@@ -330,25 +326,24 @@
                                                         </div>
 
                                                     </ul>
-                                                </div>
+                                                </div> -->
                             </div>
-                            <div class="col-lg-10">
+                            <!-- <div class="col-lg-10">
                                 <div class="sectionBox ComboItemsbox scanItem">
                                     <div class="form-check align-items-center mt-2 p-0">
-                                        <!-- <input class="form-check-input varrientCheckbox" type="checkbox" value="" id="flexCheckChecked3" checked> -->
+                                        
                                         <label class="form-check-label" for="flexCheckChecked3">
                                             Item Details
                                         </label>
                                     </div>
 
-                                    <!-- Scan Item Button -->
                                     <a href="javascript:void(0);" class="scanItemBtn" data-bs-toggle="modal"
                                         data-bs-target="#scanModal">
                                         <iconify-icon icon="iconoir:cube-scan"></iconify-icon> Scan Item
                                     </a>
                                 </div>
-                            </div>
-                            <div class="col-lg-10 tableBox VariantContainer mb-3">
+                            </div> -->
+                            <!-- <div class="col-lg-10 tableBox VariantContainer mb-3">
                                 <table class="table table-bordered AssociateItemTable">
                                     <thead>
                                         <tr>
@@ -415,7 +410,41 @@
 
 
 
+                            </div> -->
+
+                            <div class="ItemaddContainer">
+                            <div class="iteamaddSection_title">
+                                <h2>Manage Stock Items</h2>
                             </div>
+                            <table border="1" width="100%" class="table table-bordered AssociateItemTable">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Item Details</th>
+                                        <th>Quantity</th>
+                                        <th>Rate</th>
+                                        <th>Discount</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="stock-transfer-body">
+                                    <tr id="no-data-message">
+                                        <td colspan="7" style="text-align: center; padding: 20px;">
+                                            <img src="assets/img/noproduct.png" alt="No items" width="150">
+                                            <h2>No items added to transfer</h2>
+                                            <p>Please add items to transfer</p>
+                                            <button id="add-first-item" type="button" class="btnComn_add_lightbg">
+                                                <iconify-icon icon="octicon:feed-plus-16"></iconify-icon> Add Stock Item
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button id="add-new-row" type="button" class="btnComn_add_lightbg">
+                                <iconify-icon icon="octicon:feed-plus-16"></iconify-icon> Add New Row
+                            </button>
+                          </div>
 
                             <div class="col-lg-12">
                                 <div class="row">
@@ -642,7 +671,7 @@ Date Picker custom plugin End
 product list append in table js code
 -------------------------------------- -->
 
-<script>
+<!-- <script>
     $(document).ready(function () {
         function initializeProfileInput() {
             const profileInputs = document.querySelectorAll('.profile__input');
@@ -653,9 +682,9 @@ product list append in table js code
                 const noResultsItem = dropdownMenu.querySelector('.no-results');
                 const noLocationFoundItem = dropdownMenu.querySelector('.no-location-found');
                 const locationItems = dropdownMenu.querySelectorAll('.location-item');
-                const tableBody = document.querySelector('.AssociateItemTable tbody'); // Reference to the table body
+                const tableBody = document.querySelector('.AssociateItemTable tbody'); 
 
-                let defaultRowUsed = false; // Track whether the default row is used
+                let defaultRowUsed = false; 
 
                 function updateDropdown() {
                     const filter = input.value.toLowerCase();
@@ -695,27 +724,25 @@ product list append in table js code
                     item.addEventListener('click', function (e) {
                         e.preventDefault();
 
-                        // Highlight the selected item
+                 
                         locationItems.forEach(item => item.classList.remove('active'));
                         this.classList.add('active');
 
-                        // Extract item details
                         const itemName = this.querySelector('.ItemName').textContent.trim();
                         const itemStock = this.querySelector('.ItemStock span').textContent.trim();
 
-                        // Populate the input field with the selected item's name
+                  
                         input.value = itemName;
 
-                        // Check if the default row is unused
                         if (!defaultRowUsed) {
                             const defaultRow = tableBody.querySelector('.varrientDetailRow');
                             const itemDetailCell = defaultRow.querySelector('.ItemDetail');
                             const stockQtySpan = defaultRow.querySelector('.StockQty');
                             itemDetailCell.innerHTML = `<strong>${itemName}</strong>`;
                             stockQtySpan.textContent = itemStock;
-                            defaultRowUsed = true; // Mark the default row as used
+                            defaultRowUsed = true; 
                         } else {
-                            // Create a new row and append it to the table
+                           
                             const newRow = document.createElement('tr');
                             newRow.classList.add('varrientDetailRow');
                             newRow.innerHTML = `
@@ -756,10 +783,10 @@ product list append in table js code
                             tableBody.appendChild(newRow);
                         }
 
-                        // Add event listener for row removal
+                       
                         addRowRemovalHandler();
 
-                        // Hide dropdown menu
+                        
                         dropdownMenu.style.display = 'none';
                     });
                 });
@@ -770,7 +797,7 @@ product list append in table js code
                     }
                 });
 
-                // Function to add row removal handler
+        
                 function addRowRemovalHandler() {
                     const actionSetButtons = tableBody.querySelectorAll('.action-set');
                     actionSetButtons.forEach(button => {
@@ -778,35 +805,34 @@ product list append in table js code
                             const row = this.closest('tr');
                             const rowCount = tableBody.querySelectorAll('.varrientDetailRow').length;
 
-                            // If there are multiple rows, delete the selected row
+                      
                             if (rowCount > 1) {
                                 tableBody.removeChild(row);
                             } else {
-                                // Ensure at least one row remains, remove only the last row
+                               
                                 if (rowCount === 1) {
                                     tableBody.removeChild(row);
-                                    defaultRowUsed = false; // Mark the default row as unused
+                                    defaultRowUsed = false; 
                                 }
                             }
                         });
                     });
                 }
 
-                // Add initial row removal handler
+                
                 addRowRemovalHandler();
             });
         }
 
-        // Initialize profile input for existing rows
         initializeProfileInput();
     });
-</script>
+</script> -->
 
 
 
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Select all dropdown menus in the document
+    
         const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
         dropdownMenus.forEach(menu => {
@@ -814,15 +840,15 @@ product list append in table js code
                 if (e.target.tagName === 'A') {
                     const selectedValue = e.target.getAttribute('data-value');
                     const button = menu
-                        .previousElementSibling; // Select the button before the menu
+                        .previousElementSibling; 
                     if (button && selectedValue) {
-                        button.textContent = selectedValue; // Change the button text
+                        button.textContent = selectedValue; 
                     }
                 }
             });
         });
     });
-</script>
+</script> -->
 
 
 
@@ -907,79 +933,213 @@ product list append in table js code
 <!-- Include HTML5-QRCODE Library -->
 <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
 
+
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const scannerElement = document.getElementById('barcode-scanner');
-        const resultElement = document.getElementById('scannedCode');
-        let html5QrCode;
+ document.addEventListener("DOMContentLoaded", function () {
+    const tableBody = document.getElementById("stock-transfer-body");
+    const noDataMessage = document.getElementById("no-data-message");
+    const addFirstItemBtn = document.getElementById("add-first-item");
+    const addNewRowBtn = document.getElementById("add-new-row");
+    const itemCountElement = document.getElementById("item-count");
 
-        // Initialize scanner when modal is shown
-        document.getElementById('scanModal').addEventListener('shown.bs.modal', function () {
-            html5QrCode = new Html5Qrcode("barcode-scanner");
-            html5QrCode.start({
-                    facingMode: "environment"
-                }, // Use the rear camera
-                {
-                    fps: 10, // Frames per second
-                    qrbox: {
-                        width: 250,
-                        height: 250
-                    }, // Scanning box dimensions
-                },
-                (decodedText, decodedResult) => {
-                    // Handle the decoded text
-                    resultElement.textContent = decodedText;
+    let products = [
+        { name: "Healthy Snacks Collection", qty: 100, image: "assets/img/products/big-2.jpg" },
+        { name: "Organic Food Basket", qty: 50, image: "assets/img/products/img-12.jpg" },
+        { name: "Organic Spices Pack", qty: 30, image: "assets/img/products/big-1.jpg" },
+        { name: "Premium Grocery Essentials", qty: 75, image: "assets/img/products/img-14.jpg" }
+    ];
 
-                    // Optionally stop scanning after successful scan
-                    html5QrCode.stop().then(() => {
-                        console.log("Scanner stopped.");
-                    });
-                },
-                (errorMessage) => {
-                    // Handle scanning errors
-                    console.warn(errorMessage);
-                }
-            ).catch(err => {
-                console.error("Error starting scanner:", err);
-            });
-        });
+    function updateItemCount() {
+        let count = tableBody.querySelectorAll("tr").length;
+        itemCountElement.textContent = count;
+    }
 
-        // Stop scanner when modal is hidden
-        document.getElementById('scanModal').addEventListener('hidden.bs.modal', function () {
-            if (html5QrCode) {
-                html5QrCode.stop().then(() => {
-                    console.log("Scanner stopped.");
-                }).catch(err => {
-                    console.error("Error stopping scanner:", err);
-                });
-            }
-        });
+    function addRow() {
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+            <td><img src="https://via.placeholder.com/50" alt="Dummy Image" width="50" height="50"></td>
+            <td>
+                <input type="text" class="item-search form-control first-input" placeholder="Search item..." autocomplete="off">
+                <ul class="dropdown-menu"></ul>
+            </td>
+            <td><input type="number" class="quantity-available form-control" readonly></td>
+            <td><input type="number" class="quantity-transfer form-control"></td>
+             <td>
+                <div class="discount-wrappers">
+                    <input type="number" class="discount-value form-control" placeholder="Discount">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle discount-box" type="button" data-bs-toggle="dropdown">
+                            %
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item discount-option" href="#" data-value="%">%</a></li>
+                            <li><a class="dropdown-item discount-option" href="#" data-value="USD">USD</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" class="amout form-control last-input"></td>
+            <td><button class="remove-row"><iconify-icon icon="fluent:delete-28-regular"></iconify-icon></button></td>
+        `;
+        tableBody.appendChild(newRow);
+        noDataMessage.style.display = "none";
+        updateItemCount();
+        newRow.querySelector(".first-input").focus();
+
+         // ✅ Initialize Bootstrap Dropdown on the new row
+         let dropdownToggle = newRow.querySelector(".dropdown-toggle");
+        new bootstrap.Dropdown(dropdownToggle);
+
+    }
+
+    // ✅ Change discount type when selecting an option
+    tableBody.addEventListener("click", function (event) {
+        if (event.target.classList.contains("discount-option")) {
+            event.preventDefault();
+            let selectedValue = event.target.getAttribute("data-value");
+            let discountBox = event.target.closest(".dropdown").querySelector(".discount-box");
+            discountBox.textContent = selectedValue;
+        }
     });
-</script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const radio1 = document.getElementById("Radio1");
-        const radio2 = document.getElementById("Radio2");
-        const newCustomerInput = document.getElementById("NewCustomerInput");
-        const existing = document.getElementById("existing");
+    tableBody.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            let inputs = Array.from(tableBody.querySelectorAll("input"));
+            let currentIndex = inputs.indexOf(event.target);
 
-        // Function to toggle visibility based on selected radio button
-        function toggleVisibility() {
-            if (radio1.checked) {
-                newCustomerInput.style.display = "block";
-                existing.style.display = "none";
-            } else if (radio2.checked) {
-                newCustomerInput.style.display = "none";
-                existing.style.display = "block";
+            if (currentIndex !== -1) {
+                let nextInput = inputs[currentIndex + 1];
+                if (nextInput) {
+                    nextInput.focus();
+                } else {
+                    addRow();
+                }
             }
         }
-
-        // Attach event listeners to the radio buttons
-        radio1.addEventListener("change", toggleVisibility);
-        radio2.addEventListener("change", toggleVisibility);
-
-        // Initial visibility toggle
-        toggleVisibility();
     });
+
+    tableBody.addEventListener("input", function (event) {
+        if (event.target.classList.contains("item-search")) {
+            let input = event.target;
+            let search = input.value.toLowerCase();
+            let dropdown = input.nextElementSibling;
+            dropdown.innerHTML = "";
+
+            let suggestions = products.filter(p => p.name.toLowerCase().includes(search));
+
+            if (suggestions.length > 0) {
+                dropdown.style.display = "block";
+                suggestions.forEach((item, index) => {
+                    let listItem = document.createElement("li");
+                    listItem.classList.add("dropdown-item", "select-item");
+                    listItem.setAttribute("data-name", item.name);
+                    listItem.setAttribute("data-qty", item.qty);
+                    listItem.setAttribute("data-image", item.image);
+                    listItem.setAttribute("tabindex", "0");
+                    listItem.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" width="30" height="30">
+                        ${item.name} (${item.qty} available)
+                    `;
+                    dropdown.appendChild(listItem);
+                });
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    });
+
+    tableBody.addEventListener("keydown", function (event) {
+        if (event.target.classList.contains("item-search")) {
+            let dropdown = event.target.nextElementSibling;
+            let items = dropdown.querySelectorAll(".select-item");
+            if (items.length === 0) return;
+
+            let activeItem = dropdown.querySelector(".active");
+            let currentIndex = Array.from(items).indexOf(activeItem);
+
+            if (event.key === "ArrowDown") {
+                event.preventDefault();
+                if (currentIndex === -1 || currentIndex === items.length - 1) {
+                    items[0].classList.add("active");
+                } else {
+                    items[currentIndex].classList.remove("active");
+                    items[currentIndex + 1].classList.add("active");
+                }
+            } else if (event.key === "ArrowUp") {
+                event.preventDefault();
+                if (currentIndex === -1 || currentIndex === 0) {
+                    items[items.length - 1].classList.add("active");
+                } else {
+                    items[currentIndex].classList.remove("active");
+                    items[currentIndex - 1].classList.add("active");
+                }
+            } else if (event.key === "Enter" && activeItem) {
+                event.preventDefault();
+                activeItem.click();
+            }
+        }
+    });
+
+    tableBody.addEventListener("click", function (event) {
+        if (event.target.closest(".dropdown-item")) {
+            let selectedItem = event.target.closest(".dropdown-item");
+            let row = selectedItem.closest("tr");
+            row.querySelector(".item-search").value = selectedItem.getAttribute("data-name");
+            row.querySelector(".quantity-available").value = selectedItem.getAttribute("data-qty");
+            row.querySelector("td img").src = selectedItem.getAttribute("data-image");
+            selectedItem.parentElement.style.display = "none";
+            row.querySelector(".quantity-transfer").focus();
+        }
+    });
+
+    tableBody.addEventListener("click", function (event) {
+        if (event.target.closest(".remove-row")) {
+            event.target.closest("tr").remove();
+            updateItemCount();
+        }
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".item-search, .dropdown-menu")) {
+            document.querySelectorAll(".dropdown-menu").forEach(menu => menu.style.display = "none");
+        }
+    });
+
+    tableBody.addEventListener("click", function (event) {
+        if (event.target.closest(".discount-box")) {
+            let discountBox = event.target.closest(".discount-box");
+            let dropdown = discountBox.nextElementSibling;
+
+            document.querySelectorAll(".discount-dropdown").forEach(menu => {
+                if (menu !== dropdown) menu.style.display = "none";
+            });
+
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".discount-box, .discount-dropdown")) {
+            document.querySelectorAll(".discount-dropdown").forEach(menu => {
+                menu.style.display = "none";
+            });
+        }
+    });
+
+    addFirstItemBtn.addEventListener("click", addRow);
+    addNewRowBtn.addEventListener("click", addRow);
+});
+
+   
 </script>
+
+<style>
+    .discount-wrappers .dropdown-menu.show {
+    display: block !important;
+}
+.discount-wrappers .dropdown-menu.show li{
+    display: block !important;
+}
+</style>
+
