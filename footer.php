@@ -1,3 +1,93 @@
+<!-- Modal -->
+<div class="WindowsStyleModal">
+  <form action="#" id="supportTicketForm">
+    <div class="modal fade" id="HelpPopup" tabindex="-1" aria-labelledby="HelpPopupLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="HelpPopupLabel">
+              <div class="iconModal">
+                <iconify-icon icon="streamline:customer-support-1"></iconify-icon>
+              </div>
+              Raise a Support Ticket
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="form-label">Subject</label>
+                  <input type="text" class="form-control" placeholder="Enter the subject of your issue" required>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label class="form-label">Description</label>
+                  <textarea class="form-control" rows="3" placeholder="Describe your issue in detail..." required></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label">Priority</label>
+                  <select class="form-select select2" required>
+                    <option value="" disabled selected>Select priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="urgent">Urgent</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-label">Category</label>
+                  <select class="form-select select2" required>
+                    <option value="" disabled selected>Select category</option>
+                    <option value="technical">Technical Issue</option>
+                    <option value="account">Account Related</option>
+                    <option value="billing">Billing/Invoice</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+				<div class="form-group">
+					<label class="form-label">Attachments (Optional)</label>
+
+					<!-- Drop Zone -->
+					<div id="dropZone" class="border border-dashed p-3 mb-2 text-center rounded bg-light" style="cursor: pointer;">
+						<p class="mb-0 text-muted">Drag and drop images here or click to upload</p>
+						<input type="file" id="fileInput" class="d-none" multiple accept="image/*">
+					</div>
+
+					<!-- Info -->
+					<small class="text-muted d-block mb-2">You can upload screenshots or supporting documents (Max 5MB each).</small>
+
+					<!-- Uploaded List -->
+					<ul id="previewList" class="list-unstyled row g-2 mb-0"></ul>
+					</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btnClose" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btnSave">Submit Ticket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="mybutton">
+ <button class="feedback" data-bs-toggle="modal" data-bs-target="#HelpPopup"><iconify-icon icon="streamline:customer-support-1"></iconify-icon> Help</button>
+</div>
 <!-- jQuery -->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 
@@ -135,6 +225,79 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+</script>
+
+<script>
+  $(document).ready(function () {
+    const dropZone = $('#dropZone');
+    const fileInput = $('#fileInput');
+    const previewList = $('#previewList');
+    let fileList = [];
+
+    // ✅ Fix: trigger file input on click anywhere in dropZone
+    dropZone.on('click', function (e) {
+      // Only trigger if user didn't click the paragraph inside
+      if (!$(e.target).is('input[type="file"]')) {
+        fileInput.trigger('click');
+      }
+    });
+
+    // Handle file input change
+    fileInput.on('change', function (e) {
+      handleFiles(e.target.files);
+      fileInput.val(''); // reset so same file can be uploaded again
+    });
+
+    // Drag-over style
+    dropZone.on('dragover', function (e) {
+      e.preventDefault();
+      dropZone.addClass('border-primary');
+    });
+
+    dropZone.on('dragleave', function (e) {
+      e.preventDefault();
+      dropZone.removeClass('border-primary');
+    });
+
+    // Drag & Drop
+    dropZone.on('drop', function (e) {
+      e.preventDefault();
+      dropZone.removeClass('border-primary');
+      handleFiles(e.originalEvent.dataTransfer.files);
+    });
+
+    // Preview images
+    function handleFiles(files) {
+      Array.from(files).forEach(file => {
+        if (!file.type.startsWith('image/') || file.size > 5 * 1024 * 1024) return;
+
+        fileList.push(file);
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const li = `
+            <li class="position-relative">
+              <div class="ImageWrapper border rounded p-2 h-100">
+                <img src="${e.target.result}" class="img-fluid rounded mb-1" alt="${file.name}">
+                <div class="ImageDetailWrapper">
+                  <small class="text-truncate w-75" title="${file.name}">${file.name}</small>
+                  <iconify-icon icon="iconamoon:close-duotone" class="text-danger cursor-pointer removeFile" data-name="${file.name}"></iconify-icon>
+                </div>
+              </div>
+            </li>`;
+          previewList.append(li);
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    // Remove file
+    previewList.on('click', '.removeFile', function () {
+      const name = $(this).data('name');
+      $(this).closest('li').remove();
+      fileList = fileList.filter(file => file.name !== name);
+    });
+  });
 </script>
 <style>
 /* .sidebar .sidebar-menu > ul > li.submenu-open ul > li.active a span{

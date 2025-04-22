@@ -351,7 +351,9 @@
 							<a href="system-activity.php"><i data-feather="git-pull-request"></i><span><span>System Activity</span></a>
 						
 						</li>
-			
+						<li>
+							<a href="all-tickets.php"><i data-feather="git-pull-request"></i><span><span>All Tickets</span></a>
+						</li>
 						<li>
 							<a href="invoice-create.php" class="cmnCheckincheckout_btn"><span><iconify-icon icon="basil:invoice-outline"></iconify-icon> Quick Invoice</span></a>
 						</li>
